@@ -1,3 +1,11 @@
+var talentList
+
+fetch("https://shinobiworldrpg.github.io/Ficha/talentos.json")
+.then(response => {
+   return response.json();
+})
+.then(data => talentList = data);
+
 function checkVila(input){
     if(input.toLowerCase() == 'konoha' || input.toLowerCase() == 'konohagakure') return 'vKonoha';
     if(input.toLowerCase() == 'suna' || input.toLowerCase() == 'sunagakure') return 'vSuna';
@@ -27,7 +35,7 @@ function checkPvp(input){
 }
 
 $(document).ready(function(){
-    console.log('Ficha Script 1.4 Running');
+    console.log('Ficha Script 1.5 Running');
     
     // VARIÁVEIS
     var banner = $('banner').text();
