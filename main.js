@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    console.log('Ficha Scrip 1.0 Running');
+    console.log('Ficha Script 1.1 Running');
 
     $('.fichaMain').html(`
     <div class="fichaMainContainer verde">
@@ -10,11 +10,11 @@ $(document).ready(function(){
         <svg class="fLevel" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50"><defs><style>.a,.c{fill:none;}.b,.d{fill:#eaeade;font-family:Arial-Black, Arial;font-weight:800;letter-spacing:0.087em;}.b{font-size:12px;}.c{stroke:#fff;stroke-width:1.7px;}.d{font-size:27px;}</style></defs><rect class="a" width="50" height="50"/><g transform="translate(-198 -355)"><g transform="translate(200 356)"><text class="b" transform="translate(0 13)"><tspan x="0" y="0">LEVEL</tspan></text></g><line class="c" x2="46" transform="translate(200.5 373)"/><g transform="translate(205 367)"><text class="d" transform="translate(19 30)"><tspan x="-19.183" y="0">49</tspan></text></g></g></svg>
         <div class="bannerName">Sarutobi Ikoma</div><div class="bannerTitle">Alcunha Regional - Alcunha Mundial</div>
         <div class="fichaMenu">
-            <img src="/assets/Perfil.svg" class="buttonPerfil bActive">
-            <img src="/assets/Reputação.svg" class="buttonRep">
-            <img src="/assets/Habilidades.svg" class="buttonHab">
-            <img src="/assets/Arsenal.svg" class="buttonArsenal">
-            <img src="/assets/Extra.svg" class="buttonExtra">
+            <img src="https://shinobiworldrpg.github.io/Ficha/assets/Perfil.svg" class="buttonPerfil bActive">
+            <img src="https://shinobiworldrpg.github.io/Ficha/assets/Reputação.svg" class="buttonRep">
+            <img src="https://shinobiworldrpg.github.io/Ficha/assets/Habilidades.svg" class="buttonHab">
+            <img src="https://shinobiworldrpg.github.io/Ficha/assets/Arsenal.svg" class="buttonArsenal">
+            <img src="https://shinobiworldrpg.github.io/Ficha/assets/Extra.svg" class="buttonExtra">
         </div>
         <div class="fichaSecondaryContainer perfilContainer">
             <div class="perfilContent">
@@ -26,11 +26,11 @@ $(document).ready(function(){
                 <div class="campo fTendencia"><span>Tendência</span><br>Caçador de Emoções</div>
                 <div class="campo fPP"><span>Personagem Base</span><br>Ikoma (World Trigger)</div>
                 <div class="perfilButtons">
-                    <div class="pButton"><img src="/assets/Defeitos.svg" class="buttonDefeitos"></div>
-                    <div class="pButton"><img src="/assets/Historia.svg" class="buttonHistoria"></div>
-                    <div class="pButton"><img src="/assets/Desc Fis.svg" class="buttonFisica"></div>
-                    <div class="pButton"><img src="/assets/Desc Mental.svg" class="buttonMental"></div>
-                    <div class="pButton"><img src="/assets/Bijuu.svg" class="buttonBijuu"></div>
+                    <div class="pButton"><img src="https://shinobiworldrpg.github.io/Ficha/assets/Defeitos.svg" class="buttonDefeitos"></div>
+                    <div class="pButton"><img src="https://shinobiworldrpg.github.io/Ficha/assets/Historia.svg" class="buttonHistoria"></div>
+                    <div class="pButton"><img src="https://shinobiworldrpg.github.io/Ficha/assets/Desc Fis.svg" class="buttonFisica"></div>
+                    <div class="pButton"><img src="https://shinobiworldrpg.github.io/Ficha/assets/Desc Mental.svg" class="buttonMental"></div>
+                    <div class="pButton"><img src="https://shinobiworldrpg.github.io/Ficha/assets/Bijuu.svg" class="buttonBijuu"></div>
                 </div>
             </div>
             <div class="repContent">
@@ -69,97 +69,97 @@ $(document).ready(function(){
                     <div class="attC"><span>Carisma - 10</span><div class="barBar" style="width: 100%;"></div><div class="barOutline"></div></div>
                 </div>
                 <div class="hButtons">
-                    <div class="fButton"><img src="/assets/Testes.svg" class="buttonTestes"></div>
-                    <div class="fButton"><img src="/assets/Talentos.svg" class="buttonTalentos"></div>
+                    <div class="fButton"><img src="https://shinobiworldrpg.github.io/Ficha/assets/Testes.svg" class="buttonTestes"></div>
+                    <div class="fButton"><img src="https://shinobiworldrpg.github.io/Ficha/assets/Talentos.svg" class="buttonTalentos"></div>
                 </div>
             </div>
             <div class="arsenalContent">
-                <div class="fButton"><img src="/assets/Jutsus Basicos.svg" class="buttonJutsu1"></div>
-                <div class="fButton"><img src="/assets/Jutsus Gerais.svg" class="buttonJutsu2"></div>
-                <div class="fButton"><img src="/assets/Bornal.svg" class="buttonBornal"></div>
-                <div class="fButton"><img src="/assets/Edl.svg" class="buttonEdl"></div>
-                <div class="fButton"><img src="/assets/cla kg.svg" class="buttonCla"></div>
-                <div class="fButton"><img src="/assets/Individualidade.svg" class="buttonQuirk"></div>
-                <div class="fButton"><img src="/assets/Elementos.svg" class="buttonElementos"></div>
-                <div class="fButton"><img src="/assets/Kuchyose.svg" class="buttonKuchyose"></div>
+                <div class="fButton"><img src="https://shinobiworldrpg.github.io/Ficha/assets/Jutsus Basicos.svg" class="buttonJutsu1"></div>
+                <div class="fButton"><img src="https://shinobiworldrpg.github.io/Ficha/assets/Jutsus Gerais.svg" class="buttonJutsu2"></div>
+                <div class="fButton"><img src="https://shinobiworldrpg.github.io/Ficha/assets/Bornal.svg" class="buttonBornal"></div>
+                <div class="fButton"><img src="https://shinobiworldrpg.github.io/Ficha/assets/Edl.svg" class="buttonEdl"></div>
+                <div class="fButton"><img src="https://shinobiworldrpg.github.io/Ficha/assets/cla kg.svg" class="buttonCla"></div>
+                <div class="fButton"><img src="https://shinobiworldrpg.github.io/Ficha/assets/Individualidade.svg" class="buttonQuirk"></div>
+                <div class="fButton"><img src="https://shinobiworldrpg.github.io/Ficha/assets/Elementos.svg" class="buttonElementos"></div>
+                <div class="fButton"><img src="https://shinobiworldrpg.github.io/Ficha/assets/Kuchyose.svg" class="buttonKuchyose"></div>
             </div>
             <div class="extraContent">
-                <div class="fButton"><img src="/assets/Relacionamentos.svg" class="buttonRelacionamentos"></div>
-                <div class="fButton"><img src="/assets/Links.svg" class="buttonLinks"></div>
-                <div class="fButton"><img src="/assets/Notas.svg" class="buttonNotas"></div>
+                <div class="fButton"><img src="https://shinobiworldrpg.github.io/Ficha/assets/Relacionamentos.svg" class="buttonRelacionamentos"></div>
+                <div class="fButton"><img src="https://shinobiworldrpg.github.io/Ficha/assets/Links.svg" class="buttonLinks"></div>
+                <div class="fButton"><img src="https://shinobiworldrpg.github.io/Ficha/assets/Notas.svg" class="buttonNotas"></div>
                 <div class="fMoney"><span>Dinheiro</span> 5.000.000 RY$</div>
             </div>
         </div>
         <div class="defeitosSpoiler fSpoiler">
-            <div class="fSpoilerTitle">Defeitos<img src="/assets/CloseButton.png" class="fCloseButton"></div>
+            <div class="fSpoilerTitle">Defeitos<img src="https://shinobiworldrpg.github.io/Fichahttps://shinobiworldrpg.github.io/Ficha/assets/CloseButton.png" class="fCloseButton"></div>
             <div class="fSpoilerContent"></div>
         </div>
         <div class="historiaSpoiler fSpoiler">
-            <div class="fSpoilerTitle">História<img src="/assets/CloseButton.png" class="fCloseButton"></div>
+            <div class="fSpoilerTitle">História<img src="https://shinobiworldrpg.github.io/Ficha/assets/CloseButton.png" class="fCloseButton"></div>
             <div class="fSpoilerContent"></div>
         </div>
         <div class="fisicaSpoiler fSpoiler">
-            <div class="fSpoilerTitle">Descrição Física<img src="/assets/CloseButton.png" class="fCloseButton"></div>
+            <div class="fSpoilerTitle">Descrição Física<img src="https://shinobiworldrpg.github.io/Ficha/assets/CloseButton.png" class="fCloseButton"></div>
             <div class="fSpoilerContent"></div>
         </div>
         <div class="mentalSpoiler fSpoiler">
-            <div class="fSpoilerTitle">Descrição Mental<img src="/assets/CloseButton.png" class="fCloseButton"></div>
+            <div class="fSpoilerTitle">Descrição Mental<img src="https://shinobiworldrpg.github.io/Ficha/assets/CloseButton.png" class="fCloseButton"></div>
             <div class="fSpoilerContent"></div>
         </div>
         <div class="bijuuSpoiler fSpoiler">
-            <div class="fSpoilerTitle">Bijuu<img src="/assets/CloseButton.png" class="fCloseButton"></div>
+            <div class="fSpoilerTitle">Bijuu<img src="https://shinobiworldrpg.github.io/Ficha/assets/CloseButton.png" class="fCloseButton"></div>
             <div class="fSpoilerContent"></div>
         </div>
         <div class="jutsu1Spoiler fSpoiler">
-            <div class="fSpoilerTitle">Jutsus Básicos<img src="/assets/CloseButton.png" class="fCloseButton"></div>
+            <div class="fSpoilerTitle">Jutsus Básicos<img src="https://shinobiworldrpg.github.io/Ficha/assets/CloseButton.png" class="fCloseButton"></div>
             <div class="fSpoilerContent"></div>
         </div>
         <div class="jutsu2Spoiler fSpoiler">
-            <div class="fSpoilerTitle">Jutsus Gerais<img src="/assets/CloseButton.png" class="fCloseButton"></div>
+            <div class="fSpoilerTitle">Jutsus Gerais<img src="https://shinobiworldrpg.github.io/Ficha/assets/CloseButton.png" class="fCloseButton"></div>
             <div class="fSpoilerContent"></div>
         </div>
         <div class="bornalSpoiler fSpoiler">
-            <div class="fSpoilerTitle">Bornal<img src="/assets/CloseButton.png" class="fCloseButton"></div>
+            <div class="fSpoilerTitle">Bornal<img src="https://shinobiworldrpg.github.io/Ficha/assets/CloseButton.png" class="fCloseButton"></div>
             <div class="fSpoilerContent"></div>
         </div>
         <div class="edlSpoiler fSpoiler">
-            <div class="fSpoilerTitle">EDL<img src="/assets/CloseButton.png" class="fCloseButton"></div>
+            <div class="fSpoilerTitle">EDL<img src="https://shinobiworldrpg.github.io/Ficha/assets/CloseButton.png" class="fCloseButton"></div>
             <div class="fSpoilerContent"></div>
         </div>
         <div class="claSpoiler fSpoiler">
-            <div class="fSpoilerTitle">Descrição de Clã / KG<img src="/assets/CloseButton.png" class="fCloseButton"></div>
+            <div class="fSpoilerTitle">Descrição de Clã / KG<img src="https://shinobiworldrpg.github.io/Ficha/assets/CloseButton.png" class="fCloseButton"></div>
             <div class="fSpoilerContent"></div>
         </div>
         <div class="quirkSpoiler fSpoiler">
-            <div class="fSpoilerTitle">Individualidades<img src="/assets/CloseButton.png" class="fCloseButton"></div>
+            <div class="fSpoilerTitle">Individualidades<img src="https://shinobiworldrpg.github.io/Ficha/assets/CloseButton.png" class="fCloseButton"></div>
             <div class="fSpoilerContent"></div>
         </div>
         <div class="elementosSpoiler fSpoiler">
-            <div class="fSpoilerTitle">Elementos<img src="/assets/CloseButton.png" class="fCloseButton"></div>
+            <div class="fSpoilerTitle">Elementos<img src="https://shinobiworldrpg.github.io/Ficha/assets/CloseButton.png" class="fCloseButton"></div>
             <div class="fSpoilerContent"></div>
         </div>
         <div class="kuchyoseSpoiler fSpoiler">
-            <div class="fSpoilerTitle">Kuchyose no Jutsu<img src="/assets/CloseButton.png" class="fCloseButton"></div>
+            <div class="fSpoilerTitle">Kuchyose no Jutsu<img src="https://shinobiworldrpg.github.io/Ficha/assets/CloseButton.png" class="fCloseButton"></div>
             <div class="fSpoilerContent"></div>
         </div>
         <div class="relacionamentosSpoiler fSpoiler">
-            <div class="fSpoilerTitle">Relacionamentos<img src="/assets/CloseButton.png" class="fCloseButton"></div>
+            <div class="fSpoilerTitle">Relacionamentos<img src="https://shinobiworldrpg.github.io/Ficha/assets/CloseButton.png" class="fCloseButton"></div>
             <div class="fSpoilerContent"></div>
         </div>
         <div class="linksSpoiler fSpoiler">
-            <div class="fSpoilerTitle">Links Comprobatórios<img src="/assets/CloseButton.png" class="fCloseButton"></div>
+            <div class="fSpoilerTitle">Links Comprobatórios<img src="https://shinobiworldrpg.github.io/Ficha/assets/CloseButton.png" class="fCloseButton"></div>
             <div class="fSpoilerContent"></div>
         </div>
         <div class="notasSpoiler fSpoiler">
-            <div class="fSpoilerTitle">Anotações Gerais<img src="/assets/CloseButton.png" class="fCloseButton"></div>
+            <div class="fSpoilerTitle">Anotações Gerais<img src="https://shinobiworldrpg.github.io/Ficha/assets/CloseButton.png" class="fCloseButton"></div>
             <div class="fSpoilerContent"></div>
         </div>
         <div class="talentosSpoiler fSpoiler">
-            <div class="fSpoilerTitle">Talentos<img src="/assets/CloseButton.png" class="fCloseButton"></div>
+            <div class="fSpoilerTitle">Talentos<img src="https://shinobiworldrpg.github.io/Ficha/assets/CloseButton.png" class="fCloseButton"></div>
             <div class="fSpoilerContent"></div>
         </div>
         <div class="testesSpoiler fSpoiler">
-            <div class="fSpoilerTitle">Testes<img src="/assets/CloseButton.png" class="fCloseButton"></div>
+            <div class="fSpoilerTitle">Testes<img src="https://shinobiworldrpg.github.io/Ficha/assets/CloseButton.png" class="fCloseButton"></div>
             <div class="fSpoilerContent">
                 <div class="fReservas">
                     <div class="campo"><span>Vitalidade</span><br>0</div>
