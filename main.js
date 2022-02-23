@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    console.log('Ficha Script 1.2 Running');
+    console.log('Ficha Script 1.3 Running');
 
     $('.fichaMain').html(`
     <div class="fichaMainContainer verde">
@@ -18,13 +18,13 @@ $(document).ready(function(){
         </div>
         <div class="fichaSecondaryContainer perfilContainer">
             <div class="perfilContent">
-                <div class="campo fNome"><span>Nome</span><br>Sarutobi Ikoma</div>
-                <div class="campo fCla"><span>Clã / KG / HI</span><br>Sarutobi</div>
-                <div class="campo fIdade"><span>Idade</span><br>17 anos</div>
-                <div class="campo fNiver"><span>Aniversário</span><br>Primavera</div>
-                <div class="campo fGenero"><span>Gênero</span><br>Masculino</div>
-                <div class="campo fTendencia"><span>Tendência</span><br>Caçador de Emoções</div>
-                <div class="campo fPP"><span>Personagem Base</span><br>Ikoma (World Trigger)</div>
+                <div class="campo0 fNome"><span>Nome</span><br>Sarutobi Ikoma</div>
+                <div class="campo0 fCla"><span>Clã / KG / HI</span><br>Sarutobi</div>
+                <div class="campo0 fIdade"><span>Idade</span><br>17 anos</div>
+                <div class="campo0 fNiver"><span>Aniversário</span><br>Primavera</div>
+                <div class="campo0 fGenero"><span>Gênero</span><br>Masculino</div>
+                <div class="campo0 fTendencia"><span>Tendência</span><br>Caçador de Emoções</div>
+                <div class="campo0 fPP"><span>Personagem Base</span><br>Ikoma (World Trigger)</div>
                 <div class="perfilButtons">
                     <div class="pButton"><img src="https://shinobiworldrpg.github.io/Ficha/assets/Defeitos.svg" class="buttonDefeitos"></div>
                     <div class="pButton"><img src="https://shinobiworldrpg.github.io/Ficha/assets/Historia.svg" class="buttonHistoria"></div>
@@ -34,14 +34,14 @@ $(document).ready(function(){
                 </div>
             </div>
             <div class="repContent">
-                <div class="campo fVIla"><span>Vila</span><br>Konohagakure</div>
-                <div class="campo fGraduação"><span>Graduação</span><br>Chunin</div>
-                <div class="campo fSpecial"><span>Cargo Especial</span><br>N/a</div>
-                <div class="campo fAlcunhaLocal"><span>Alcunha Local</span><br>N/a</div>
-                <div class="campo fAlcunhaMundial"><span>Alcunha Mundial</span><br>N/a</div>
-                <div class="campo fRep"><span>Reputação</span><br>Nv.10 - Ninja Dedicado</div>
-                <div class="campo fOrg"><span>Organização / Time</span><br>N/a</div>
-                <div class="campo fPatente"><span>Profissão e Patente</span><br>Herbologista - Auxiliar Experiente</div>
+                <div class="campo0 fVIla"><span>Vila</span><br>Konohagakure</div>
+                <div class="campo0 fGraduação"><span>Graduação</span><br>Chunin</div>
+                <div class="campo0 fSpecial"><span>Cargo Especial</span><br>N/a</div>
+                <div class="campo0 fAlcunhaLocal"><span>Alcunha Local</span><br>N/a</div>
+                <div class="campo0 fAlcunhaMundial"><span>Alcunha Mundial</span><br>N/a</div>
+                <div class="campo0 fRep"><span>Reputação</span><br>Nv.10 - Ninja Dedicado</div>
+                <div class="campo0 fOrg"><span>Organização / Time</span><br>N/a</div>
+                <div class="campo0 fPatente"><span>Profissão e Patente</span><br>Herbologista - Auxiliar Experiente</div>
                 <div class="fMissões"><center><span>Missões</span></center><hr>
                     RANK S - 00
                     RANK A - 00
@@ -52,11 +52,11 @@ $(document).ready(function(){
                 </div>
             </div>
             <div class="habContent">
-                <div class="campo fNivel"><span>Nível</span><br>49</div>
-                <div class="campo fExp"><span>Exp</span><br>5720 / 6040</div>
-                <div class="campo fAssinatura"><span>Técnica Assinatura</span><br>N/a</div>
-                <div class="campo fIndividualidade"><span>Individualidade</span><br>Chakra Suppression Technique</div>
-                <div class="campo fKuchyose"><span>Kuchyose</span><br>N/a</div>
+                <div class="campo0 fNivel"><span>Nível</span><br>49</div>
+                <div class="campo0 fExp"><span>Exp</span><br>5720 / 6040</div>
+                <div class="campo0 fAssinatura"><span>Técnica Assinatura</span><br>N/a</div>
+                <div class="campo0 fIndividualidade"><span>Individualidade</span><br>Chakra Suppression Technique</div>
+                <div class="campo0 fKuchyose"><span>Kuchyose</span><br>N/a</div>
                 <div class="fatributos">
                     <div class="attC"><span>Ninjutsu - 3</span><div class="barBar" style="width: 30%;"></div><div class="barOutline"></div></div>
                     <div class="attC"><span>Taijutsu - 3</span><div class="barBar" style="width: 30%;"></div><div class="barOutline"></div></div>
@@ -162,38 +162,38 @@ $(document).ready(function(){
             <div class="fSpoilerTitle">Testes<img src="https://shinobiworldrpg.github.io/Ficha/assets/CloseButton.png" class="fCloseButton"></div>
             <div class="fSpoilerContent">
                 <div class="fReservas">
-                    <div class="campo"><span>Vitalidade</span><br>0</div>
-                    <div class="campo"><span>Chakra</span><br>0</div>
-                    <div class="campo"><span>Saúde Mental</span><br>0</div>
-                    <div class="campo"><span>Stamina</span><br>0</div>
-                    <div class="campo" style="margin-right: 0px;"><span>Vontade</span><br>0</div>
+                    <div class="campo0"><span>Vitalidade</span><br>0</div>
+                    <div class="campo0"><span>Chakra</span><br>0</div>
+                    <div class="campo0"><span>Saúde Mental</span><br>0</div>
+                    <div class="campo0"><span>Stamina</span><br>0</div>
+                    <div class="campo0" style="margin-right: 0px;"><span>Vontade</span><br>0</div>
                 </div>
                 <div class="fTestes">
-                    <div class="campo campo2"><span>Alcance de Ninjutsu (AN)</span><br>0</div>
-                    <div class="campo campo2"><span>Velocidade de Ninjutsu (VN)</span><br>0</div>
-                    <div class="campo campo2"><span>Velocidade de Conjuração (VC)</span><br>0</div>
-                    <div class="campo campo2"><span>Velocidade de Selos de Mãos (VSM)</span><br>0</div>
-                    <div class="campo campo2"><span>Dano de Ninjutsu (DN)</span><br>0</div>
-                    <div class="campo campo2"><span>Alcance de Genjutsu (AG)</span><br>0</div>
-                    <div class="campo campo2"><span>Velocidade de Expansão de Genjutsu (VEG)</span><br>0</div>
-                    <div class="campo campo2"><span>Precisão do Genjutsu (PG)</span><br>0</div>
-                    <div class="campo campo2"><span>Percepção de Genjutsu (PdG)</span><br>0</div>
-                    <div class="campo campo2"><span>Dano Físico (DF)</span><br>0</div>
-                    <div class="campo campo2"><span>Dano com Armas (DA)</span><br>0</div>
-                    <div class="campo campo2"><span>Velocidade de Arremesso (VAR)</span><br>0</div>
-                    <div class="campo campo2"><span>Precisão de Arremesso (PAR)</span><br>0</div>
-                    <div class="campo campo2"><span>Defesa Física (DF)</span><br>0</div>
-                    <div class="campo campo2"><span>Capacidade de Carga (CC)</span><br>0</div>
-                    <div class="campo campo2"><span>Velocidade do Personagem (VP)</span><br>0</div>
-                    <div class="campo campo2"><span>Velocidade dos Golpes (VG)</span><br>0</div>
-                    <div class="campo campo2"><span>Velocidade do Saque (VS)</span><br>0</div>
-                    <div class="campo campo2"><span>Reflexos (RE)</span><br>0</div>
-                    <div class="campo campo2"><span>Percepção de Movimentos (PM)</span><br>0</div>
-                    <div class="campo campo2"><span>Percepção de Mentiras (PMS)</span><br>0</div>
-                    <div class="campo campo2"><span>Criação de Armadilhas (CDA)</span><br>0</div>
-                    <div class="campo campo2"><span>Velocidade no Preparo de Armadilhas (VPA)</span><br>0</div>
-                    <div class="campo campo2"><span>Percepção de Armadilhas (PA)</span><br>0</div>
-                    <div class="campo campo2 campofinal"><span>Persuasão (PE)</span><br>0</div>
+                    <div class="campo0 campo2"><span>Alcance de Ninjutsu (AN)</span><br>0</div>
+                    <div class="campo0 campo2"><span>Velocidade de Ninjutsu (VN)</span><br>0</div>
+                    <div class="campo0 campo2"><span>Velocidade de Conjuração (VC)</span><br>0</div>
+                    <div class="campo0 campo2"><span>Velocidade de Selos de Mãos (VSM)</span><br>0</div>
+                    <div class="campo0 campo2"><span>Dano de Ninjutsu (DN)</span><br>0</div>
+                    <div class="campo0 campo2"><span>Alcance de Genjutsu (AG)</span><br>0</div>
+                    <div class="campo0 campo2"><span>Velocidade de Expansão de Genjutsu (VEG)</span><br>0</div>
+                    <div class="campo0 campo2"><span>Precisão do Genjutsu (PG)</span><br>0</div>
+                    <div class="campo0 campo2"><span>Percepção de Genjutsu (PdG)</span><br>0</div>
+                    <div class="campo0 campo2"><span>Dano Físico (DF)</span><br>0</div>
+                    <div class="campo0 campo2"><span>Dano com Armas (DA)</span><br>0</div>
+                    <div class="campo0 campo2"><span>Velocidade de Arremesso (VAR)</span><br>0</div>
+                    <div class="campo0 campo2"><span>Precisão de Arremesso (PAR)</span><br>0</div>
+                    <div class="campo0 campo2"><span>Defesa Física (DF)</span><br>0</div>
+                    <div class="campo0 campo2"><span>Capacidade de Carga (CC)</span><br>0</div>
+                    <div class="campo0 campo2"><span>Velocidade do Personagem (VP)</span><br>0</div>
+                    <div class="campo0 campo2"><span>Velocidade dos Golpes (VG)</span><br>0</div>
+                    <div class="campo0 campo2"><span>Velocidade do Saque (VS)</span><br>0</div>
+                    <div class="campo0 campo2"><span>Reflexos (RE)</span><br>0</div>
+                    <div class="campo0 campo2"><span>Percepção de Movimentos (PM)</span><br>0</div>
+                    <div class="campo0 campo2"><span>Percepção de Mentiras (PMS)</span><br>0</div>
+                    <div class="campo0 campo2"><span>Criação de Armadilhas (CDA)</span><br>0</div>
+                    <div class="campo0 campo2"><span>Velocidade no Preparo de Armadilhas (VPA)</span><br>0</div>
+                    <div class="campo0 campo2"><span>Percepção de Armadilhas (PA)</span><br>0</div>
+                    <div class="campo0 campo2 campofinal"><span>Persuasão (PE)</span><br>0</div>
                 </div>
             </div>
         </div>
