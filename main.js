@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    console.log('Ficha Script 1.1 Running');
+    console.log('Ficha Script 1.2 Running');
 
     $('.fichaMain').html(`
     <div class="fichaMainContainer verde">
@@ -91,7 +91,7 @@ $(document).ready(function(){
             </div>
         </div>
         <div class="defeitosSpoiler fSpoiler">
-            <div class="fSpoilerTitle">Defeitos<img src="https://shinobiworldrpg.github.io/Fichahttps://shinobiworldrpg.github.io/Ficha/assets/CloseButton.png" class="fCloseButton"></div>
+            <div class="fSpoilerTitle">Defeitos<img src="https://shinobiworldrpg.github.io/Ficha/assets/CloseButton.png" class="fCloseButton"></div>
             <div class="fSpoilerContent"></div>
         </div>
         <div class="historiaSpoiler fSpoiler">
