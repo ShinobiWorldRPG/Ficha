@@ -1,4 +1,4 @@
-/* Version 1.1.1 */
+/* Version 1.1.2 */
 
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap");
@@ -150,6 +150,7 @@
   position: absolute;
   top: 215px;
   right: 5px;
+  white-space: nowrap;
 }
 
 .fichaMainContainer .bannerTitle {
@@ -480,6 +481,7 @@
   font-size: 14px;
   letter-spacing: 0.087em;
   font-weight: 0;
+  white-space: nowrap;
 }
 
 .fichaMainContainer .fichaSecondaryContainer .campo0 span {
