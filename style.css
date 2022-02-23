@@ -67,7 +67,7 @@
 }
 
 .fichaMainContainer .fTexture {
-  background-image: url(/assets/48982623-sandpaper-texture.webp);
+  background-image: url(https://shinobiworldrpg.github.io/Ficha/assets/48982623-sandpaper-texture.webp);
   background-color: white;
   background-size: 150%;
   background-repeat: repeat-y;
@@ -109,7 +109,7 @@
 }
 
 .fichaMainContainer .fVila.vKonoha {
-  background-image: url(/assets/Konoha.svg);
+  background-image: url(/https://shinobiworldrpg.github.io/Ficha/assets/Konoha.svg);
 }
 
 .fichaMainContainer .pvp {
@@ -121,11 +121,11 @@
 }
 
 .fichaMainContainer .pvp.pvpOn {
-  background-image: url(/assets/pvpOn.svg);
+  background-image: url(https://shinobiworldrpg.github.io/Ficha/assets/pvpOn.svg);
 }
 
 .fichaMainContainer .pvp.pvpOff {
-  background-image: url(/assets/pvpOff.svg);
+  background-image: url(https://shinobiworldrpg.github.io/Ficha/assets/pvpOff.svg);
 }
 
 .fichaMainContainer .fLevel {
