@@ -1,4 +1,4 @@
-/* Version 1.1 */
+/* Version 1.1.1 */
 
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap");
@@ -325,9 +325,10 @@
 }
 
 .fichaMainContainer .fichaSecondaryContainer .repContent .fMissões hr {
-  width: 133px;
+  width: 132px;
   position: absolute;
-  left: 0;
+  height: 0px;
+  left: -1px;
   border: 0.5px solid var(--baseC4);
 }
 
@@ -465,7 +466,7 @@
   background-color: var(--baseC4);
 }
 
-.fichaMainContainer .fichaSecondaryContainer .campo {
+.fichaMainContainer .fichaSecondaryContainer .campo0 {
   float: left;
   height: 36px;
   background-color: #232323;
@@ -481,7 +482,7 @@
   font-weight: 0;
 }
 
-.fichaMainContainer .fichaSecondaryContainer .campo span {
+.fichaMainContainer .fichaSecondaryContainer .campo0 span {
   font-weight: bold;
   line-height: 18px;
 }
@@ -635,6 +636,7 @@
 }
 
 .fichaMainContainer .fSpoiler ::-webkit-scrollbar-track {
+  background: none;
   border-radius: 10px;
   position: absolute;
 }
@@ -683,7 +685,7 @@
   grid-auto-rows: 50px;
 }
 
-.fichaMainContainer .testesSpoiler .campo {
+.fichaMainContainer .testesSpoiler .campo0 {
   float: left;
   height: 36px;
   background-color: #232323;
@@ -699,7 +701,7 @@
   font-weight: 0;
 }
 
-.fichaMainContainer .testesSpoiler .campo span {
+.fichaMainContainer .testesSpoiler .campo0 span {
   font-weight: bold;
   line-height: 18px;
 }
