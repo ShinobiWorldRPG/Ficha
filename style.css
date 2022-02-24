@@ -315,7 +315,7 @@
   font-size: 14px;
   line-height: 12px;
   letter-spacing: 0.087em;
-  white-space: pre-wrap;
+  white-space: nowrap;
 }
 
 .fichaMainContainer .fichaSecondaryContainer .repContent .fMissões span {
