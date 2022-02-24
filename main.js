@@ -1,6 +1,6 @@
 var talentList
 
-fetch("https://shinobiworldrpg.github.io/Ficha/talentos.json")
+fetch("./talentos.json")
 .then(response => {
    return response.json();
 })
@@ -35,7 +35,7 @@ function checkPvp(input){
 }
 
 $(document).ready(function(){
-    console.log('Ficha Script 1.5 Running');
+    console.log('Ficha Script 1.5.1 Running');
     
     // VARIÁVEIS
     var banner = $('banner').text();
@@ -55,7 +55,7 @@ $(document).ready(function(){
     var alcunhaMundial = $('mundial').text();
     var rep = $('reputacao').text();
     var time = $('time').text();
-    var missoes = $('missoes').text();
+    var missoes = $('missoes').html();
     var level = $('level').text();
     var exp = $('exp').text();
     var assinatura = $('assinatura').text();
