@@ -1,4 +1,4 @@
-var version = '1.6.1';
+var version = '1.6.2';
 
 function checkVila(input){
     if(input.toLowerCase() == 'konoha' || input.toLowerCase() == 'konohagakure') return 'vKonoha';
@@ -156,7 +156,7 @@ function talentGenerator(talentos , lista, i, tipo){
         //console.log(final);
         return final;
     }
-    var j = checarspoiler(talentos[i]-1);
+    var j = checarspoiler(talentos[i]);
 
     //tipo[j] += lista[talentos[i]-1].code;
     tipo[j] += divCheck(lista[talentos[i]-1].code , talentos[i]);
