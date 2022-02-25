@@ -1,4 +1,4 @@
-var version = '1.5.4';
+var version = '1.6';
 
 function checkVila(input){
     if(input.toLowerCase() == 'konoha' || input.toLowerCase() == 'konohagakure') return 'vKonoha';
@@ -53,7 +53,119 @@ function saque(arma , VS){
     return VS;
 }
 
-$(document).ready(function(){fetch("https://shinobiworldrpg.github.io/Ficha/talentos.json").then(response => {return response.json();}).then(data => {
+function checarspoiler(numero){
+    if (numero < 17) return 0;
+    if (numero < 34) return 1;
+    if (numero < 47) return 2;
+    if (numero < 56) return 3;
+    if (numero < 67) return 4;
+    if (numero < 81) return 5;
+    if (numero < 90) return 6;
+    if (numero < 105) return 7;
+    if (numero < 129) return 8;
+    if (numero < 144) return 9;
+    if (numero < 157) return 10;
+    if (numero < 173) return 11;
+    if (numero < 183) return 12;
+    if (numero < 192) return 13;
+    if (numero < 202) return 14;
+    if (numero < 221) return 15;
+    if (numero < 236) return 16;
+    if (numero < 254) return 17;
+    if (numero < 258) return 18;
+    if (numero < 262) return 19;
+    else return 20;
+}
+
+function divCheck(texto, i){
+    //console.log(i);
+    if(i !== 1 && i !== 6 && i !== 13 && i !== 17 && i !== 22 && i !== 28 && i !== 34 && i !== 38 && i !== 42 && i !== 46 && i !== 49 && i !== 52 && i !== 56 && i !== 59 && i !== 63 && i !== 67 && i !== 72 && i !== 78 && i !== 81 && i !== 84 && i !== 87 && i !== 90 && i !== 95 && i !== 100 && i !== 105 && i !== 111 && i !== 119 && i !== 128 && i !== 129 && i !== 134 && i !== 141 && i !== 144 && i !== 148 && i !== 153 && i !== 157 && i !== 160 && i !== 169 && i !== 173 && i !== 176 && i !== 179 && i !== 182 && i !== 183 && i !== 186 && i !== 189 && i !== 192 && i !== 195 && i !== 198 && i !== 202 && i !== 209 && i !== 215 && i !== 221 && i !== 225 && i !== 231 && i !== 236 && i !== 242 && i !== 248 && i !== 254 && i !== 255 && i !== 256 && i !== 258){
+        return `<div style="padding-left: 50px">${texto}</div><br><br>`
+    }
+    else return `${texto}<br><br>`;
+}
+
+function talentGenerator(talentos , lista, i, tipo){
+    if(talentos[i] <= 0) return talentGenerator(talentos, lista, i + 1, tipo);
+    if(talentos[i]-1 > lista.length) return talentGenerator(talentos, lista, i + 1, tipo);
+    if(i >= talentos.length){
+        var final = "";
+        if (tipo[0] !== ""){
+            final += `<dl class="codebox spoiler"><dt style="cursor: pointer;">Ninjutsu:</dt><dd><div class="spoiler_content">${tipo[0]}</div></dd></dl><br>`;
+        }
+        if (tipo[1] !== ""){
+            final += `<dl class="codebox spoiler"><dt style="cursor: pointer;">Controle de Chakra:</dt><dd><div class="spoiler_content">${tipo[1]}</div></dd></dl><br>`;
+        }
+        if (tipo[2] !== ""){
+            final += `<dl class="codebox spoiler"><dt style="cursor: pointer;">Fuinjutsu:</dt><dd><div class="spoiler_content">${tipo[2]}</div></dd></dl><br>`;
+        }
+        if (tipo[3] !== ""){
+            final += `<dl class="codebox spoiler"><dt style="cursor: pointer;">Bushinjutsu:</dt><dd><div class="spoiler_content">${tipo[3]}</div></dd></dl><br>`;
+        }
+        if (tipo[4] !== ""){
+            final += `<dl class="codebox spoiler"><dt style="cursor: pointer;">Selos de Mão:</dt><dd><div class="spoiler_content">${tipo[4]}</div></dd></dl><br>`;
+        }
+        if (tipo[5] !== ""){
+            final += `<dl class="codebox spoiler"><dt style="cursor: pointer;">Elementos de Chakra:</dt><dd><div class="spoiler_content">${tipo[5]}</div></dd></dl><br>`;
+        }
+        if (tipo[6] !== ""){
+            final += `<dl class="codebox spoiler"><dt style="cursor: pointer;">Nintaijutsu:</dt><dd><div class="spoiler_content">${tipo[6]}</div></dd></dl><br>`;
+        }
+        if (tipo[7] !== ""){
+            final += `<dl class="codebox spoiler"><dt style="cursor: pointer;">Taijutsu:</dt><dd><div class="spoiler_content">${tipo[7]}</div></dd></dl><br>`;
+        }
+        if (tipo[8] !== ""){
+            final += `<dl class="codebox spoiler"><dt style="cursor: pointer;">Genjutsu:</dt><dd><div class="spoiler_content">${tipo[8]}</div></dd></dl><br>`;
+        }
+        if (tipo[9] !== ""){
+            final += `<dl class="codebox spoiler"><dt style="cursor: pointer;">Inteligência:</dt><dd><div class="spoiler_content">${tipo[9]}</div></dd></dl><br>`;
+        }
+        if (tipo[10] !== ""){
+            final += `<dl class="codebox spoiler"><dt style="cursor: pointer;">Atenção:</dt><dd><div class="spoiler_content">${tipo[10]}</div></dd></dl><br>`;
+        }
+        if (tipo[11] !== ""){
+            final += `<dl class="codebox spoiler"><dt style="cursor: pointer;">Carisma:</dt><dd><div class="spoiler_content">${tipo[11]}</div></dd></dl><br>`;
+        }
+        if (tipo[12] !== ""){
+            final += `<dl class="codebox spoiler"><dt style="cursor: pointer;">Resistência:</dt><dd><div class="spoiler_content">${tipo[12]}</div></dd></dl><br>`;
+        }
+        if (tipo[13] !== ""){
+            final += `<dl class="codebox spoiler"><dt style="cursor: pointer;">Resiliência:</dt><dd><div class="spoiler_content">${tipo[13]}</div></dd></dl><br>`;
+        }
+        if (tipo[14] !== ""){
+            final += `<dl class="codebox spoiler"><dt style="cursor: pointer;">Força:</dt><dd><div class="spoiler_content">${tipo[14]}</div></dd></dl><br>`;
+        }
+        if (tipo[15] !== ""){
+            final += `<dl class="codebox spoiler"><dt style="cursor: pointer;">Reservas:</dt><dd><div class="spoiler_content">${tipo[15]}</div></dd></dl><br>`;
+        }
+        if (tipo[16] !== ""){
+            final += `<dl class="codebox spoiler"><dt style="cursor: pointer;">Destreza:</dt><dd><div class="spoiler_content">${tipo[16]}</div></dd></dl><br>`;
+        }
+        if (tipo[17] !== ""){
+            final += `<dl class="codebox spoiler"><dt style="cursor: pointer;">Bukijutsu:</dt><dd><div class="spoiler_content">${tipo[17]}</div></dd></dl><br>`;
+        }
+        if (tipo[18] !== ""){
+            final += `<dl class="codebox spoiler"><dt style="cursor: pointer;">Invocação:</dt><dd><div class="spoiler_content">${tipo[18]}</div></dd></dl><br>`;
+        }
+        if (tipo[19] !== ""){
+            final += `<dl class="codebox spoiler"><dt style="cursor: pointer;">Espaço-Tempo:</dt><dd><div class="spoiler_content">${tipo[19]}</div></dd></dl><br>`;
+        }
+        if (tipo[20] !== ""){
+            final += `<dl class="codebox spoiler"><dt style="cursor: pointer;">Talentos Secretos:</dt><dd><div class="spoiler_content">${tipo[20]}</div></dd></dl><br>`;
+        }
+        //console.log(final);
+        return final;
+    }
+    var j = checarspoiler(talentos[i]-1);
+
+    //tipo[j] += lista[talentos[i]-1].code;
+    tipo[j] += divCheck(lista[talentos[i]-1].code , talentos[i]);
+    //console.log(tipo);
+
+    return talentGenerator(talentos, lista, i + 1, tipo);
+}
+
+$(document).ready(function(){fetch("./talentos.json").then(response => {return response.json();}).then(data => {
 
     console.log(`Ficha Script ${version} Running`);
     console.log(`Talentos: ${data.length}`);
@@ -161,6 +273,9 @@ $(document).ready(function(){fetch("https://shinobiworldrpg.github.io/Ficha/tale
 
     var indialtura = 0;
     if($('individualidade2').text() !== '' || $('individualidade3').text() !== '') indialtura = 1;
+    var talent = ""; 
+    talent = talentGenerator(talentos, data, 0, ["","","","","","","","","","","","","","","","","","","","",""]);
+    //console.log(talent);
 
     /*var lista = '';
     for (let index = 0; index < data.length; index++) {
@@ -320,7 +435,7 @@ $(document).ready(function(){fetch("https://shinobiworldrpg.github.io/Ficha/tale
         </div>
         <div class="talentosSpoiler fSpoiler">
             <div class="fSpoilerTitle">Talentos<img src="https://shinobiworldrpg.github.io/Ficha/assets/CloseButton.png" class="fCloseButton"></div>
-            <div class="fSpoilerContent"></div>
+            <div class="fSpoilerContent">${talent}</div>
         </div>
         <div class="testesSpoiler fSpoiler">
             <div class="fSpoilerTitle">Testes<img src="https://shinobiworldrpg.github.io/Ficha/assets/CloseButton.png" class="fCloseButton"></div>
