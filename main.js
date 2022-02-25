@@ -1,4 +1,4 @@
-var version = '1.6.3';
+var version = '1.7';
 
 function checkVila(input){
     if(input.toLowerCase() == 'konoha' || input.toLowerCase() == 'konohagakure') return 'vKonoha';
@@ -165,6 +165,53 @@ function talentGenerator(talentos , lista, i, tipo){
     return talentGenerator(talentos, lista, i + 1, tipo);
 }
 
+function elementGenerator(talentos , lista, i, tipo){
+    if(talentos[i] <= 0) return elementGenerator(talentos, lista, i + 1, tipo);
+    if(talentos[i]-1 > lista.length) return elementGenerator(talentos, lista, i + 1, tipo);
+    if(i >= talentos.length){
+        var final = "";
+        if (tipo[5] !== ""){
+            final += `<dl class="codebox spoiler"><dt style="cursor: pointer;">Elementos de Chakra (${talentos[0]}):</dt><dd><div class="spoiler_content">${tipo[5]}</div></dd></dl><br>`;
+        }
+        //console.log(final);
+        return final;
+    }
+    var j = checarspoiler(talentos[i]);
+
+    //tipo[j] += lista[talentos[i]-1].code;
+    tipo[j] += divCheck(lista[talentos[i]-1].code , talentos[i]);
+    //console.log(tipo);
+
+    return elementGenerator(talentos, lista, i + 1, tipo);
+}
+
+function elementCalc(talentos, lista, i, j , DN, VN, AN, DND , DNC){
+    if(talentos[i] <= 0) return elementCalc(talentos, lista, i + 1, j , DN, VN, AN, DND , DNC);
+    if(talentos[i]-1 > lista.length) return elementCalc(talentos, lista, i + 1, j , DN, VN, AN, DND , DNC);
+    if(i >= talentos.length){
+        var texto = `
+        <div class="campofinal elementTitle">${talentos[0]}</div>
+        <div class="fTestes">
+            <div class="campo0 campo2"><span>Alcance de Ninjutsu (AN)</span><br>${AN}m</div>
+            <div class="campo0 campo2"><span>Velocidade de Ninjutsu (VN)</span><br>${VN}m/s</div>
+            <div class="campo0 campo2"><span>Dano de Ninjutsu (DN)</span><br>${DN}</div>
+            <div class="campo0 campo2"><span>Dano de Ninjutsu Concentrado (DNC)</span><br>${DNC}</div>
+            <div class="campo0 campo2 campofinal"><span>Dano de Ninjutsu Dispersivo (DND)</span><br>${DND}</div>
+        </div>`
+
+        return texto;
+    }
+
+    if(lista[talentos[i]-1].atributo[j] == 'EDN') return elementCalc(talentos, lista , i + 1, 0, DN + lista[talentos[i]-1].bonus[j] , VN, AN, DND , DNC);
+    if(lista[talentos[i]-1].atributo[j] == 'EVN') return elementCalc(talentos, lista , i + 1, 0, DN , VN + lista[talentos[i]-1].bonus[j] , AN, DND , DNC);
+    if(lista[talentos[i]-1].atributo[j] == 'EAN') return elementCalc(talentos, lista , i + 1, 0, DN , VN, AN + lista[talentos[i]-1].bonus[j] , DND , DNC);
+    if(lista[talentos[i]-1].atributo[j] == 'EDND') return elementCalc(talentos, lista , i + 1, 0, DN , VN, AN, DND+ lista[talentos[i]-1].bonus[j] , DNC);
+    if(lista[talentos[i]-1].atributo[j] == 'EDNC') return elementCalc(talentos, lista , i + 1, 0, DN , VN, AN, DND , DNC + lista[talentos[i]-1].bonus[j] );
+
+    if(j < lista[talentos[i]-1].atributo.length-1) return elementCalc(talentos, lista, i, j+1, DN, VN, AN, DND , DNC);
+    else return elementCalc(talentos, lista , i+1 , 0 , DN, VN, AN, DND , DNC);
+}
+
 $(document).ready(function(){fetch("https://shinobiworldrpg.github.io/Ficha/talentos.json").then(response => {return response.json();}).then(data => {
 
     console.log(`Ficha Script ${version} Running`);
@@ -225,12 +272,11 @@ $(document).ready(function(){fetch("https://shinobiworldrpg.github.io/Ficha/tale
     var inteligencia = Number($('inteligencia').text());
     var atencao = Number($('atencao').text());
     var carisma = Number($('carisma').text());
-
-    talentos = talentos.split('/').map(Number).sort((a, b) => a - b);
-
     var bonuscla = $('BonusCla').text().split('/').map(Number);
 
+    talentos = talentos.split('/').map(Number).sort((a, b) => a - b);
     //console.log(talentos);
+
 
     //Cálculos
 
@@ -275,7 +321,22 @@ $(document).ready(function(){fetch("https://shinobiworldrpg.github.io/Ficha/tale
     if($('individualidade2').text() !== '' || $('individualidade3').text() !== '') indialtura = 1;
     var talent = ""; 
     talent = talentGenerator(talentos, data, 0, ["","","","","","","","","","","","","","","","","","","","",""]);
-    //console.log(talent);
+    
+    var elemental = $('Elementais').text();
+    var elementalfinal = '';
+    var elementtestes = '';
+    elemental = elemental.split('&');
+    
+    for (let index = 0; index < elemental.length; index++) {
+        elemental[index] = elemental[index].split('/');
+    
+        for (let j = 1; j < elemental[index].length; j++) {
+            elemental[index][j] = Number(elemental[index][j]);           
+        }
+        elemental[index].sort((a, b) => a - b);
+        elementalfinal += elementGenerator(elemental[index], data, 1, ["","","","","","","","","","","","","","","","","","","","",""]);
+        elementtestes += elementCalc(elemental[index], data, 1, 0, DN, VN, AN, DND, DNC);
+    }
 
     /*var lista = '';
     for (let index = 0; index < data.length; index++) {
@@ -435,7 +496,7 @@ $(document).ready(function(){fetch("https://shinobiworldrpg.github.io/Ficha/tale
         </div>
         <div class="talentosSpoiler fSpoiler">
             <div class="fSpoilerTitle">Talentos<img src="https://shinobiworldrpg.github.io/Ficha/assets/CloseButton.png" class="fCloseButton"></div>
-            <div class="fSpoilerContent">${talent}</div>
+            <div class="fSpoilerContent">${talent}${elementalfinal}</div>
         </div>
         <div class="testesSpoiler fSpoiler">
             <div class="fSpoilerTitle">Testes<img src="https://shinobiworldrpg.github.io/Ficha/assets/CloseButton.png" class="fCloseButton"></div>
@@ -477,6 +538,7 @@ $(document).ready(function(){fetch("https://shinobiworldrpg.github.io/Ficha/tale
                     <div class="campo0 campo2"><span>Percepção de Armadilhas (PA)</span><br>${PA}</div>
                     <div class="campo0 campo2"><span>Persuasão (PE)</span><br>${PE}</div>
                 </div>
+                ${elementtestes}
             </div>
         </div>
     </div>
