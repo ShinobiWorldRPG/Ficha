@@ -1,4 +1,4 @@
-var version = '1.7.2';
+var version = '1.7.3';
 
 function checkVila(input){
     if(input.toLowerCase() == 'konoha' || input.toLowerCase() == 'konohagakure') return 'vKonoha';
@@ -335,7 +335,7 @@ $(document).ready(function(){fetch("https://shinobiworldrpg.github.io/Ficha/tale
         }
         elemental[index].sort((a, b) => a - b);
         elementalfinal += elementGenerator(elemental[index], data, 1, ["","","","","","","","","","","","","","","","","","","","",""]);
-        elementtestes += elementCalc(elemental[index], data, 1, 0, DN, VN, AN, DND, DNC);
+        if(elemental[index][0] != '') elementtestes += elementCalc(elemental[index], data, 1, 0, DN, VN, AN, DND, DNC);
     }
 
     /*var lista = '';
@@ -350,7 +350,7 @@ $(document).ready(function(){fetch("https://shinobiworldrpg.github.io/Ficha/tale
     $('.fichaMain').html(`
     <div class="fichaMainContainer verde ${checkVila(vila)}">
         <div class="bannerFundo"></div><div class="titleFundo"></div><div class="sideFundoFundo"></div><div class="sideFundo"></div><div class="fTexture"></div>
-        <svg class="bannerImage" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="516.783" height="175.001" viewBox="0 0 516.783 175.001"><defs><pattern id="a" width="1" height="1" viewBox="0 334.693 516.783 175.001"><image preserveAspectRatio="xMidYMid slice" width="516.783" href="${banner}"/></pattern></defs><path d="M702,211H185.217a112.51,112.51,0,0,0,0-175H702V211Z" transform="translate(-185.217 -36)" fill="url(#a)"/></svg>
+        <svg class="bannerImage" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="516.783" height="175.001" viewBox="0 0 516.783 175.001"><defs><pattern id="a" width="1" height="1" viewBox="100% 100% 516.783 175.001"><image preserveAspectRatio="xMidYMid slice" width="516.783" href="${banner}"/></pattern></defs><path d="M702,211H185.217a112.51,112.51,0,0,0,0-175H702V211Z" transform="translate(-185.217 -36)" fill="url(#a)"/></svg>
         <div class="perfilImage" style="background-image: url(${avatar});"></div>
         <div class="fVila ${checkVila(vila)}"></div><div class="pvp ${checkPvp(pvp)}"></div>
         <svg class="fLevel" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50"><defs><style>.a,.c{fill:none;}.b,.d{fill:#eaeade;font-family:Arial-Black, Arial;font-weight:800;letter-spacing:0.087em;}.b{font-size:12px;}.c{stroke:#fff;stroke-width:1.7px;}.d{font-size:27px;}</style></defs><rect class="a" width="50" height="50"/><g transform="translate(-198 -355)"><g transform="translate(200 356)"><text class="b" transform="translate(0 13)"><tspan x="0" y="0">LEVEL</tspan></text></g><line class="c" x2="46" transform="translate(200.5 373)"/><g transform="translate(205 367)"><text class="d" transform="translate(19 30)"><tspan x="-19.183" y="0">${level}</tspan></text></g></g></svg>
