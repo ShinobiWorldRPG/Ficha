@@ -1,4 +1,4 @@
-var version = '1.8.2';
+var version = '1.8.3';
 
 function checkVila(input){
     if(input.toLowerCase() == 'konoha' || input.toLowerCase() == 'konohagakure') return 'vKonoha';
@@ -199,7 +199,7 @@ function elementCalc(talentos, lista, i, j , DN, VN, AN, DND , DNC){
             <div class="campo0 campo2 campofinal"><span>Dano de Ninjutsu Dispersivo (DND)</span><br>${DND}</div>
         </div>`
 
-        console.log(talentos[1]);
+        //console.log(talentos[1]);
         if(talentos[1] !== undefined && talentos[1] !== 0) return texto;
         else return '';
     }
@@ -247,7 +247,7 @@ function bukiCalc(talentos, lista, i, j , DA, VG, VAR, PAR ){
             <div class="campo0 campo2"><span>Precisão de Arremesso (PAR)</span><br>${PAR}m</div>
         </div>`
 
-        console.log(talentos[1]);
+        //console.log(talentos[1]);
         if(talentos[1] !== undefined && talentos[1] !== 0) return texto;
         else return '';
     }
@@ -382,7 +382,7 @@ $(document).ready(function(){fetch("https://shinobiworldrpg.github.io/Ficha/tale
         for (let j = 1; j < elemental[index].length; j++) {
             elemental[index][j] = Number(elemental[index][j]);           
         }
-        elemental[index].sort((a, b) => a - b);
+        elemental[index].sort((a, b) => (a & 1) - (b & 1) || a - b);
         elementalfinal += elementGenerator(elemental[index], data, 1, ["","","","","","","","","","","","","","","","","","","","",""]);
         if(elemental[index][0] != '') elementtestes += elementCalc(elemental[index], data, 1, 0, DN, VN, AN, DND, DNC);
     }
@@ -398,7 +398,7 @@ $(document).ready(function(){fetch("https://shinobiworldrpg.github.io/Ficha/tale
         for (let j = 1; j < bukiT[index].length; j++) {
             bukiT[index][j] = Number(bukiT[index][j]);           
         }
-        bukiT[index].sort((a, b) => a - b);
+        bukiT[index].sort((a, b) => (a & 1) - (b & 1) || a - b);
         bukiTfinal += bukiGenerator(bukiT[index], data, 1, ["","","","","","","","","","","","","","","","","","","","",""]);
         if(bukiT[index][0] != '') bukiTtestes += bukiCalc(bukiT[index], data, 1, 0, DA, VG, VAR, PAR);
     }
