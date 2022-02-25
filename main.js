@@ -1,4 +1,4 @@
-var version = '1.7.3';
+var version = '1.8';
 
 function checkVila(input){
     if(input.toLowerCase() == 'konoha' || input.toLowerCase() == 'konohagakure') return 'vKonoha';
@@ -199,7 +199,9 @@ function elementCalc(talentos, lista, i, j , DN, VN, AN, DND , DNC){
             <div class="campo0 campo2 campofinal"><span>Dano de Ninjutsu Dispersivo (DND)</span><br>${DND}</div>
         </div>`
 
-        return texto;
+        console.log(talentos[1]);
+        if(talentos[1] !== undefined && talentos[1] !== 0) return texto;
+        else return '';
     }
 
     if(lista[talentos[i]-1].atributo[j] == 'EDN') return elementCalc(talentos, lista , i + 1, 0, DN + lista[talentos[i]-1].bonus[j] , VN, AN, DND , DNC);
@@ -210,6 +212,53 @@ function elementCalc(talentos, lista, i, j , DN, VN, AN, DND , DNC){
 
     if(j < lista[talentos[i]-1].atributo.length-1) return elementCalc(talentos, lista, i, j+1, DN, VN, AN, DND , DNC);
     else return elementCalc(talentos, lista , i+1 , 0 , DN, VN, AN, DND , DNC);
+}
+
+function bukiGenerator(talentos , lista, i, tipo){
+    if(talentos[i] <= 0) return bukiGenerator(talentos, lista, i + 1, tipo);
+    if(talentos[i]-1 > lista.length) return bukiGenerator(talentos, lista, i + 1, tipo);
+    if(i >= talentos.length){
+        var final = "";
+        if (tipo[17] !== ""){
+            final += `<dl class="codebox spoiler"><dt style="cursor: pointer;">Bukijutsu (${talentos[0]}):</dt><dd><div class="spoiler_content">${tipo[17]}</div></dd></dl><br>`;
+        }
+        //console.log(final);
+        return final;
+    }
+    var j = checarspoiler(talentos[i]);
+
+    //tipo[j] += lista[talentos[i]-1].code;
+    tipo[j] += divCheck(lista[talentos[i]-1].code , talentos[i]);
+    //console.log(tipo);
+
+    return bukiGenerator(talentos, lista, i + 1, tipo);
+}
+
+function bukiCalc(talentos, lista, i, j , DA, VG, VAR, PAR ){
+    if(talentos[i] <= 0) return bukiCalc(talentos, lista, i + 1, j , DA, VG, VAR, PAR );
+    if(talentos[i]-1 > lista.length) return bukiCalc(talentos, lista, i + 1, j , DA, VG, VAR, PAR );
+    if(i >= talentos.length){
+        var texto = `
+        <div class="campofinal elementTitle">${talentos[0]}</div>
+        <div class="fTestes">
+            <div class="campo0 campo2"><span>Dano com Armas (DA)</span><br>${DA}</div>
+            <div class="campo0 campo2"><span>Velocidade dos Golpes (VG)</span><br>${VG}m/s</div>
+            <div class="campo0 campo2"><span>Velocidade de Arremesso (VAR)</span><br>${VAR}m/s</div>
+            <div class="campo0 campo2"><span>Precisão de Arremesso (PAR)</span><br>${PAR}m</div>
+        </div>`
+
+        console.log(talentos[1]);
+        if(talentos[1] !== undefined && talentos[1] !== 0) return texto;
+        else return '';
+    }
+
+    if(lista[talentos[i]-1].atributo[j] == 'ADA') return bukiCalc(talentos, lista , i + 1, 0, DA + lista[talentos[i]-1].bonus[j] , VG, VAR, PAR );
+    if(lista[talentos[i]-1].atributo[j] == 'AVG') return bukiCalc(talentos, lista , i + 1, 0, DA , VG + lista[talentos[i]-1].bonus[j] , VAR, PAR );
+    if(lista[talentos[i]-1].atributo[j] == 'AVAR') return bukiCalc(talentos, lista , i + 1, 0, DA , VG, VAR + lista[talentos[i]-1].bonus[j] , PAR );
+    if(lista[talentos[i]-1].atributo[j] == 'APAR') return bukiCalc(talentos, lista , i + 1, 0, DA , VG, VAR, PAR+ lista[talentos[i]-1].bonus[j] );
+
+    if(j < lista[talentos[i]-1].atributo.length-1) return bukiCalc(talentos, lista, i, j+1, DA, VG, VAR, PAR );
+    else return bukiCalc(talentos, lista , i+1 , 0 , DA, VG, VAR, PAR );
 }
 
 $(document).ready(function(){fetch("https://shinobiworldrpg.github.io/Ficha/talentos.json").then(response => {return response.json();}).then(data => {
@@ -336,6 +385,22 @@ $(document).ready(function(){fetch("https://shinobiworldrpg.github.io/Ficha/tale
         elemental[index].sort((a, b) => a - b);
         elementalfinal += elementGenerator(elemental[index], data, 1, ["","","","","","","","","","","","","","","","","","","","",""]);
         if(elemental[index][0] != '') elementtestes += elementCalc(elemental[index], data, 1, 0, DN, VN, AN, DND, DNC);
+    }
+
+    var bukiT = $('buki').text();
+    var bukiTfinal = '';
+    var bukiTtestes = '';
+    bukiT = bukiT.split('&');
+
+    for (let index = 0; index < bukiT.length; index++) {
+        bukiT[index] = bukiT[index].split('/');
+    
+        for (let j = 1; j < bukiT[index].length; j++) {
+            bukiT[index][j] = Number(bukiT[index][j]);           
+        }
+        bukiT[index].sort((a, b) => a - b);
+        bukiTfinal += bukiGenerator(bukiT[index], data, 1, ["","","","","","","","","","","","","","","","","","","","",""]);
+        if(bukiT[index][0] != '') bukiTtestes += bukiCalc(bukiT[index], data, 1, 0, DA, VG, VAR, PAR);
     }
 
     /*var lista = '';
@@ -496,7 +561,7 @@ $(document).ready(function(){fetch("https://shinobiworldrpg.github.io/Ficha/tale
         </div>
         <div class="talentosSpoiler fSpoiler">
             <div class="fSpoilerTitle">Talentos<img src="https://shinobiworldrpg.github.io/Ficha/assets/CloseButton.png" class="fCloseButton"></div>
-            <div class="fSpoilerContent">${talent}${elementalfinal}</div>
+            <div class="fSpoilerContent">${talent}${elementalfinal}${bukiTfinal}</div>
         </div>
         <div class="testesSpoiler fSpoiler">
             <div class="fSpoilerTitle">Testes<img src="https://shinobiworldrpg.github.io/Ficha/assets/CloseButton.png" class="fCloseButton"></div>
@@ -539,6 +604,7 @@ $(document).ready(function(){fetch("https://shinobiworldrpg.github.io/Ficha/tale
                     <div class="campo0 campo2"><span>Persuasão (PE)</span><br>${PE}</div>
                 </div>
                 ${elementtestes}
+                ${bukiTtestes}
             </div>
         </div>
     </div>
