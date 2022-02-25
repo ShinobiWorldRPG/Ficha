@@ -1,4 +1,4 @@
-/* Version 1.2 */
+/* Version 1.2.1 */
 
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap");
@@ -726,5 +726,18 @@
   -ms-grid-column: 1;
       grid-column-start: 1;
   grid-column-end: 3;
+}
+
+.fichaMainContainer .testesSpoiler .elementTitle {
+  margin-top: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.087em;
+  text-align: left;
+  width: 590px;
+  color: var(--iceColor);
+  margin-bottom: 10px;
 }
 /*# sourceMappingURL=style.css.map */
