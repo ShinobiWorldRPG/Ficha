@@ -1,4 +1,4 @@
-var version = '1.8';
+var version = '1.8.1';
 
 function checkVila(input){
     if(input.toLowerCase() == 'konoha' || input.toLowerCase() == 'konohagakure') return 'vKonoha';
@@ -177,6 +177,8 @@ function elementGenerator(talentos , lista, i, tipo){
         return final;
     }
     var j = checarspoiler(talentos[i]);
+    console.log(i);
+    console.log(lista[talentos[i]-1);
 
     //tipo[j] += lista[talentos[i]-1].code;
     tipo[j] += divCheck(lista[talentos[i]-1].code , talentos[i]);
