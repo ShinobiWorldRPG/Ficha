@@ -1,14 +1,1886 @@
 [
     {
+    "indice": "1",
     "name": "Estudado em Ninjutsu",
-    "atributo": "VN",
-    "bonus": 2,
-    "code": "Html aqui"
+    "atributo": ["DN","VN"],
+    "bonus": [25,2],
+    "code": "<b>Estudado em Ninjutsu</b><br><b>Requisito:</b> 3 pontos em Ninjutsu<br><b>Bônus:</b> +25 de dano nas técnicas de ninjutsu; +2m/s de velocidade nas técnicas de ninjutsu"
     },
     {
-    "name": "Github",
-    "atributo": "Qual cálculo",
-    "bonus": "bonificação",
-    "code": "Html aqui"
+    "indice": "2",
+    "name": "Caminho do Ninjutsu (Alcance)",
+    "atributo": ["AN"],
+    "bonus": [5],
+    "code": "<b>Caminho do Ninjutsu (Alcance)</b><br><b>Requisito:</b> Estudado em Ninjutsu<br><b>Bônus:</b> +05m de alcance em técnicas de ninjutsu"
+    },
+    {
+    "indice": "3",
+    "name": "Caminho do Ninjutsu (Velocidade)",
+    "atributo": ["VN"],
+    "bonus": [1],
+    "code": "<b>Caminho do Ninjutsu (Velocidade)</b><br><b>Requisito:</b> Estudado em Ninjutsu<br><b>Bônus:</b> +01m/s de velocidade nas técnicas de ninjutsu"
+    },
+    {
+    "indice": "4",
+    "name": "Caminho do Ninjutsu (Dano)",
+    "atributo": ["DN"],
+    "bonus": [25],
+    "code": "<b>Caminho do Ninjutsu (Dano)</b><br><b>Requisito:</b> Estudado em Ninjutsu<br><b>Bônus:</b> +25 de dano nas técnicas de ninjutsu"
+    },
+    {
+    "indice": "5",
+    "name": "Caminho das Barreiras",
+    "atributo": [""],
+    "bonus": [0],
+    "code": "<b>Caminho das Barreiras</b><br><b>Requisito:</b> Estudado em Ninjutsu<br><b>Bônus:</b> Habilidade de usar e criar Kekkai Ninjutsu (Ninjutsu de Barreiras) até rank B"
+    },
+    {
+    "indice": "6",
+    "name": "Versado em Ninjutsu",
+    "atributo": ["DN","VN"],
+    "bonus": [75,2],
+    "code": "<b>Versado em Ninjutsu</b><br><b>Requisito:</b> Estudado em Ninjutsu, 6 pontos em Ninjutsu &amp; 3 Talentos Aprimoradores.<br><b>Bônus:</b> +75 de dano nas técnicas de ninjutsu; +2m/s de velocidade nas técnicas de ninjutsu"
+    },
+    {
+    "indice": "7",
+    "name": "Longo Caminho do Ninjutsu",
+    "atributo": ["AN"],
+    "bonus": [5],
+    "code": "<b>Longo Caminho do Ninjutsu</b><br><b>Requisito:</b> Versado em Ninjutsu<br><b>Bônus:</b> +05m de alcance em técnicas de ninjutsu"
+    },
+    {
+    "indice": "8",
+    "name": "Caminho do Ninjutsu Concentrado (Dano)",
+    "atributo": ["DNC"],
+    "bonus": [75],
+    "code": "<b>Caminho do Ninjutsu Concentrado (Dano)</b><br><b>Requisito:</b> Versado em Ninjutsu<br><b>Bônus:</b> +75 de dano nas técnicas de ninjutsu (do tipo concentrado¹)"
+    },
+    {
+    "indice": "9",
+    "name": "Caminho do Ninjutsu Dispersivo (Dano)",
+    "atributo": ["DND"],
+    "bonus": [75],
+    "code": "<b>Caminho do Ninjutsu Dispersivo (Dano)</b><br><b>Requisito:</b> Versado em Ninjutsu<br><b>Bônus:</b> +75 de dano nas técnicas de ninjutsu (do tipo dispersivo)"
+    },
+    {
+    "indice": "10",
+    "name": "Caminho da Velocidade Espiritual",
+    "atributo": ["VN"],
+    "bonus": [1],
+    "code": "<b>Caminho da Velocidade Espiritual</b><br><b>Requisito:</b> Versado em Ninjutsu<br><b>Bônus:</b> +1m/s de velocidade nas técnicas de ninjutsu"
+    },
+    {
+    "indice": "11",
+    "name": "Reforço das Barreiras",
+    "atributo": [""],
+    "bonus": [0],
+    "code": "<b>Reforço das Barreiras</b><br><b>Requisito:</b> Versado em Ninjutsu &amp; Caminho das Barreiras.<br><b>Bônus:</b> Habilidade de usar e criar Kekkai Ninjutsu (Ninjutsu de Barreiras) até rank A"
+    },
+    {
+    "indice": "12",
+    "name": "Criador de Maldições",
+    "atributo": [""],
+    "bonus": [0],
+    "code": "<b>Criador de Maldições</b><br><b>Requisito:</b> Versado em Ninjutsu, Conhecimentos Anatômicos &amp; Grande Controle de Chakra<br><b>Bônus:</b> Habilidade de criar Juinjutsus"
+    },
+    {
+    "indice": "13",
+    "name": "Mestre em Ninjutsu",
+    "atributo": ["DN","VN"],
+    "bonus": [100,4],
+    "code": "<b>Mestre em Ninjutsu</b><br><b>Requisito:</b> Versado em Ninjutsu, 10 pontos em Ninjutsu &amp; 2 Talentos Aprimoradores.<br><b>Bônus:</b> +100 de dano nas técnicas de ninjutsu; +4m/s de velocidade nas técnicas de ninjutsu"
+    },
+    {
+    "indice": "14",
+    "name": "Caminho do Ninjutsu Destrutivo",
+    "atributo": ["DN"],
+    "bonus": [100],
+    "code": "<b>Caminho do Ninjutsu Destrutivo</b><br><b>Requisito:</b> Mestre em Ninjutsu<br><b>Bônus:</b> +100 de dano nas técnicas de ninjutsu"
+    },
+    {
+    "indice": "15",
+    "name": "Caminho do Ninjutsu Expansivo",
+    "atributo": ["AN"],
+    "bonus": [20],
+    "code": "<b>Caminho do Ninjutsu Expansivo</b><br><b>Requisito:</b> Mestre em Ninjutsu<br><b>Bônus:</b> +20m de alcance em técnicas de ninjutsu"
+    },
+    {
+    "indice": "16",
+    "name": "Mestre das Barreiras",
+    "atributo": [""],
+    "bonus": [0],
+    "code": "<b>Mestre das Barreiras</b><br><b>Requisito:</b> Mestre em Ninjutsu &amp; Reforço das Barreiras<br><b>Bônus:</b> Habilidade de usar e criar Kekkai Ninjutsu (Ninjutsu de Barreiras) até rank S"
+    },
+    {
+    "indice": "17",
+    "name": "Bom Controle de Chakra",
+    "atributo": [""],
+    "bonus": [0],
+    "code": "<b>Bom Controle de Chakra</b><br><b>Requisito:</b> 3 pontos em Inteligência e 3 pontos em Atenção<br><b>Bônus:</b> 10% a menos no consumo de chakra em qualquer tipo de técnica, desde que não possuam este talento como requerimento"
+    },
+    {
+    "indice": "18",
+    "name": "Bom Controle de Expansão (Ninjutsu)",
+    "atributo": ["AN"],
+    "bonus": [5],
+    "code": "<b>Bom Controle de Expansão (Ninjutsu)</b><br><b>Requisito:</b> Bom Controle de Chakra<br><b>Bônus:</b> +05m de alcance em técnicas de ninjutsu (puros ou elementais)"
+    },
+    {
+    "indice": "19",
+    "name": "Bom Controle de Expansão (Genjutsu)",
+    "atributo": ["AG"],
+    "bonus": [5],
+    "code": "<b>Bom Controle de Expansão (Genjutsu)</b><br><b>Requisito:</b> Bom Controle de Chakra<br><b>Bônus:</b> +05m alcance em técnicas de genjutsu"
+    },
+    {
+    "indice": "20",
+    "name": "Bom Controle de Velocidade (Ninjutsu)",
+    "atributo": ["VC"],
+    "bonus": [-1],
+    "code": "<b>Bom Controle de Velocidade (Ninjutsu)</b><br><b>Requisito:</b> Bom Controle de Chakra<br><b>Bônus:</b> -01s em velocidade de conjuração"
+    },
+    {
+    "indice": "21",
+    "name": "Bom Controle de Velocidade (Genjutsu)",
+    "atributo": ["VEG"],
+    "bonus": [2],
+    "code": "<b>Bom Controle de Velocidade (Genjutsu)</b><br><b>Requisito:</b> Bom Controle de Chakra<br><b>Bônus:</b> +2m/s de velocidade de expansão de genjutsu"
+    },
+    {
+    "indice": "22",
+    "name": "Grande Controle de Chakra",
+    "atributo": [""],
+    "bonus": [0],
+    "code": "<b>Grande Controle de Chakra</b><br><b>Requisito:</b> Bom Controle de Chakra, 4 pontos em Inteligência, 4 pontos em Atenção &amp; 2 Talentos Aprimoradores de Controle de Chakra<br><b>Bônus:</b> 25% a menos no consumo de chakra em qualquer tipo de técnica, desde que não possuam este talento como requerimento; este valor substitui o do talento anterior"
+    },
+    {
+    "indice": "23",
+    "name": "Grande Controle de Expansão (Ninjutsu)",
+    "atributo": ["AN"],
+    "bonus": [10],
+    "code": "<b>Grande Controle de Expansão (Ninjutsu)</b><br><b>Requisito:</b> Grande Controle de Chakra<br><b>Bônus:</b> +10m de alcance em técnicas de ninjutsu (puros ou elementais)"
+    },
+    {
+    "indice": "24",
+    "name": "Grande Controle de Expansão (Genjutsu)",
+    "atributo": ["AG"],
+    "bonus": [10],
+    "code": "<b>Grande Controle de Expansão (Genjutsu)</b><br><b>Requisito:</b> Grande Controle de Chakra<br><b>Bônus:</b> +10m alcance em técnicas de genjutsu"
+    },
+    {
+    "indice": "25",
+    "name": "Grande Controle de Velocidade (Ninjutsu)",
+    "atributo": ["VC"],
+    "bonus": [-2],
+    "code": "<b>Grande Controle de Velocidade (Ninjutsu)</b><br><b>Requisito:</b> Grande Controle de Chakra<br><b>Bônus:</b> -02s em velocidade de conjuração"
+    },
+    {
+    "indice": "26",
+    "name": "Grande Controle de Velocidade (Genjutsu)",
+    "atributo": ["VEG"],
+    "bonus": [2],
+    "code": "<b>Grande Controle de Velocidade (Genjutsu)</b><br><b>Requisito:</b> Grande Controle de Chakra<br><b>Bônus:</b> +2m/s de velocidade de expansão de genjutsu"
+    },
+    {
+    "indice": "27",
+    "name": "Controle do Fluxo de Chakra",
+    "atributo": [""],
+    "bonus": [0],
+    "code": "<b>Controle do Fluxo de Chakra</b><br><b>Requisito:</b> Grande Controle de Chakra<br><b>Bônus:</b> Habilidade de usar chakra nagashi"
+    },
+    {
+    "indice": "28",
+    "name": "Mestre em Controle de Chakra",
+    "atributo": [""],
+    "bonus": [0],
+    "code": "<b>Mestre em Controle de Chakra</b><br><b>&gt;Requisito:</b> Grande Controle de Chakra, 8 pontos em Inteligência, 8 pontos em Atenção &amp; 2 Talentos Aprimoradores<br><b>Bônus:</b> 50% a menos no consumo de chakra em qualquer técnica, desde que não possuam este talento como requerimento; este valor substitui o do talento anterior"
+    },
+    {
+    "indice": "29",
+    "name": "Mestre no Controle de Expansão (Ninjutsu)",
+    "atributo": ["AN"],
+    "bonus": [15],
+    "code": "<b>Mestr&gt;e no Controle de Expansão (Ninjutsu)</b><br><b>Requisito:</b> Mestre em Controle de Chakra<br><b>Bônus:</b> +15m de alcance em técnicas de ninjutsu (puros ou elementais)"
+    },
+    {
+    "indice": "30",
+    "name": "Mestre no Controle de Expansão (Genjutsu)",
+    "atributo": ["AG"],
+    "bonus": [15],
+    "code": "<b>Mestre no Controle de Expansão (Genjutsu)</b><br><b>Requisito:</b> Mestre em Controle de Chakra<br><b>Bônus:</b> +15m alcance em técnicas de genjutsu"
+    },
+    {
+    "indice": "31",
+    "name": "Mestre no Controle de Velocidade (Ninjutsu)",
+    "atributo": ["VC"],
+    "bonus": [-2],
+    "code": "<b>Mestre no Controle de Velocidade (Ninjutsu)</b><br><b>Requisito:</b> Mestre em Controle de Chakra<br><b>Bônus:</b> -02s em velocidade de conjuração"
+    },
+    {
+    "indice": "32",
+    "name": "Mestre no Controle de Velocidade (Genjutsu)",
+    "atributo": ["VEG"],
+    "bonus": [2],
+    "code": "<b>Mestre no Controle de Velocidade (Genjutsu)</b><br><b>Requisito:</b> Mestre em Controle de Chakra<br><b>Bônus:</b> +2m/s de velocidade de expansão de genjutsu"
+    },
+    {
+    "indice": "33",
+    "name": "Sombra & Luz",
+    "atributo": [""],
+    "bonus": [0],
+    "code": "<b>Sombra &amp; Luz</b><br><b>Requisito:</b> Mestre em Controle de Chakra &amp; Controle do Fluxo de Chakra<br><b>Bônus:</b> Habilidade de aprender uma das seguintes naturezas de chakra: Yin ou Yang"
+    },
+    {
+    "indice": "34",
+    "name": "Estudado em Fuinjutsu",
+    "atributo": [""],
+    "bonus": [],
+    "code": "<b>Estudado em Fuinjutsu</b><br><b>Requisito:</b> Bom Controle de Chakra &amp; Estudado em Ninjutsu<br><b>Bônus:</b> Habilidade de usar e criar fuinjutsus até rank B que não façam parte dos exclusivos de aprimoradores"
+    },
+    {
+    "indice": "35",
+    "name": "Estudado em Paralisia",
+    "atributo": [""],
+    "bonus": [0],
+    "code": "<b>Estudado em Paralisia</b><br><b>Requisito:</b> Estudado em Fuinjutsu<br><b>Bônus:</b> Habilidade de usar e criar Fuinjutsus de paralisia até rank B"
+    },
+    {
+    "indice": "36",
+    "name": "Estudado em Prisões",
+    "atributo": [""],
+    "bonus": [0],
+    "code": "<b>Estudado em Prisões</b><br><b>Requisito:</b> Estudado em Fuinjutsu<br><b>Bônus:</b> Habilidade de usar e criar Fuinjutsus de selar objetos até rank B"
+    },
+    {
+    "indice": "37",
+    "name": "Estudado em Bloqueio",
+    "atributo": [""],
+    "bonus": [0],
+    "code": "<b>Estudado em Bloqueio</b><br><b>Requisito:</b> Estudado em Fuinjutsu<br><b>Bônus:</b> Habilidade de usar e criar Fuinjutsus de selar chakra até rank B"
+    },
+    {
+    "indice": "38",
+    "name": "Versado em Fuinjutsu",
+    "atributo": [""],
+    "bonus": [],
+    "code": "<b>Versado em Fuinjutsu</b><br><b>Requisito:</b> Estudado em Fuinjutsu, Grande Controle de Chakra, Versado em Ninjutsu &amp; 1 Talento Aprimorador<br><b>Bônus:</b> Habilidade de usar e criar fuinjutsus até rank A que não façam parte dos exclusivos de aprimoradores"
+    },
+    {
+    "indice": "39",
+    "name": "Versado em Paralisia",
+    "atributo": [""],
+    "bonus": [],
+    "code": "<b>Versado em Paralisia</b><br><b>Requisito:</b> Versado em Fuinjutsu<br><b>Bônus:</b> Habilidade de usar e criar Fuinjutsus de paralisia até rank A"
+    },
+    {
+    "indice": "40",
+    "name": "Versado em Prisões",
+    "atributo": [""],
+    "bonus": [],
+    "code": "<b>Versado em Prisões</b><br><b>Requisito:</b> Versado em Fuinjutsu<br><b>Bônus:</b> Habilidade de usar e criar Fuinjutsus de selar objetos até rank A"
+    },
+    {
+    "indice": "41",
+    "name": "Versado em Bloqueio",
+    "atributo": [""],
+    "bonus": [],
+    "code": "<b>Versado em Bloqueio</b><br><b>Requisito:</b> Versado em Fuinjutsu<br><b>Bônus:</b> Habilidade de usar e criar Fuinjutsus de selar chakra até rank A"
+    },
+    {
+    "indice": "42",
+    "name": "Mestre em Fuinjutsu",
+    "atributo": [""],
+    "bonus": [],
+    "code": "<b>Mestre em Fuinjutsu</b><br><b>Requisito:</b> Versado em Fuinjutsu, Mestre em Controle de Chakra, Mestre em Ninjutsu &amp; 1 Talento Aprimorador<br><b>Bônus:</b> Habilidade de usar e criar fuinjutsus até rank S que não façam parte dos exclusivos de aprimoradores"
+    },
+    {
+    "indice": "43",
+    "name": "Mestre em Paralisia",
+    "atributo": [""],
+    "bonus": [0],
+    "code": "<b>Mestre em Paralisia</b><br><b>Requisito:</b> Mestre em Fuinjutsu<br><b>Bônus:</b> Habilidade de usar e criar Fuinjutsus de paralisia até rank S"
+    },
+    {
+    "indice": "44",
+    "name": "Mestre em Prisões",
+    "atributo": [""],
+    "bonus": [0],
+    "code": "<b>Mestre em Prisões</b><br><b>Requisito:</b> Mestre em Fuinjutsu<br><b>Bônus:</b> Habilidade de usar e criar Fuinjutsus de selar objetos até rank S"
+    },
+    {
+    "indice": "45",
+    "name": "Mestre em Bloqueio",
+    "atributo": [""],
+    "bonus": [0],
+    "code": "<b>Mestre em Bloqueio</b><br><b>Requisito:</b> Mestre em Fuinjutsu<br><b>Bônus:</b> Habilidade de usar e criar Fuinjutsus de selar chakra até rank S"
+    },
+    {
+    "indice": "46",
+    "name": "Mestre em Sacrifícios",
+    "atributo": [""],
+    "bonus": [0],
+    "code": "<b>Mestre em Sacrifícios</b><br><b>Requisito:</b> Mestre em Fuinjutsu, Mestre em Paralisia, Prisões e Bloqueio<br><b>Bônus:</b> Habilidade de usar e criar Fuinjutsus de selar coisas vivas até rank S"
+    },
+    {
+    "indice": "47",
+    "name": "Estudado em Bunshinjutsu",
+    "atributo": [""],
+    "bonus": [0],
+    "code": "<b>Estudado em Bunshinjutsu</b><br><b>Requisito:</b> Estudado em Ninjutsu<br><b>Bônus:</b> Habilidade de aprender e utilizar o Kage Bunshin no Jutsu com limite de até dois clones. Estes clones não podem sair do tópico em que o criador estiver. A divisão de chakra será igual entre os clones e criador"
+    },
+    {
+    "indice": "48",
+    "name": "Multiplicador",
+    "atributo": [""],
+    "bonus": [0],
+    "code": "<b>Multiplicador</b><br><b>Requisito:</b> Estudado em Bunshinjutsu &amp; Reservas Sobre-humanas<br><b>Bônus:</b> +2 clones no limite do Kage Bunshin no Jutsu"
+    },
+    {
+    "indice": "49",
+    "name": "Versado em Bunshinjutsu",
+    "atributo": [""],
+    "bonus": [],
+    "code": "<b>Versado em Bunshinjutsu</b><br><b>Requisito:</b> Versado em Ninjutsu &amp; Estudado em Bunshinjutsu<br><b>Bônus:</b> Habilidade de aprender e utilizar o Kage Bunshin no Jutsu com limite de até cinco clones (sem acumular com o TP anterior). Estes clones não podem sair do tópico em que o criador estiver. A divisão de chakra ficará à escolha do usuário"
+    },
+    {
+    "indice": "50",
+    "name": "Clones Elementais",
+    "atributo": [""],
+    "bonus": [0],
+    "code": "<b>Clones Elementais</b><br><b>Requisito:</b> Versado em Bunshinjutsu, Estudado em Elemento de Chakra (escolhido)<br><b>Bônus:</b> Habilidade de usar variações de Kage Bunshin no Jutsu do elemento escolhido"
+    },
+    {
+    "indice": "51",
+    "name": "Grande Clonador",
+    "atributo": [""],
+    "bonus": [0],
+    "code": "<b>Grande Clonador</b><br><b>Requisito:</b> Versado em Bunshinjutsu, Multiplicador &amp; Reservas Colossais<br><b>Bônus:</b> Habilidade de usar o Tajū Kage Bunshin no Jutsu com limite de clones de 12. Estes clones não podem sair do tópico em que o criador estiver. A divisão de chakra ficará à escolha do usuário"
+    },
+    {
+    "indice": "52",
+    "name": "Mestre em Bunshinjutsu",
+    "atributo": [""],
+    "bonus": [0],
+    "code": "<b>Mestre em Bunshinjutsu</b><br><b>Requisito:</b> Mestre em Ninjutsu &amp; Versado em Bunshinjutsu<br><b>Bônus:</b> Habilidade de aprender e utilizar o Kage Bunshin no Jutsu com limite de até sete clones (sem acumular com o TP anterior). Estes clones podem sair do tópico em que o criador estiver, mas o jogador terá limite de dois tópicos simultâneos usando este método. A divisão de chakra ficará à escolha do usuário"
+    },
+    {
+    "indice": "53",
+    "name": "Mestre multiplicador",
+    "atributo": [""],
+    "bonus": [0],
+    "code": "<b>Mestre multiplicador</b><br><b>Requisito:</b> Mestre em Bunshinjutsu &amp; Reservas Colossais<br><b>Bônus:</b> +1 clone no limite do Kage Bunshin no Jutsu"
+    },
+    {
+    "indice": "54",
+    "name": "Mestre Clonador",
+    "atributo": [""],
+    "bonus": [0],
+    "code": "<b>Mestre Clonador</b><br><b>Requisito:</b> Mestre em Bunshinjutsu &amp; Reservas Colossais<br><b>Bônus:</b> +5 clones no limite do Tajū Kage Bunshin no Jutsu"
+    },
+    {
+    "indice": "55",
+    "name": "Controlador de Clones",
+    "atributo": [""],
+    "bonus": [0],
+    "code": "<b>Controlador de Clones</b><br><b>Requisito:</b> Mestre em Bunshinjutsu, Mestre em Controle de Chakra &amp; Reservas Colossais.<br><b>Bônus:</b> Permite aumentar para três os tópicos simultâneos usando clones"
+    },
+    {
+    "indice": "56",
+    "name": "Estudado em Selos",
+    "atributo": ["VSM"],
+    "bonus": [-0.25],
+    "code": "<b>Estudado em Selos</b><br><b>Requisito:</b> 3 pontos em Inteligência &amp; 1 ponto em Destreza.<br><b>Bônus:</b> -0,25s na formação de um selo de mão"
+    },
+    {
+    "indice": "57",
+    "name": "Bom Controle de Selos",
+    "atributo": [""],
+    "bonus": [0],
+    "code": "<b>Bom Controle de Selos</b><br><b>Requisito:</b> Estudado em Selos<br><b>Bônus:</b> -1 selo de mão, não podendo reduzir a zero"
+    },
+    {
+    "indice": "58",
+    "name": "Selos Ágeis",
+    "atributo": ["VSM"],
+    "bonus": [-0.25],
+    "code": "<b>Selos Ágeis</b><br><b>Requisito:</b> Estudado em Selos<br><b>Bônus:</b> -0,25s na formação de um selo de mão"
+    },
+    {
+    "indice": "59",
+    "name": "Versado em Selos",
+    "atributo": ["VSM"],
+    "bonus": [-0.25],
+    "code": "<b>Versado em Selos</b><br><b>Requisito:</b> 5 pontos em Inteligência, 2 pontos em Destreza &amp; Estudado em Selos<br><b>Bônus:</b> -0,25s na formação de um selo de mão"
+    },
+    {
+    "indice": "60",
+    "name": "Grande Controle de Selos",
+    "atributo": [""],
+    "bonus": [],
+    "code": "<b>Grande Controle de Selos</b><br><b>Requisito:</b> Versado em Selos<br><b>Bônus:</b> -2 selo de mão, não podendo reduzir a zero"
+    },
+    {
+    "indice": "61",
+    "name": "Selos Rápidos",
+    "atributo": ["VSM"],
+    "bonus": [-0.25],
+    "code": "<b>Selos Rápidos</b><br><b>Requisito:</b> Versado em Selos<br><b>Bônus:</b> -0,25s na formação de um selo de mão"
+    },
+    {
+    "indice": "62",
+    "name": "Uma Mão",
+    "atributo": ["atributo"],
+    "bonus": [111],
+    "code": "<b>Uma Mão</b><br><b>Requisito:</b> Versado em Selos &amp; 5 Atenção.<br><b>Bônus:</b> Habilidade de realizar selos com apenas uma mão (mas não de criar mais de uma técnica simultânea com isso)"
+    },
+    {
+    "indice": "63",
+    "name": "Mestre em Selos",
+    "atributo": ["VSM"],
+    "bonus": [-0.5],
+    "code": "<b>Mestre em Selos</b><br><b>Requisito:</b> 8 pontos em Inteligência, 3 pontos em Destreza &amp; Versado em Selos<br><b>Bônus:</b> -0,50s na formação de um selo de mão"
+    },
+    {
+    "indice": "64",
+    "name": "Mestre no Controle de Selos",
+    "atributo": ["atributo"],
+    "bonus": [111],
+    "code": "<b>Mestre no Controle de Selos</b><br><b>Requisito:</b> Mestre em Selos<br><b>Bônus:</b> Reduz pela metade os selos necessários (se for número quebrado, arredonda para o menor e não pode zerar)"
+    },
+    {
+    "indice": "65",
+    "name": "Selos Ultra Sônicos",
+    "atributo": ["VSM"],
+    "bonus": [-1],
+    "code": "<b>Selos Ultra Sônicos</b><br><b>Requisito:</b> Mestre em Selos<br><b>Bônus:</b> -1s na formação de um selo de mão"
+    },
+    {
+    "indice": "66",
+    "name": "Grande Conjurador",
+    "atributo": ["atributo"],
+    "bonus": [111],
+    "code": "<b>Grande Conjurador</b><br><b>Requisito:</b>Mestre em Selos, Uma Mão, 10 pontos em Atenção &amp; 08 pontos em Ninjutsu<br><b>Bônus:</b> Habilidade de realizar selos com apenas uma mão (podendo assim realizar dois jutsus simultâneos)"
+    },
+    {
+    "indice": "67",
+    "name": "Estudado em Elemento de Chakra (à escolha)",
+    "atributo": ["atributo"],
+    "bonus": [25,2],
+    "code": "<b>Estudado em Elemento de Chakra (à escolha)</b><br><b>Requisito:</b> 3 pontos em Ninjutsu &amp; elemento escolhido<br><b>Bônus:</b> +25 de dano nas técnicas de ninjutsu do elemento escolhido; +2m/s de velocidade nas técnicas de ninjutsu do elemento escolhido"
+    },
+    {
+    "indice": "68",
+    "name": "Alcance Elemental",
+    "atributo": ["atributo"],
+    "bonus": [5],
+    "code": "<b>Alcance Elemental</b><br><b>Requisito:</b> Estudado em Elemento de Chakra (escolhido)<br><b>Bônus:</b> +05m de alcance em técnicas de ninjutsu do elemento escolhido"
+    },
+    {
+    "indice": "69",
+    "name": "Velocidade Elemental",
+    "atributo": ["atributo"],
+    "bonus": [1],
+    "code": "<b>Velocidade Elemental</b><br><b>Requisito:</b>  Estudado em Elemento de Chakra (escolhido)<br><b>Bônus:</b> +01m/s de velocidade nas técnicas de ninjutsu do elemento escolhido"
+    },
+    {
+    "indice": "70",
+    "name": "Elemento Destruidor",
+    "atributo": ["atributo"],
+    "bonus": [25],
+    "code": "<b>Elemento Destruidor</b><br><b>Requisito:</b>  Estudado em Elemento de Chakra (escolhido)<br><b>Bônus:</b> +25 de dano nas técnicas de ninjutsu do elemento escolhido"
+    },
+    {
+    "indice": "71",
+    "name": "Resistência Elemental",
+    "atributo": ["atributo"],
+    "bonus": [0],
+    "code": "<b>Resistência Elemental</b><br><b>Requisito:</b>  Estudado em Elemento de Chakra (escolhido)<br><b>Bônus:</b> -10% no desconto contra a fraqueza do elemento escolhido"
+    },
+    {
+    "indice": "72",
+    "name": "Versado em Elemento de Chakra (escolhido)",
+    "atributo": ["atributo"],
+    "bonus": [75,2],
+    "code": "<b>Versado em Elemento de Chakra (escolhido)</b><br><b>Requisito:</b> Estudado em Elemento de Chakra (escolhido), 6 pontos em Ninjutsu &amp; 2 Talentos Aprimoradores<br><b>Bônus:</b> +75 de dano nas técnicas de ninjutsu do elemento escolhido; +2m/s de velocidade nas técnicas de ninjutsu do elemento escolhido"
+    },
+    {
+    "indice": "73",
+    "name": "Grande Alcance Elemental",
+    "atributo": ["atributo"],
+    "bonus": [5],
+    "code": "<b>Grande Alcance Elemental</b><br><b>Requisito:</b> Versado em Elemento de Chakra (escolhido)<br><b>Bônus:</b> +05m de alcance em técnicas de ninjutsu do elemento escolhido"
+    },
+    {
+    "indice": "74",
+    "name": "Potencializador de Elemento Concentrado",
+    "atributo": ["atributo"],
+    "bonus": [75],
+    "code": "<b>Potencializador de Elemento Concentrado</b><br><b>Requisito:</b> Versado em Elemento de Chakra (escolhido)<br><b>Bônus:</b> +75 de dano nas técnicas de ninjutsu (do tipo concentrado¹) do elemento escolhido"
+    },
+    {
+    "indice": "75",
+    "name": "Potencializador de Elemento Dispersivo",
+    "atributo": ["atributo"],
+    "bonus": [75],
+    "code": "<b>Potencializador de Elemento Dispersivo</b><br><b>Requisito:</b> Versado em Elemento de Chakra (escolhido)<br><b>Bônus:</b> +75 de dano nas técnicas de ninjutsu (do tipo dispersivo) do elemento escolhido"
+    },
+    {
+    "indice": "76",
+    "name": "Grande Velocidade Elemental",
+    "atributo": ["atributo"],
+    "bonus": [1],
+    "code": "<b>Grande Velocidade Elemental</b><br><b>Requisito:</b> Versado em Elemento de Chakra (escolhido)<br><b>Bônus:</b> +1m/s de velocidade nas técnicas de ninjutsu do elemento escolhido"
+    },
+    {
+    "indice": "77",
+    "name": "Manipulador Elemental",
+    "atributo": ["atributo"],
+    "bonus": [0],
+    "code": "<b>Manipulador Elemental</b><br><b>Requisito:</b> Versado em Elemento de Chakra (escolhido)<br><b>Bônus:</b> Habilidade de realizar manipulações elementais do elemento escolhido"
+    },
+    {
+    "indice": "78",
+    "name": "Mestre em Elemento de Chakra (escolhido)",
+    "atributo": ["atributo"],
+    "bonus": [100,4],
+    "code": "<b>Mestre em Elemento de Chakra (escolhido)</b><br><b>Requisito:</b> Versado em Elemento de Chakra (escolhido), 10 pontos em Ninjutsu &amp; 3 Talentos Aprimoradores<br><b>Bônus:</b> +100 de dano nas técnicas de ninjutsu do elemento escolhido; +4m/s de velocidade nas técnicas de ninjutsu do elemento escolhido"
+    },
+    {
+    "indice": "79",
+    "name": "Elemento Devastador",
+    "atributo": ["atributo"],
+    "bonus": [100],
+    "code": "<b>Elemento Devastador</b><br><b>Requisito:</b> Mestre em Elemento de Chakra (escolhido)<br><b>Bônus:</b> +100 de dano nas técnicas de ninjutsu do elemento escolhido"
+    },
+    {
+    "indice": "80",
+    "name": "Verdadeiro Alcance Elemental",
+    "atributo": ["atributo"],
+    "bonus": [20],
+    "code": "<b>Verdadeiro Alcance Elemental</b><br><b>Requisito:</b> Mestre em Elemento de Chakra (escolhido)<br><b>Bônus:</b> +20m de alcance em técnicas de ninjutsu do elemento escolhido"
+    },
+    {
+    "indice": "81",
+    "name": "Estudado em Nintaijutsu",
+    "atributo": ["atributo"],
+    "bonus": [35],
+    "code": "<b>Estudado em Nintaijutsu</b><br><b>Requisito:</b> 3 pontos em Taijutsu &amp; 1 ponto Ninjutsu<br><b>Bônus:</b> +35 de Dano Físico (usando Nintaijutsu)"
+    },
+    {
+    "indice": "82",
+    "name": "Fluxo da Alma",
+    "atributo": ["atributo"],
+    "bonus": [0],
+    "code": "<b>Fluxo da Alma</b><br><b>Requisito:</b> Estudado em Nintaijutsu<br><b>Bônus:</b> Habilidade de utilizar chakra flow chakra nagashi através do corpo"
+    },
+    {
+    "indice": "83",
+    "name": "Leveza da Alma",
+    "atributo": ["atributo"],
+    "bonus": [2],
+    "code": "<b>Leveza da Alma</b><br><b>Requisito:</b> Estudado em Nintaijutsu.<br><b>Bônus:</b> +2m/s na velocidade dos golpes (usando Nintaijutsu)"
+    },
+    {
+    "indice": "84",
+    "name": "Versado em Nintaijutsu",
+    "atributo": ["atributo"],
+    "bonus": [50],
+    "code": "<b>Versado em Nintaijutsu</b><br><b>Requisito:</b> Estudado em Nintaijutsu, 6 pontos em Taijutsu, 2 pontos em Ninjutsu &amp; Fluxo da Alma<br><b>Bônus:</b> +50 de Dano Físico (usando Nintaijutsu)"
+    },
+    {
+    "indice": "85",
+    "name": "Fluxo da Alma Elemental",
+    "atributo": ["atributo"],
+    "bonus": [0],
+    "code": "<b>Fluxo da Alma Elemental</b><br><b>Requisito:</b> Versado em Nintaijutsu, Fluxo da Alma &amp; Estudado em Elemento de Chakra (escolhido)<br><b>Bônus:</b> Habilidade de utilizar chakra nagashi com o elemento que se é estudado"
+    },
+    {
+    "indice": "86",
+    "name": "Grandeza da Alma",
+    "atributo": ["atributo"],
+    "bonus": [2],
+    "code": "<b>Grandeza da Alma</b><br><b>Requisito:</b> Versado em Nintaijutsu<br><b>Bônus:</b> +2m/s na velocidade dos golpes (usando Nintaijutsu)"
+    },
+    {
+    "indice": "87",
+    "name": "Mestre em Nintaijutsu",
+    "atributo": ["atributo"],
+    "bonus": [60],
+    "code": "<b>Mestre em Nintaijutsu</b><br><b>Requisito:</b> Versado em Nintaijutsu, 10 pontos em Taijutsu, 3 pontos em Ninjutsu &amp; Fluxo da Alma Elemental<br><b>Bônus:</b> +60 em Dano Físico (usando Nintaijutsu)"
+    },
+    {
+    "indice": "88",
+    "name": "Explosão da Alma",
+    "atributo": ["atributo"],
+    "bonus": [60],
+    "code": "<b>Explosão da Alma</b><br><b>Requisito:</b> Mestre em Nintaijutsu<br><b>Bônus:</b> +60 em Dano Físico (usando Nintaijutsu)"
+    },
+    {
+    "indice": "89",
+    "name": "Maravilhas da Alma",
+    "atributo": ["atributo"],
+    "bonus": [60],
+    "code": "<b>Maravilhas da Alma</b><br><b>Requisito:</b> Versado em Nintaijutsu.<br><b>Bônus:</b> +2m/s na velocidade dos golpes (usando Nintaijutsu)"
+    },
+    {
+    "indice": "90",
+    "name": "Estudado em Taijutsu",
+    "atributo": ["DF"],
+    "bonus": [25],
+    "code": "<b>Estudado em Taijutsu</b><br><b>Requisito:</b> 3 Taijutsu<br><b>Bônus:</b> +25 em Dano Físico"
+    },
+    {
+    "indice": "91",
+    "name": "Golpes Intensos",
+    "atributo": ["DF"],
+    "bonus": [25],
+    "code": "<b>Golpes Intensos</b><br><b>Requisito:</b> Estudado em Taijutsu &amp; Força Aguçada<br><b>Bônus:</b> +25 em Dano Físico"
+    },
+    {
+    "indice": "92",
+    "name": "Golpes Rápidos",
+    "atributo": ["VG"],
+    "bonus": [2],
+    "code": "<b>Golpes Rápidos</b><br><b>Requisito:</b> Estudado em Taijutsu &amp; Destreza Aguçada<br><b>Bônus:</b> +2m/s na velocidade dos golpes"
+    },
+    {
+    "indice": "93",
+    "name": "Bloqueios Firmes",
+    "atributo": ["DEFF"],
+    "bonus": [1],
+    "code": "<b>Bloqueios Firmes</b><br><b>Requisito:</b> Estudado em Taijutsu &amp; Força Aguçada<br><b>Bônus:</b> +1% em Defesa Física"
+    },
+    {
+    "indice": "94",
+    "name": "Combinações Ferozes",
+    "atributo": ["atributo"],
+    "bonus": [0],
+    "code": "<b>Combinações Ferozes</b><br><b>Requisito:</b> Estudado em Taijutsu &amp; Destreza Aguçada<br><b>Bônus:</b> Permite usar dois movimentos (socos, chutes, etc) com 1 Ação Rápida"
+    },
+    {
+    "indice": "95",
+    "name": "Versado em Taijutsu",
+    "atributo": ["DF"],
+    "bonus": [25],
+    "code": "<b>Versado em Taijutsu</b><br><b>Requisito:</b> Estudado em Taijutsu, 6 pontos em Taijutsu &amp; 2 Talentos Aprimoradores<br><b>Bônus:</b> +25 em Dano Físico"
+    },
+    {
+    "indice": "96",
+    "name": "Golpes Destruidores",
+    "atributo": ["DF"],
+    "bonus": [30],
+    "code": "<b>Golpes Destruidores</b><br><b>Requisito:</b> Versado em Taijutsu &amp; Força Sobre-humana<br><b>Bônus:</b> +30 em Dano Físico"
+    },
+    {
+    "indice": "97",
+    "name": "Golpes Velozes",
+    "atributo": ["VG"],
+    "bonus": [2],
+    "code": "<b>Golpes Velozes</b><br><b>Requisito:</b> Versado em Taijutsu &amp; Destreza Sobre-humana<br><b>Bônus:</b> +2m/s na velocidade dos golpes"
+    },
+    {
+    "indice": "98",
+    "name": "Bloqueios Rígidos",
+    "atributo": ["DEFF"],
+    "bonus": [1],
+    "code": "<b>Bloqueios Rígidos</b><br><b>Requisito:</b> Versado em Taijutsu &amp; Força Sobre-humana<br><b>Bônus:</b> +1% em Defesa Física"
+    },
+    {
+    "indice": "99",
+    "name": "Combinações Vorazes",
+    "atributo": ["atributo"],
+    "bonus": [0],
+    "code": "<b>Combinações Vorazes</b><br><b>Requisito:</b> Versado em Taijutsu &amp; Destreza Sobre-humana<br><b>Bônus:</b> Permite usar três movimentos (socos, chutes, etc) com 1 Ação Rápida"
+    },
+    {
+    "indice": "100",
+    "name": "Mestre em Taijutsu",
+    "atributo": ["DF"],
+    "bonus": [40],
+    "code": "<b>Mestre em Taijutsu</b><br><b>Requisito:</b> Versado em Taijutsu, 10 pontos em Taijutsu &amp; 2 Talentos Aprimoradores<br><b>Bônus:</b> +40 em Dano Físico"
+    },
+    {
+    "indice": "101",
+    "name": "Golpes Devastadores",
+    "atributo": ["DF"],
+    "bonus": [60],
+    "code": "<b>Golpes Devastadores</b><br><b>Requisito:</b> Mestre em Taijutsu &amp; Força Colossal<br><b>Bônus:</b> +60 em Dano Físico"
+    },
+    {
+    "indice": "102",
+    "name": "Golpes Ultravelozes",
+    "atributo": ["VG"],
+    "bonus": [2],
+    "code": "<b>Golpes Ultravelozes</b><br><b>Requisito:</b> Versado em Taijutsu &amp; Destreza Divina<br><b>Bônus:</b> +2m/s na velocidade dos golpes"
+    },
+    {
+    "indice": "103",
+    "name": "Bloqueios Perfeitos",
+    "atributo": ["DEFF"],
+    "bonus": [1],
+    "code": "<b>Bloqueios Perfeitos</b><br><b>Requisito:</b> Mestre em Taijutsu &amp; Força Colossal<br><b>Bônus:</b> +1% em Defesa Física"
+    },
+    {
+    "indice": "104",
+    "name": "Combinações Monstruosas",
+    "atributo": ["PG"],
+    "bonus": [2],
+    "code": "<b>Combinações Monstruosas</b><br><b>Requisito:</b> Versado em Taijutsu &amp; Destreza Divina<br><b>Bônus:</b> Permite usar quatro movimentos (socos, chutes, etc) com 1 Ação Rápida"
+    },
+    {
+    "indice": "105",
+    "name": "Estudado em Genjutsu",
+    "atributo": ["PG"],
+    "bonus": [2],
+    "code": "<b>Estudado em Genjutsu</b><br><b>Requisito:</b> 3 pontos em Genjutsu &amp; Bom Controle de Chakra<br><b>Bônus:</b> +2 na Precisão de Genjutsus"
+    },
+    {
+    "indice": "106",
+    "name": "Hábil em Controle Mental",
+    "atributo": ["atributo"],
+    "bonus": [0],
+    "code": "<b>Hábil em Controle Mental</b><br><b>Requisito:</b> Estudado em Genjutsu<br><b>Bônus:</b> Habilidade de usar Genjutsus de Controle Mental até rank B"
+    },
+    {
+    "indice": "107",
+    "name": "Hábil em Ilusões",
+    "atributo": ["atributo"],
+    "bonus": [0],
+    "code": "<b>Hábil em Ilusões</b><br><b>Requisito:</b> Estudado em Genjutsu<br><b>Bônus:</b> Habilidade de usar Genjutsus de Ilusão até rank B"
+    },
+    {
+    "indice": "108",
+    "name": "Hábil em Sonoridades",
+    "atributo": ["atributo"],
+    "bonus": [0],
+    "code": "<b>Hábil em Sonoridades</b><br><b>Requisito:</b> Estudado em Genjutsu &amp; Ototon<br><b>Bônus:</b> Habilidade de usar Genjutsus Sonoros"
+    },
+    {
+    "indice": "109",
+    "name": "Gatilhos de Controle Mental",
+    "atributo": ["atributo"],
+    "bonus": [0],
+    "code": "<b>Gatilhos de Controle Mental</b><br><b>Requisito:</b> Estudado em Genjutsu &amp; Hábil em Controle Mental<br><b>Bônus:</b> Habilidade de adicionar gatilhos em objetos para ativar genjutsus de controle mental"
+    },
+    {
+    "indice": "110",
+    "name": "Gatilho de Ilusões",
+    "atributo": ["atributo"],
+    "bonus": [0],
+    "code": "<b>Gatilho de Ilusões</b><br><b>Requisito:</b> Estudado em Genjutsu<br><b>Bônus:</b> Habilidade de adicionar gatilhos em objetos para ativar genjutsus de ilusão"
+    },
+    {
+    "indice": "111",
+    "name": "Versado em Genjutsu",
+    "atributo": ["PG"],
+    "bonus": [2],
+    "code": "<b>Versado em Genjutsu</b><br><b>Requisito:</b> Estudado em Genjutsu, 6 Genjutsu, Grande Controle de Chakra &amp; 2 Talentos Aprimoradores<br><b>Bônus:</b> +2 na Precisão Genjutsus; +1 turno de duração em todos os genjutsus"
+    },
+    {
+    "indice": "112",
+    "name": "Manipulador",
+    "atributo": ["atributo"],
+    "bonus": [0],
+    "code": "<b>Manipulador</b><br><b>Requisito:</b> Versado em Genjutsu, Hábil em Controle Mental &amp; Gatilho de Controle Mental<br><b>Bônus:</b> Habilidade de usar Genjutsus de Controle Mental até rank A"
+    },
+    {
+    "indice": "113",
+    "name": "Questionador",
+    "atributo": ["atributo"],
+    "bonus": [0],
+    "code": "<b>Questionador</b><br><b>Requisito:</b> Versado em Genjutsu, Hábil em Controle Mental, Gatilho de Controle Mental &amp; Manipulador<br><b>Bônus:</b> Habilidade de forçar até 1 resposta por turno através de genjutsu de controle mental"
+    },
+    {
+    "indice": "114",
+    "name": "Controlador de Mentes",
+    "atributo": ["atributo"],
+    "bonus": [0],
+    "code": "<b>Controlador de Mentes</b><br><b>Requisito:</b> Versado em Genjutsu, Hábil em Controle Mental, Gatilho de Controle Mental &amp; Manipulador<br><b>Bônus:</b> Habilidade de controlar até 5 alvos simultâneos"
+    },
+    {
+    "indice": "115",
+    "name": "Mente Elemental",
+    "atributo": ["atributo"],
+    "bonus": [0],
+    "code": "<b>Mente Elemental</b><br><b>Requisito:</b> Versado em Genjutsu &amp; Estudado em Elemento de Chakra<br><b>Bônus:</b> Habilidade de usar genjutsus através do elemento de chakra estudado"
+    },
+    {
+    "indice": "116",
+    "name": "Ilusionista",
+    "atributo": ["atributo"],
+    "bonus": [0],
+    "code": "<b>Ilusionista</b><br><b>Requisito:</b> Versado em Genjutsu, Hábil em Ilusões &amp; Gatilho de Ilusões<br><b>Bônus:</b> Habilidade de usar Genjutsus de Ilusão até rank A"
+    },
+    {
+    "indice": "117",
+    "name": "Criador de Mundos",
+    "atributo": ["atributo"],
+    "bonus": [0],
+    "code": "<b>Criador de Mundos</b><br><b>Requisito:</b> Versado em Genjutsu, Hábil em Ilusões, Gatilho de Ilusões &amp; Ilusionista<br><b>Bônus:</b> Habilidade criar ilusões que afetem o ambiente"
+    },
+    {
+    "indice": "118",
+    "name": "Ilusões Massivas",
+    "atributo": ["atributo"],
+    "bonus": [0],
+    "code": "<b>Ilusões Massivas</b><br><b>Requisito:</b> Versado em Genjutsu, Hábil em Ilusões, Gatilho de Ilusões &amp; Ilusionista<br><b>Bônus:</b> Habilidade de prender até 5 alvos simultâneos em ilusões"
+    },
+    {
+    "indice": "119",
+    "name": "Mestre em Genjutsu",
+    "atributo": ["PG"],
+    "bonus": [2],
+    "code": "<b>Mestre em Genjutsu</b><br><b>Requisito:</b> Versado em Genjutsu, 10 pontos em Genjutsu, Mestre em Controle de Chakra &amp; 3 Talentos Aprimoradores<br><b>Bônus:</b> +2 na Precisão Genjutsus &amp; +1 turno de duração de todos os genjutsus"
+    },
+    {
+    "indice": "120",
+    "name": "Mestre em Manipulação",
+    "atributo": ["atributo"],
+    "bonus": [0],
+    "code": "<b>Mestre em Manipulação</b><br><b>Requisito:</b> Mestre em Genjutsu, Manipulador, Questionador &amp; Controlador de Mentes<br><b>Bônus:</b> Habilidade de usar Genjutsus de Controle Mental até rank S"
+    },
+    {
+    "indice": "121",
+    "name": "Mestre Questionador",
+    "atributo": ["atributo"],
+    "bonus": [0],
+    "code": "<b>Mestre Questionador</b><br><b>Requisito:</b> Mestre em Genjutsu &amp; Mestre em Manipulação<br><b>Bônus:</b> Habilidade de forçar até 2 respostas por turno através de genjutsu de controle mental"
+    },
+    {
+    "indice": "122",
+    "name": "Mestre Controlador de Mentes",
+    "atributo": ["atributo"],
+    "bonus": [0],
+    "code": "<b>Mestre Controlador de Mentes</b><br><b>Requisito:</b> Mestre em Genjutsu &amp; Mestre em Manipulação<br><b>Bônus:</b> Habilidade de controlar até 8 alvos simultâneos"
+    },
+    {
+    "indice": "123",
+    "name": "Deus da Manipulação",
+    "atributo": ["atributo"],
+    "bonus": [0],
+    "code": "<b>Deus da Manipulação</b><br><b>Requisito:</b> Mestre em Genjutsu, Mestre em Manipulação, Mestre Questionador &amp; Mestre Controlador de Mentes<br><b>Bônus:</b> +2 na Precisão Genjutsus (Controle Mental); +5% danos necessários para quebrar genjutsus de controle mental"
+    },
+    {
+    "indice": "124",
+    "name": "Mestre Ilusionista",
+    "atributo": ["atributo"],
+    "bonus": [0],
+    "code": "<b>Mestre Ilusionista</b><br><b>Requisito:</b> Mestre em Genjutsu, Ilusionista, Criador de Mundos &amp; Ilusões Massivas<br><b>Bônus:</b> Habilidade de usar Genjutsus de Ilusão até rank S"
+    },
+    {
+    "indice": "125",
+    "name": "Criador de Realidades",
+    "atributo": ["atributo"],
+    "bonus": [0],
+    "code": "<b>Criador de Realidades</b><br><b>Requisito:</b> Mestre em Genjutsu &amp; Mestre Ilusionista<br><b>Bônus:</b> Habilidade criar ilusões que alterem a realidade do alvo no espaço de tempo permitido"
+    },
+    {
+    "indice": "126",
+    "name": "A Grande Ilusão",
+    "atributo": ["atributo"],
+    "bonus": [0],
+    "code": "<b>A Grande Ilusão</b><br><b>Requisito:</b> Mestre em Genjutsu &amp; Mestre Ilusionista<br><b>Bônus:</b> Habilidade de prender até 8 alvos simultâneos em ilusões"
+    },
+    {
+    "indice": "127",
+    "name": "Deus das Ilusões",
+    "atributo": ["atributo"],
+    "bonus": [2],
+    "code": "<b>Deus das Ilusões</b><br><b>Requisito:</b> Mestre em Genjutsu, Mestre Ilusionista, Criador de Realidades &amp; A Grande Ilusão<br><b>Bônus:</b> +2 na Precisão Genjutsus (Ilusões); +5% de dano necessários para quebrar genjutsus de ilusões"
+    },
+    {
+    "indice": "128",
+    "name": "Deus do Genjutsu",
+    "atributo": ["atributo"],
+    "bonus": [0],
+    "code": "<b>Deus do Genjutsu</b><br><b>Requisito:</b> Mestre em Genjutsu, 10 Genjutsu, Mestre em Controle de Chakra &amp; todos os Talentos Aprimoradores desta árvore<br><b>Bônus:</b> Habilidade de usar e criar Genjutsus que misturem Controle Mental e Ilusão"
+    },
+    {
+    "indice": "129",
+    "name": "Inteligência Aguçada",
+    "atributo": ["CDA"],
+    "bonus": [1],
+    "code": "<b>Inteligência Aguçada</b><br><b>Requisito:</b> 3 pontos em Inteligência<br><b>Bônus:</b> +1 em criação de armadilhas"
+    },
+    {
+    "indice": "130",
+    "name": "Preparador de Armadilhas",
+    "atributo": ["VPA"],
+    "bonus": [-3],
+    "code": "<b>Preparador de Armadilhas</b><br><b>Requisito:</b> Inteligência Aguçada<br><b>Bônus:</b> -3 na velocidade de preparo de armadilhas"
+    },
+    {
+    "indice": "131",
+    "name": "Hábil em Memorização",
+    "atributo": ["atributo"],
+    "bonus": [0],
+    "code": "<b>Hábil em Memorização</b><br><b>Requisito:</b> Inteligência Aguçada<br><b>Bônus:</b> Capacidade de adquirir +2 Jutsus até rank A"
+    },
+    {
+    "indice": "132",
+    "name": "Conhecimentos Anatômicos",
+    "atributo": ["atributo"],
+    "bonus": [0],
+    "code": "<b>Conhecimentos Anatômicos</b><br><b>Requisito:</b> Inteligência Aguçada<br><b>Bônus:</b> Conhecimentos anatômicos humanos e animais básicos"
+    },
+    {
+    "indice": "133",
+    "name": "Conhecimentos Toxicológicos",
+    "atributo": ["atributo"],
+    "bonus": [0],
+    "code": "<b>Conhecimentos Toxicológicos</b><br><b>Requisito:</b> Inteligência Aguçada<br><b>Bônus:</b> Conhecimentos sobre toxicologia"
+    },
+    {
+    "indice": "134",
+    "name": "Altas Habilidades",
+    "atributo": ["CDA"],
+    "bonus": [2],
+    "code": "<b>Altas Habilidades</b><br><b>Requisito:</b> Inteligência Aguçada, 6 pontos em Inteligência &amp; 2 Talentos Aprimoradores<br><b>Bônus:</b> +2 em criação de armadilhas"
+    },
+    {
+    "indice": "135",
+    "name": "Grande Preparador de Armadilhas",
+    "atributo": ["VPA"],
+    "bonus": [-3],
+    "code": "<b>Grande Preparador de Armadilhas</b><br><b>Requisito:</b> Altas Habilidades<br><b>Bônus:</b> -3 na velocidade de preparo de armadilhas"
+    },
+    {
+    "indice": "136",
+    "name": "Mestre em Memorização",
+    "atributo": ["atributo"],
+    "bonus": [0],
+    "code": "<b>Mestre em Memorização</b><br><b>Requisito:</b> Altas Habilidades<br><b>Bônus:</b> Capacidade de adquirir +3 Jutsus até rank A"
+    },
+    {
+    "indice": "137",
+    "name": "Conhecimentos Científicos",
+    "atributo": ["atributo"],
+    "bonus": [0],
+    "code": "<b>Conhecimentos Científicos</b><br><b>Requisito:</b> Altas Habilidades<br><b>Bônus:</b> Conhecimentos aprofundados sobre química, biologia e física."
+    },
+    {
+    "indice": "138",
+    "name": "Conhecimentos Psicológicos",
+    "atributo": ["atributo"],
+    "bonus": [1],
+    "code": "<b>Conhecimentos Psicológicos</b><br><b>Requisito:</b> Altas Habilidades<br><b>Bônus:</b> Conhecimentos sobre a psicologia humana; +1 Precisão Genjutsu (Ilusão)"
+    },
+    {
+    "indice": "139",
+    "name": "Conhecimentos de Engenharia",
+    "atributo": ["atributo"],
+    "bonus": [0],
+    "code": "<b>Conhecimentos de Engenharia</b><br><b>Requisito:</b> Altas Habilidades<br><b>Bônus:</b> Conhecimentos sobre engenharia, matemática, química, física e manipulação de materiais e máquinas"
+    },
+    {
+    "indice": "140",
+    "name": "Raciocínio Sistemático",
+    "atributo": ["atributo"],
+    "bonus": [0],
+    "code": "<b>Raciocínio Sistemático</b><br><b>Requisito:</b> Altas Habilidades<br><b>Bônus:</b> Habilidade de calcular números, distâncias e afins com precisão perfeita, além de permitir ao usuário perceber e identificar padrões em movimentos, facilitando a esquiva nesses casos. O jogador deverá passar 2 turnos observando durante seus posts (Ação Rápida), e a partir do terceiro post, ganhará 2m /s extra de percepção de velocidade, além de 2 m/s de velocidade em movimentos de esquiva e defensivos contra ataques físicos (incluindo ataques envolvendo armas)"
+    },
+    {
+    "indice": "141",
+    "name": "Genialidade",
+    "atributo": ["VPA"],
+    "bonus": [2],
+    "code": "<b>Genialidade</b><br><b>Requisito:</b> Altas Habilidades, 10 Inteligência &amp; 2 Talentos Aprimoradores<br><b>Bônus:</b> +2 em criação de armadilhas e -50% de palavras para aprender técnicas"
+    },
+    {
+    "indice": "142",
+    "name": "Mestre Preparador de Armadilhas",
+    "atributo": ["VPA"],
+    "bonus": [-3],
+    "code": "<b>Mestre Preparador de Armadilhas</b><br><b>Requisito:</b> Altas Habilidades<br><b>Bônus:</b> -3 na velocidade de preparo de armadilhas"
+    },
+    {
+    "indice": "143",
+    "name": "Gênio da Memorização",
+    "atributo": ["atributo"],
+    "bonus": [0],
+    "code": "<b>Gênio da Memorização</b><br><b>Requisito:</b> Altas Habilidades.<br><b>Bônus:</b> Capacidade de adquirir +2 Jutsus até rank S"
+    },
+    {
+    "indice": "144",
+    "name": "Atenção Intensificada",
+    "atributo": ["PM"],
+    "bonus": [1],
+    "code": "<b>Atenção Intensificada</b><br><b>Requisito:</b> 3 Atenção<br><b>Bônus:</b> +1 em Percepção de Movimentos"
+    },
+    {
+    "indice": "145",
+    "name": "Foco em Ação",
+    "atributo": ["PM"],
+    "bonus": [1],
+    "code": "<b>Foco em Ação</b><br><b>Requisito:</b> Atenção Intensificada<br><b>Bônus:</b> +1 em Percepção de Movimentos"
+    },
+    {
+    "indice": "146",
+    "name": "Foco no Oculto",
+    "atributo": ["PA"],
+    "bonus": [1],
+    "code": "<b>Foco no Oculto</b><br><b>Requisito:</b> Atenção Intensificada<br><b>Bônus:</b> +1 em Percepção de Armadilhas"
+    },
+    {
+    "indice": "147",
+    "name": "Foco na Realidade",
+    "atributo": ["PdG"],
+    "bonus": [1],
+    "code": "<b>Foco na Realidade</b><br><b>Requisito:</b> Atenção Intensificada<br><b>Bônus:</b> +1 em Percepção de Genjutsus"
+    },
+    {
+    "indice": "148",
+    "name": "Atenção Aprimorada",
+    "atributo": ["PM"],
+    "bonus": [1],
+    "code": "<b>Atenção Aprimorada</b><br><b>Requisito:</b> Atenção Intensificada, 6 Atenção &amp; 2 Talentos Aprimoradores<br><b>Bônus:</b> +1 em Percepção de Movimentos"
+    },
+    {
+    "indice": "149",
+    "name": "Concentrado em Ação",
+    "atributo": ["PM"],
+    "bonus": [2],
+    "code": "<b>Concentrado em Ação</b><br><b>Requisito:</b> Atenção Aprimorada &amp; Foco em Ação<br><b>Bônus:</b> +2 em Percepção de Movimentos"
+    },
+    {
+    "indice": "150",
+    "name": "Concentrado no Oculto",
+    "atributo": ["PA"],
+    "bonus": [2],
+    "code": "<b>Concentrado no Oculto</b><br><b>Requisito:</b> Atenção Aprimorada &amp; Foco no Oculto<br><b>Bônus:</b> +2 em Percepção de Armadilhas"
+    },
+    {
+    "indice": "151",
+    "name": "Concentrado na Realidade",
+    "atributo": ["PdG"],
+    "bonus": [2],
+    "code": "<b>Concentrado na Realidade</b><br><b>Requisito:</b> Atenção Aprimorada &amp; Foco na Realidade<br><b>Bônus:</b> +2 em Percepção de Genjutsus"
+    },
+    {
+    "indice": "152",
+    "name": "Audição Aprimorada",
+    "atributo": ["atributo"],
+    "bonus": [0],
+    "code": "<b>Audição Aprimorada</b><br><b>Requisito:</b> Atenção Aprimorada<br><b>Bônus:</b> Habilidade de ouvir perfeitamente até 70m de distância e identificar pessoas pelos passos e demais sons em até 20m. Não é possível extrapolar a audição para coisas como respiração e batimentos cardíacos. Anulará os efeitos de Leveza"
+    },
+    {
+    "indice": "153",
+    "name": "Super Atento",
+    "atributo": ["PM"],
+    "bonus": [1],
+    "code": "<b>Super Atento</b><br><b>Requisito:</b> Atenção Aprimorada, 10 Atenção &amp; 2 Talentos Aprimoradores<br><b>Bônus:</b> +1 em Percepção de Movimentos"
+    },
+    {
+    "indice": "154",
+    "name": "Olhos de Águia",
+    "atributo": ["PM"],
+    "bonus": [2],
+    "code": "<b>Olhos de Águia</b><br><b>Requisito:</b> Super Atento &amp; Concentrado em Ação<br><b>Bônus:</b> +2 em Percepção de Movimentos"
+    },
+    {
+    "indice": "155",
+    "name": "Minucioso",
+    "atributo": ["PA"],
+    "bonus": [2],
+    "code": "<b>Minucioso</b><br><b>Requisito:</b> Super Atento &amp; Concentrado no Oculto<br><b>Bônus:</b> +2 em Percepção de Armadilhas"
+    },
+    {
+    "indice": "156",
+    "name": "Realista",
+    "atributo": ["PdG"],
+    "bonus": [2],
+    "code": "<b>Realista</b><br><b>Requisito:</b> Super Atento &amp; Concentrado na Realidade<br><b>Bônus:</b> +2 em Percepção de Genjutsus"
+    },
+    {
+    "indice": "157",
+    "name": "Carismático",
+    "atributo": ["PMS","PE"],
+    "bonus": [1,1],
+    "code": "<b>Carismático</b><br><b>Requisito:</b> 3 pontos em Carisma<br><b>Bônus:</b> +1 em Percepção de Mentiras; +1 em Persuasão"
+    },
+    {
+    "indice": "158",
+    "name": "Perceptivo",
+    "atributo": ["PMS"],
+    "bonus": [1],
+    "code": "<b>Perceptivo</b><br><b>Requisito:</b> Carismático<br><b>Bônus:</b> +1 em Percepção de Mentiras"
+    },
+    {
+    "indice": "159",
+    "name": "Persuasivo",
+    "atributo": ["PE"],
+    "bonus": [1],
+    "code": "<b>Persuasivo</b><br><b>Requisito:</b> Carismático<br><b>Bônus:</b> +1 em Persuasão"
+    },
+    {
+    "indice": "160",
+    "name": "Envolvente",
+    "atributo": ["PMS","PE"],
+    "bonus": [2,2],
+    "code": "<b>Envolvente</b><br><b>Requisito:</b> 6 pontos em Carisma, Carismático &amp; 1 Talento Aprimorador<br><b>Bônus:</b> +2 em Percepção de Mentiras; +2 em Persuasão"
+    },
+    {
+    "indice": "161",
+    "name": "Grande Líder",
+    "atributo": ["atributo"],
+    "bonus": [0],
+    "code": "<b>Grande Líder</b><br><b>Requisito:</b> Envolvente<br><b>Bônus:</b> Capacidade de liderar os outros aprimorada. Os personagens (NPCs) tendem a segui-lo com facilidade. Se usado com outros jogadores (fora de PvP) concede +1VT aos seguidores que o aceitarem como líder"
+    },
+    {
+    "indice": "162",
+    "name": "Ator",
+    "atributo": ["atributo"],
+    "bonus": [0],
+    "code": "<b>Ator</b><br><b>Requisito:</b> Envolvente<br><b>Bônus:</b> Habilidades de atuação e dramatização"
+    },
+    {
+    "indice": "163",
+    "name": "Sedutor",
+    "atributo": ["atributo"],
+    "bonus": [0],
+    "code": "<b>Sedutor</b><br><b>Requisito:</b> Envolvente<br><b>Bônus:</b> Habilidades de sedução"
+    },
+    {
+    "indice": "164",
+    "name": "Ameaçador",
+    "atributo": ["atributo"],
+    "bonus": [0],
+    "code": "<b>Ameaçador</b><br><b>Requisito:</b> Envolvente<br><b>Bônus:</b> Capacidade de ameaçar os outros aprimorado. Os personagens (NPCs) tendem a temê-los com facilidade. Se usado com outros jogadores (fora de PvP) com eficácia causa -5SM aos alvos da ameaça"
+    },
+    {
+    "indice": "165",
+    "name": "Negociador",
+    "atributo": ["atributo"],
+    "bonus": [0],
+    "code": "<b>Negociador</b><br><b>Requisito:</b> Envolvente<br><b>Bônus:</b> Habilidades de negociação avançadas. Consegue comprar mercadorias 20% mais baratas que o normal"
+    },
+    {
+    "indice": "166",
+    "name": "Vendedor",
+    "atributo": ["atributo"],
+    "bonus": [0],
+    "code": "<b>Vendedor</b><br><b>Requisito:</b> Envolvente<br><b>Bônus:</b> Habilidades de vendas avançadas. Consegue vender itens em lojas pelo mapa por 20% a mais que o valor básico deles"
+    },
+    {
+    "indice": "167",
+    "name": "Mestre Perceptivo",
+    "atributo": ["atributo"],
+    "bonus": [0],
+    "code": "<b>Mestre Perceptivo</b><br><b>Requisito:</b> Envolvente<br><b>Bônus:</b> +2 em Percepção de Mentiras"
+    },
+    {
+    "indice": "168",
+    "name": "Mestre Persuasivo",
+    "atributo": ["atributo"],
+    "bonus": [0],
+    "code": "<b>Mestre Persuasivo</b><br><b>Requisito:</b> Envolvente<br><b>Bônus:</b> +2 em Persuasão"
+    },
+    {
+    "indice": "169",
+    "name": "Grande Lábia",
+    "atributo": ["PMS","PE"],
+    "bonus": [2,2],
+    "code": "<b>Grande Lábia</b><br><b>Requisito:</b> 10 pontos em Carisma, Envolvente &amp; 2 Talentos Aprimoradores<br><b>Bônus:</b> +2 Percepção de Mentiras; +2 Persuasão"
+    },
+    {
+    "indice": "170",
+    "name": "Interrogador",
+    "atributo": ["atributo"],
+    "bonus": [0],
+    "code": "<b>Interrogador</b><br><b>Requisito:</b> Grande Lábia<br><b>Bônus:</b> Habilidades de interrogação avançadas"
+    },
+    {
+    "indice": "171",
+    "name": "Gênio Perceptivo",
+    "atributo": ["atributo"],
+    "bonus": [0],
+    "code": "<b>Gênio Perceptivo</b><br><b>Requisito:</b> Grande Lábia<br><b>Bônus:</b> +2 em Percepção de Mentiras"
+    },
+    {
+    "indice": "172",
+    "name": "Gênio Persuasivo",
+    "atributo": ["atributo"],
+    "bonus": [0],
+    "code": "<b>Gênio Persuasivo</b><br><b>Requisito:</b> Grande Lábia<br><b>Bônus:</b> +2 em Persuasão"
+    },
+    {
+    "indice": "173",
+    "name": "Resistência Sobre-humana",
+    "atributo": ["ST"],
+    "bonus": [1],
+    "code": "<b>Resistência Sobre-humana</b><br><b>Requisito:</b> 3 pontos em Constituição<br><b>Bônus:</b> +1 em Stamina"
+    },
+    {
+    "indice": "174",
+    "name": "Resistência Física Sobre-humana",
+    "atributo": ["DEFFF"],
+    "bonus": [1],
+    "code": "<b>Resistência Física Sobre-humana</b><br><b>Requisito:</b> Resistência Sobre-humana<br><b>Bônus:</b> +1% em Defesa Física contra ataques físicos"
+    },
+    {
+    "indice": "175",
+    "name": "Resistência Elemental Sobre-humana",
+    "atributo": ["DEFE"],
+    "bonus": [1],
+    "code": "<b>Resistência Elemental Sobre-humana</b><br><b>Requisito:</b> Resistência Sobre-humana<br><b>Bônus:</b> +1% em Defesa Física contra ataques elementais"
+    },
+    {
+    "indice": "176",
+    "name": "Resistência Monstruosa",
+    "atributo": ["ST"],
+    "bonus": [1],
+    "code": "<b>Resistência Monstruosa</b><br><b>Requisito:</b> Resistência Sobre-humana, 6 pontos em Constituição &amp; 2 Talentos Aprimoradores<br><b>Bônus:</b> +1 em Stamina"
+    },
+    {
+    "indice": "177",
+    "name": "Resistência Física Monstruosa",
+    "atributo": ["DEFFF"],
+    "bonus": [2],
+    "code": "<b>Resistência Física Monstruosa</b><br><b>Requisito:</b> Resistência Monstruosa<br><b>Bônus:</b> +2% em Defesa Física contra ataques físicos"
+    },
+    {
+    "indice": "178",
+    "name": "Resistência Elemental Monstruosa",
+    "atributo": ["DEFE"],
+    "bonus": [2],
+    "code": "<b>Resistência Elemental Monstruosa</b><br><b>Requisito:</b> Resistência Monstruosa<br><b>Bônus:</b> +2% em Defesa Física contra ataques elementais"
+    },
+    {
+    "indice": "179",
+    "name": "Resistência Colossal",
+    "atributo": ["ST"],
+    "bonus": [1],
+    "code": "<b>Resistência Colossal</b><br><b>Requisito:</b> Resistência Monstruosa, 10 pontos em Constituição &amp; 2 Talentos Aprimoradores<br><b>Bônus:</b> +1 em Stamina"
+    },
+    {
+    "indice": "180",
+    "name": "Resistência Física Colossal",
+    "atributo": ["DEFFF"],
+    "bonus": [1],
+    "code": "<b>Resistência Física Colossal</b><br><b>Requisito:</b> Resistência Colossal<br><b>Bônus:</b> +2% em Defesa Física contra ataques físicos"
+    },
+    {
+    "indice": "181",
+    "name": "Resistência Elemental Colossal",
+    "atributo": ["DEFE"],
+    "bonus": [1],
+    "code": "<b>Resistência Elemental Colossal</b><br><b>Requisito:</b> Resistência Colossal<br><b>Bônus:</b> +2% em Defesa Física contra ataques elementais"
+    },
+    {
+    "indice": "182",
+    "name": "Inquebrável",
+    "atributo": ["DEFF"],
+    "bonus": [7],
+    "code": "<b>Inquebrável</b><br><b>Requisito:</b> Resistência Colossal &amp; Força Colossal<br><b>Bônus:</b> +7% em Defesa Física"
+    },
+    {
+    "indice": "183",
+    "name": "Tranquilidade Incomum",
+    "atributo": ["SM"],
+    "bonus": [100],
+    "code": "<b>Tranquilidade Incomum</b><br><b>Requisito:</b> 3 pontos em Constituição<br><b>Bônus:</b> +100SM"
+    },
+    {
+    "indice": "184",
+    "name": "Mente Perceptiva",
+    "atributo": ["atributo"],
+    "bonus": [0],
+    "code": "<b>Mente Perceptiva</b><br><b>Requisito:</b> Tranquilidade Incomum<br><b>Bônus:</b> Habilidade de utilizar Genjutsu: Kai contra técnicas até rank B"
+    },
+    {
+    "indice": "185",
+    "name": "Mente Protegida",
+    "atributo": ["atributo"],
+    "bonus": [0],
+    "code": "<b>Mente Protegida</b><br><b>Requisito:</b> Tranquilidade Incomum<br><b>Bônus:</b> A partir de Assustado todos os redutores de atributos causados por danos à Saúde Mental são reduzidos pela metade (arredondado para baixo"
+    },
+    {
+    "indice": "186",
+    "name": "Resiliência Absurda",
+    "atributo": ["SM"],
+    "bonus": [200],
+    "code": "<b>Resiliência Absurda</b><br><b>Requisito:</b> Tranquilidade Incomum, 6 pontos em Constituição &amp; 1 Talento Aprimorador<br><b>Bônus:</b> +200SM"
+    },
+    {
+    "indice": "187",
+    "name": "Quebrador de Ilusões",
+    "atributo": ["atributo"],
+    "bonus": [0],
+    "code": "<b>Quebrador de Ilusões</b><br><b>Requisito:</b> Resiliência Absurda &amp; Mente Perceptiva<br><b>Bônus:</b> Habilidade de utilizar Genjutsu: Kai contra técnicas até rank A"
+    },
+    {
+    "indice": "188",
+    "name": "Sem Medo",
+    "atributo": ["atributo"],
+    "bonus": [0],
+    "code": "<b>Sem Medo</b><br><b>Requisito:</b> Resiliência Absurda &amp; Mente Protegida<br><b>Bônus:</b> A partir de Assustado todos os acréscimos no consumo de chakra são anulados"
+    },
+    {
+    "indice": "189",
+    "name": "Nirvana",
+    "atributo": ["SM"],
+    "bonus": [400],
+    "code": "<b>Nirvana</b><br><b>Requisito:</b> Resiliência Absurda, 10 pontos em Constituição &amp; 1 Talento Aprimorador<br><b>Bônus:</b> +400SM"
+    },
+    {
+    "indice": "190",
+    "name": "Inalcançável",
+    "atributo": ["atributo"],
+    "bonus": [0],
+    "code": "<b>Inalcançável</b><br><b>Requisito:</b> Nirvana &amp; Quebrador de Ilusões<br><b>Bônus:</b> Habilidade de utilizar Genjutsu: Kai contra técnicas até rank S"
+    },
+    {
+    "indice": "191",
+    "name": "Inabalável",
+    "atributo": ["atributo"],
+    "bonus": [0],
+    "code": "<b>Inabalável</b><br><b>Requisito:</b> Nirvana &amp; Sem Medo<br><b>Bônus:</b> Todos os efeitos que ocorrem após passagem de turnos num mesmo estado negativo são anulados"
+    },
+    {
+    "indice": "192",
+    "name": "Força Sobre-humana",
+    "atributo": ["DF","DA"],
+    "bonus": [30,50],
+    "code": "<b>Força Sobre-humana</b><br><b>Requisito:</b> 3 pontos em Força<br><b>Bônus:</b> +30 em Dano Físico; +50 em Dano com Armas"
+    },
+    {
+    "indice": "193",
+    "name": "Carregador Sobre-humano",
+    "atributo": ["CC"],
+    "bonus": [10],
+    "code": "<b>Carregador Sobre-humano</b><br><b>Requisito:</b> Força Sobre-humana<br><b>Bônus:</b> +10 em Carga"
+    },
+    {
+    "indice": "194",
+    "name": "Proteção Sobre-humana",
+    "atributo": ["DEFF"],
+    "bonus": [1],
+    "code": "<b>Proteção Sobre-humana</b><br><b>Requisito:</b> Força Sobre-humana<br><b>Bônus:</b> +1% em Defesa Física"
+    },
+    {
+    "indice": "195",
+    "name": "Força Monstruosa",
+    "atributo": ["DF","DA"],
+    "bonus": [50,75],
+    "code": "<b>Força Monstruosa</b><br><b>Requisito:</b> Força Sobre-humana, 6 pontos em Força &amp; 1 Talento Aprimorador<br><b>Bônus:</b> +50 em Dano Físico; +75 em Dano com Armas"
+    },
+    {
+    "indice": "196",
+    "name": "Carregador Monstruoso",
+    "atributo": ["CC"],
+    "bonus": [20],
+    "code": "<b>Carregador Monstruoso</b><br><b>Requisito:</b> Força Monstruosa &amp; Carregador Sobre-humano<br><b>Bônus:</b> +20 em Carga"
+    },
+    {
+    "indice": "197",
+    "name": "Proteção Monstruosa",
+    "atributo": ["DEFF"],
+    "bonus": [2],
+    "code": "<b>Proteção Monstruosa</b><br><b>Requisito:</b> Força Monstruosa &amp; Proteção Sobre-humana<br><b>Bônus:</b> +2% em Defesa Física"
+    },
+    {
+    "indice": "198",
+    "name": "Força Colossal",
+    "atributo": ["DF","DA"],
+    "bonus": [60,80],
+    "code": "<b>Força Colossal</b><br><b>Requisito:</b> Força Monstruosa, 10 Força &amp; 1 Talento Aprimorador<br><b>Bônus:</b> +60 em Dano Físico; +80 em Dano com Armas"
+    },
+    {
+    "indice": "199",
+    "name": "Carregador Colossal",
+    "atributo": ["CC"],
+    "bonus": [20],
+    "code": "<b>Carregador Colossal</b><br><b>Requisito:</b> Força Colossal &amp; Carregador Monstruoso<br><b>Bônus:</b> +20 em Carga"
+    },
+    {
+    "indice": "200",
+    "name": "Proteção Colossal",
+    "atributo": ["DEFF"],
+    "bonus": [2],
+    "code": "<b>Proteção Colossal</b><br><b>Requisito:</b> Força Colossal &amp; Proteção Monstruosa<br><b>Bônus:</b> +2% em Defesa Física"
+    },
+    {
+    "indice": "201",
+    "name": "Destruidor de Mundos",
+    "atributo": ["DF"],
+    "bonus": [65],
+    "code": "<b>Destruidor de Mundos</b><br><b>Requisito:</b> Força Colossal<br><b>Bônus:</b> +65 em Dano Físico"
+    },
+    {
+    "indice": "202",
+    "name": "Reservas Sobre-humanas",
+    "atributo": ["HP","CH"],
+    "bonus": [100,100],
+    "code": "<b>Reservas Sobre-humanas</b><br><b>Requisito:</b> 3 pontos em Constituição<br><b>Bônus:</b> +100HP &amp; CH"
+    },
+    {
+    "indice": "203",
+    "name": "Recuperação Vital Incomum",
+    "atributo": ["atributo"],
+    "bonus": [0],
+    "code": "<b>Recuperação Vital Incomum</b><br><b>Requisito:</b> Reservas Sobre-humanas<br><b>Bônus:</b> +5% em Recuperação de HP"
+    },
+    {
+    "indice": "204",
+    "name": "Recuperação Espiritual Incomum",
+    "atributo": ["atributo"],
+    "bonus": [0],
+    "code": "<b>Recuperação Espiritual Incomum</b><br><b>Requisito:</b> Reservas Sobre-humanas<br><b>Bônus:</b> +5% em Recuperação de CH"
+    },
+    {
+    "indice": "205",
+    "name": "Determinação Sobre-humana",
+    "atributo": ["VT"],
+    "bonus": [1],
+    "code": "<b>Determinação Sobre-humana</b><br><b>Requisito:</b> Reservas Sobre-humanas<br><b>Bônus:</b> +1VT"
+    },
+    {
+    "indice": "206",
+    "name": "Ninjutsus Expansivos",
+    "atributo": ["AN"],
+    "bonus": [5],
+    "code": "<b>Ninjutsus Expansivos</b><br><b>Requisito:</b> Reservas Sobre-humanas<br><b>Bônus:</b> +5m no alcance de ninjutsus"
+    },
+    {
+    "indice": "207",
+    "name": "Genjutsus Expansivos",
+    "atributo": ["AG"],
+    "bonus": [5],
+    "code": "<b>Genjutsus Expansivos</b><br><b>Requisito:</b> Reservas Sobre-humanas<br><b>Bônus:</b> +5m no alcance de genjutsus"
+    },
+    {
+    "indice": "208",
+    "name": "Afinidade Aquática",
+    "atributo": ["atributo"],
+    "bonus": [0],
+    "code": "<b>Afinidade Aquática</b><br><b>Requisito:</b> Defeito: Deformidade (aparência de peixe)<br><b>Bônus:</b> +4m/s de velocidade extra quando dentro da água e possibilidade de respirar debaixo d’água"
+    },
+    {
+    "indice": "209",
+    "name": "Reservas Monstruosas",
+    "atributo": ["HP","CH"],
+    "bonus": [200,200],
+    "code": "<b>Reservas Monstruosas</b><br><b>Requisito:</b> Reservas Sobre-humanas, 6 pontos em Constituição &amp; 3 Talentos Aprimoradores<br><b>Bônus:</b> +200HP &amp; CH"
+    },
+    {
+    "indice": "210",
+    "name": "Recuperação Vital Acelerada",
+    "atributo": ["atributo"],
+    "bonus": [0],
+    "code": "<b>Recuperação Vital Acelerada</b><br><b>Requisito:</b> Reservas Monstruosas &amp; Recuperação Vital Incomum<br><b>Bônus:</b> +5% em Recuperação de HP"
+    },
+    {
+    "indice": "211",
+    "name": "Recuperação Espiritual Acelerada",
+    "atributo": ["atributo"],
+    "bonus": [0],
+    "code": "<b>Recuperação Espiritual Acelerada</b><br><b>Requisito:</b> Reservas Monstruosas &amp; Recuperação Espiritual Incomum<br><b>Bônus:</b> +5% Recuperação de CH"
+    },
+    {
+    "indice": "212",
+    "name": "Determinação Monstruosa",
+    "atributo": ["VT"],
+    "bonus": [2],
+    "code": "<b>Determinação Monstruosa</b><br><b>Requisito:</b> Reservas Monstruosas &amp; Determinação Sobre-humana<br><b>Bônus:</b> +2VT"
+    },
+    {
+    "indice": "213",
+    "name": "Ninjutsus Mega Expansivos",
+    "atributo": ["AN"],
+    "bonus": [5],
+    "code": "<b>Ninjutsus Mega Expansivos</b><br><b>Requisito:</b> Reservas Monstruosas &amp; Ninjutsus Expansivos<br><b>Bônus:</b> +5m no alcance de ninjutsus"
+    },
+    {
+    "indice": "214",
+    "name": "Genjutsus Mega Expansivos",
+    "atributo": ["AG"],
+    "bonus": [5],
+    "code": "<b>Genjutsus Mega Expansivos</b><br><b>Requisito:</b> Reservas Monstruosas &amp; Genjutsus Expansivos<br><b>Bônus:</b> +5m no alcance de genjutsus"
+    },
+    {
+    "indice": "215",
+    "name": "Reservas Colossais",
+    "atributo": ["HP","CH"],
+    "bonus": [400,400],
+    "code": "<b>Reservas Colossais</b><br><b>Requisito:</b> Reservas Monstruosas, 10 pontos em Constituição &amp; 3 Talentos Aprimoradores<br><b>Bônus:</b> +400HP &amp; CH"
+    },
+    {
+    "indice": "216",
+    "name": "Determinação Colossal",
+    "atributo": ["VT"],
+    "bonus": [2],
+    "code": "<b>Determinação Colossal</b><br><b>Requisito:</b> Reservas Colossais &amp; Determinação Monstruosa<br><b>Bônus:</b> +2VT"
+    },
+    {
+    "indice": "217",
+    "name": "Ninjutsus Ultra Expansivos",
+    "atributo": ["AN"],
+    "bonus": [15],
+    "code": "<b>Ninjutsus Ultra Expansivos</b><br><b>Requisito:</b> Reservas Colossais &amp; Ninjutsus Mega Expansivos<br><b>Bônus:</b> +15m no alcance de ninjutsus"
+    },
+    {
+    "indice": "218",
+    "name": "Genjutsus Ultra Expansivos",
+    "atributo": ["AG"],
+    "bonus": [15],
+    "code": "<b>Genjutsus Ultra Expansivos</b><br><b>Requisito:</b> Reservas Colossais &amp; Genjutsus Mega Expansivos<br><b>Bônus:</b> +15m no alcance de genjutsus"
+    },
+    {
+    "indice": "219",
+    "name": "Sinergia Natural",
+    "atributo": ["atributo"],
+    "bonus": [0],
+    "code": "<b>Sinergia Natural</b><br><b>Requisito:</b> Reservas Colossais<br><b>Bônus:</b> Habilidade de aprender, criar e usar Senjutsu e técnicas ligadas à invocação do usuário"
+    },
+    {
+    "indice": "220",
+    "name": "Transgressão das Leis",
+    "atributo": ["atributo"],
+    "bonus": [0],
+    "code": "<b>Transgressão das Leis</b><br><b>Requisito:</b> Reservas Colossais &amp; Genialidade<br><b>Bônus:</b> Habilidade de usar e criar técnicas de Kinjutsu"
+    },
+    {
+    "indice": "221",
+    "name": "Destreza Sobre-humana",
+    "atributo": ["VP"],
+    "bonus": [2],
+    "code": "<b>Destreza Sobre-humana</b><br><b>Requisito:</b> 3 pontos em Destreza<br><b>Bônus:</b> +2m/s na velocidade do personagem"
+    },
+    {
+    "indice": "222",
+    "name": "Agilidade Sobre-humana",
+    "atributo": ["VG"],
+    "bonus": [2],
+    "code": "<b>Agilidade Sobre-humana</b><br><b>Requisito:</b> Destreza Sobre-humana<br><b>Bônus:</b> +2m/s na velocidade dos golpes"
+    },
+    {
+    "indice": "223",
+    "name": "Reflexos Sobre-humanos",
+    "atributo": ["RE"],
+    "bonus": [1],
+    "code": "<b>Reflexos Sobre-humanos</b><br><b>Requisito:</b> Destreza Sobre-humana<br><b>Bônus:</b> +1m/s em Reflexos"
+    },
+    {
+    "indice": "224",
+    "name": "Ambidestria",
+    "atributo": ["atributo"],
+    "bonus": [0],
+    "code": "<b>Ambidestria</b><br><b>Requisito:</b> Destreza Sobre-humana<br><b>Bônus:</b> Habilidade de usar armas com ambas as mãos"
+    },
+    {
+    "indice": "225",
+    "name": "Destreza Monstruosa",
+    "atributo": ["VP"],
+    "bonus": [2],
+    "code": "<b>Destreza Monstruosa</b><br><b>Requisito:</b> Destreza Sobre-humana, 6 Destreza &amp; 2 Talentos Aprimoradores<br><b>Bônus:</b> +2m/s na velocidade do personagem"
+    },
+    {
+    "indice": "226",
+    "name": "Agilidade Monstruosa",
+    "atributo": ["VG"],
+    "bonus": [2],
+    "code": "<b>Agilidade Monstruosa</b><br><b>Requisito:</b> Destreza Monstruosa e Agilidade Sobre-humana<br><b>Bônus:</b> +2m/s na velocidade dos golpes"
+    },
+    {
+    "indice": "227",
+    "name": "Reflexos Monstruosa",
+    "atributo": ["RE"],
+    "bonus": [1],
+    "code": "<b>Reflexos Monstruosos</b><br><b>Requisito:</b> Destreza Monstruosa e Reflexos Sobre-humanos<br><b>Bônus:</b> +1m/s em reflexos"
+    },
+    {
+    "indice": "228",
+    "name": "Mestre do Saque",
+    "atributo": ["atributo"],
+    "bonus": [0],
+    "code": "<b>Mestre do Saque</b><br><b>Requisito:</b> Destreza Monstruosa<br><b>Bônus:</b> Todos os bônus de redução de saque do atributo Destreza são dobrados"
+    },
+    {
+    "indice": "229",
+    "name": "Leveza",
+    "atributo": ["atributo"],
+    "bonus": [0],
+    "code": "<b>Leveza</b><br><b>Requisito:</b> Destreza Monstruosa<br><b>Bônus:</b> Habilidade de usar passos leves e quase imperceptíveis (só podem ser ouvidos por pessoas a 3m do usuário)"
+    },
+    {
+    "indice": "230",
+    "name": "Mestre das Lutas",
+    "atributo": ["atributo"],
+    "bonus": [0],
+    "code": "<b>Mestre das Lutas</b><br><b>Requisito:</b> Versado em Taijutsu<br><b>Bônus:</b> +1 Estilo de Luta nos limites do personagem"
+    },
+    {
+    "indice": "231",
+    "name": "Destreza Divina",
+    "atributo": ["VP"],
+    "bonus": [2],
+    "code": "<b>Destreza Divina</b><br><b>Requisito:</b> Destreza Monstruosa, 10 pontos em Destreza &amp; 2 Talentos Aprimoradores.<br><b>Bônus:</b> +2m/s na velocidade do personagem"
+    },
+    {
+    "indice": "232",
+    "name": "Agilidade Divina",
+    "atributo": ["VG"],
+    "bonus": [2],
+    "code": "<b>Agilidade Divina</b><br><b>Requisito:</b> Destreza Divina e Agilidade Monstruosa<br><b>Bônus:</b> +2m/s na velocidade dos golpes"
+    },
+    {
+    "indice": "233",
+    "name": "Reflexos Divina",
+    "atributo": ["RE"],
+    "bonus": [1],
+    "code": "<b>Reflexos Divinos</b><br><b>Requisito:</b> Destreza Divina e Reflexos Monstruosos<br><b>Bônus:</b> +1m/s em reflexos"
+    },
+    {
+    "indice": "234",
+    "name": "Mestre da Ação",
+    "atributo": ["atributo"],
+    "bonus": [1],
+    "code": "<b>Mestre da Ação</b><br><b>Requisito:</b> Destreza Divina<br><b>Bônus:</b> +1 Ação Rápida por turno"
+    },
+    {
+    "indice": "235",
+    "name": "Mestre do Deslocamento",
+    "atributo": ["atributo"],
+    "bonus": [2],
+    "code": "<b>Mestre do Deslocamento</b><br><b>Requisito:</b> Destreza Divina &amp; Versado em Bunshinjutsu<br><b>Bônus:</b> Habilidade de usar e criar técnicas que criem efeitos de pós-imagem; a técnica Shunshin no Jutsu passa a dar +2m/s ao ser usado"
+    },
+    {
+    "indice": "236",
+    "name": "Estudado em Bukijutsu (à escolha)",
+    "atributo": ["atributo"],
+    "bonus": [50],
+    "code": "<b>Estudado em Bukijutsu (à escolha)</b><br><b>Requisito:</b> 3 pontos em Destreza ou 3 pontos em Força (Shurikenjutsu) &amp; 2 pontos em Atenção<br><b>Bônus:</b> +50 no dano com a arma escolhida"
+    },
+    {
+    "indice": "237",
+    "name": "Armas Velozes",
+    "atributo": ["atributo"],
+    "bonus": [2],
+    "code": "<b>Armas Velozes</b><br><b>Requisito:</b> Estudado em Bukijutsu (escolhido)<br><b>Bônus:</b> +2 na velocidade dos golpes usando a arma escolhida. Não funciona para Shurikenjutsu, Kayakujutsu e Kyujutsu"
+    },
+    {
+    "indice": "238",
+    "name": "Arremessos Velozes",
+    "atributo": ["atributo"],
+    "bonus": [2],
+    "code": "<b>Arremessos Velozes</b><br><b>Requisito:</b> Estudado em Bukijutsu (Shurikenjutsu, Kayakujutsu e Kyujutsu)<br><b>Bônus:</b> +2 em velocidade de arremesso usando a arma escolhida"
+    },
+    {
+    "indice": "239",
+    "name": "Arremessos Precisos",
+    "atributo": ["atributo"],
+    "bonus": [2],
+    "code": "<b>Arremessos Precisos</b><br><b>Requisito:</b> Estudado em Bukijutsu (Shurikenjutsu, Kayakujutsu e Kyujutsu)<br><b>Bônus:</b> +1 em precisão de arremesso (usando a arma escolhida)"
+    },
+    {
+    "indice": "240",
+    "name": "Proficiência em Bukijutsu (escolhido)",
+    "atributo": ["atributo"],
+    "bonus": [-10],
+    "code": "<b>Proficiência em Bukijutsu (escolhido)</b><br><b>Requisito:</b> Estudado em Bukijutsu (escolhido)<br><b>Bônus:</b> -10 no dano causado à resistência da arma"
+    },
+    {
+    "indice": "241",
+    "name": "Combinações Perigosas",
+    "atributo": ["atributo"],
+    "bonus": [0],
+    "code": "<b>Combinações Perigosas</b><br><b>Requisito:</b> Estudado em Bukijutsu (escolhido)<br><b>Bônus:</b> Permite usar dois movimentos com a arma escolhida em 1 Ação Rápida"
+    },
+    {
+    "indice": "242",
+    "name": "Versado em Bukijutsu (escolhido)",
+    "atributo": ["atributo"],
+    "bonus": [75],
+    "code": "<b>Versado em Bukijutsu (escolhido)</b><br><b>Requisito:</b> Estudado em Bukijutsu (à escolha), 6 Destreza ou 6 Força (Shurikenjutsu), 4 Atenção &amp; 3 Talentos Aprimoradores<br><b>Bônus:</b> +75 no dano com a arma escolhida"
+    },
+    {
+    "indice": "243",
+    "name": "Armas Mega Velozes",
+    "atributo": ["atributo"],
+    "bonus": [2],
+    "code": "<b>Armas Mega Velozes</b><br><b>Requisito:</b> Versado em Bukijutsu (escolhido) &amp; Armas Velozes<br><b>Bônus:</b> +2 na velocidade dos golpes usando a arma escolhida. Não funciona para Shurikenjutsu, Kayakujutsu e Kyujutsu"
+    },
+    {
+    "indice": "244",
+    "name": "Arremessos Mega Velozes",
+    "atributo": ["atributo"],
+    "bonus": [2],
+    "code": "<b>Arremessos Mega Velozes</b><br><b>Requisito:</b> Versado em Bukijutsu (Shurikenjutsu, Kayakujutsu e Kyujutsu) &amp; Arremessos Velozes (escolhido)<br><b>Bônus:</b> +2 em velocidade de arremesso usando a arma escolhida"
+    },
+    {
+    "indice": "245",
+    "name": "Arremessos Mega Precisos",
+    "atributo": ["atributo"],
+    "bonus": [2],
+    "code": "<b>Arremessos Mega Precisos</b><br><b>Requisito:</b> Versado em Bukijutsu (Shurikenjutsu, Kayakujutsu e Kyujutsu) &amp; Arremessos Precisos (escolhido)<br><b>Bônus:</b> +2 Precisão de Arremesso usando a arma escolhida"
+    },
+    {
+    "indice": "246",
+    "name": "Grande Proficiência em Bukijutsu (escolhido)",
+    "atributo": ["atributo"],
+    "bonus": [-10],
+    "code": "<b>Grande Proficiência em Bukijutsu (escolhido)</b><br><b>Requisito:</b> Versado em Bukijutsu (escolhido) &amp; Proficiência em Bukijutsu (escolhido)<br><b>Bônus:</b> -10 no dano causado à resistência da arma"
+    },
+    {
+    "indice": "247",
+    "name": "Combinações Letais",
+    "atributo": ["atributo"],
+    "bonus": [0],
+    "code": "<b>Combinações Letais</b><br><b>Requisito:</b> Versado em Bukijutsu (escolhido) &amp; Combinações Perigosas<br><b>Bônus:</b> Permite usar três movimentos com a arma escolhida em 1 Ação Rápida"
+    },
+    {
+    "indice": "248",
+    "name": "Mestre em Bukijutsu (escolhido)",
+    "atributo": ["atributo"],
+    "bonus": [80],
+    "code": "<b>Mestre em Bukijutsu (escolhido)</b><br><b>Requisito:</b> Versado em Bukijutsu (à escolha), 10 Destreza ou 10 Força (Shurikenjutsu), 8 Atenção &amp; 3 Talentos Aprimoradores.<br><b>Bônus:</b> +80 de dano com arma escolhida"
+    },
+    {
+    "indice": "249",
+    "name": "Armas Ultra Velozes",
+    "atributo": ["atributo"],
+    "bonus": [2],
+    "code": "<b>Armas Ultra Velozes</b><br><b>Requisito:</b> Mestre em Bukijutsu (escolhido) &amp; Armas Mega Velozes<br><b>Bônus:</b> +2 na velocidade dos golpes usando a arma escolhida. Não funciona para Shurikenjutsu, Kayakujutsu e Kyujutsu"
+    },
+    {
+    "indice": "250",
+    "name": "Arremessos Ultra Velozes",
+    "atributo": ["atributo"],
+    "bonus": [2],
+    "code": "<b>Arremessos Ultra Velozes</b><br><b>Requisito:</b> Mestre em Bukijutsu (Shurikenjutsu, Kayakujutsu e Kyujutsu) &amp; Arremessos Mega Velozes (escolhido)<br><b>Bônus:</b> +2 em velocidade de arremesso usando a arma escolhida"
+    },
+    {
+    "indice": "251",
+    "name": "Arremessos Ultra Precisos",
+    "atributo": ["atributo"],
+    "bonus": [2],
+    "code": "<b>Arremessos Ultra Precisos</b><br><b>Requisito:</b> Versado em Bukijutsu (Shurikenjutsu, Kayakujutsu e Kyujutsu) &amp; Arremessos Mega Precisos (escolhido).<br><b>Bônus:</b> +2 em precisão de arremesso usando a arma escolhida"
+    },
+    {
+    "indice": "252",
+    "name": "Domínio Perfeito em Bukijutsu (escolhido)",
+    "atributo": ["atributo"],
+    "bonus": [-10],
+    "code": "<b>Domínio Perfeito em Bukijutsu (escolhido)</b><br><b>Requisito:</b> Mestre em Bukijutsu (escolhido) &amp; Grande Proficiência em Bukijutsu (escolhido).<br><b>Bônus:</b> -10 de dano causado à resistência da arma"
+    },
+    {
+    "indice": "253",
+    "name": "Combinações Fatais",
+    "atributo": ["atributo"],
+    "bonus": [0],
+    "code": "<b>Combinações Fatais</b><br><b>Requisito:</b> Mestre em Bukijutsu (escolhido) &amp; Combinações Letais<br><b>Bônus:</b> Permite usar quatro movimentos com a arma escolhida em 1 Ação Rápida"
+    },
+    {
+    "indice": "254",
+    "name": "Estudado em Invocação",
+    "atributo": ["atributo"],
+    "bonus": [0],
+    "code": "<b>Estudado em Invocação</b><br><b>Requerimento:</b> 3 pontos Ninjutsu &amp; 2 pontos em Carisma<br><b>Descrição:</b> Habilidade de formar um pacto com alguma espécie de kuchiyose e convocar até o rank B delas"
+    },
+    {
+    "indice": "255",
+    "name": "Versado em Invocação",
+    "atributo": ["atributo"],
+    "bonus": [0],
+    "code": "<b>Versado em Invocação</b><br><b>Requerimento:</b> Estudado em Invocação, 6 pontos em Ninjutsu, 4 pontos em Carisma &amp; Bom Controle de Chakra<br><b>Descrição:</b> Habilidade de convocar até o rank A da espécie contratual"
+    },
+    {
+    "indice": "256",
+    "name": "Mestre em Invocação",
+    "atributo": ["atributo"],
+    "bonus": [0],
+    "code": "<b>Mestre em Invocação</b><br><b>Requerimento:</b> Versado em Invocação, 10 pontos em Ninjutsu, 6 pontos em Carisma &amp; Grande Controle de Chakra<br><b>Descrição:</b> Habilidade de convocar até o rank S da espécie contratual"
+    },
+    {
+    "indice": "257",
+    "name": "Múltiplos Pactos",
+    "atributo": ["atributo"],
+    "bonus": [0],
+    "code": "<b>Múltiplos Pactos</b><br><b>Requerimento:</b> Mestre em Invocação &amp; Reservas Monstruosas<br><b>Descrição:</b> Habilidade de realizar um segundo contrato de Invocação"
+    },
+    {
+    "indice": "258",
+    "name": "Hábil em Jikukan Ninjutsu",
+    "atributo": ["atributo"],
+    "bonus": [0],
+    "code": "<b>Hábil em Jikukan Ninjutsu</b><br><b>Requerimento:</b> Mestre em Ninjutsu &amp; Altas Habilidades.<br><b>Descrição:</b> Habilidade de desenvolver Talentos Aprimoradores de Espaço-Tempo"
+    },
+    {
+    "indice": "259",
+    "name": "Tecido Rasgado",
+    "atributo": ["atributo"],
+    "bonus": [0],
+    "code": "<b>Tecido Rasgado</b><br><b>Requerimento:</b> Hábil em Jikukan Ninjutsu &amp; Estudado em Fuinjutsu.<br><b>Descrição:</b> Habilidade de usar e criar técnicas de jikukan ninjutsu que usem marcações para realizar o transporte. Para usar acima de rank B é preciso de Versado/Mestre em Fuinjutsu. É permitido criar uma dimensão de bolso"
+    },
+    {
+    "indice": "260",
+    "name": "Viajante",
+    "atributo": ["atributo"],
+    "bonus": [0],
+    "code": "<b>Viajante</b><br><b>Requerimento:</b> Hábil em Jikukan Ninjutsu &amp; Reserva Sobre-humana<br><b>Descrição:</b> Habilidade de usar e criar técnicas de jikukan ninjutsu que não usam marcações, mas sim viagens entre dimensões. Para usar acima de rank B é preciso de Reservas Monstruosas e Colossais, para A e S respectivamente. É permitido criar uma dimensão de bolso"
+    },
+    {
+    "indice": "261",
+    "name": "Elemento Fragmentado",
+    "atributo": ["atributo"],
+    "bonus": [0],
+    "code": "<b>Elemento Fragmentado</b><br><b>Requerimento:</b> Hábil em Jikukan Ninjutsu &amp; Estudado em Elemento de Chakra (escolhido).<br><b>Descrição:</b> Habilidade de usar e criar técnicas de jikukan ninjutsu que não usam marcações, mas sim elemento do chakra escolhido. Para usar acima de rank B é preciso de Versado/Mestre no elemento escolhido para rank A e S respectivamente. É permitido criar uma dimensão de bolso."
+    },
+    {
+    "indice": "262",
+    "name": "Dedicado",
+    "atributo": ["atributo"],
+    "bonus": [0],
+    "code": "<b>Dedicado</b><br><b>Requisitos:</b> Sem Clã/Kekkei Genkai &amp; Nível 05.<br><b>Bônus:</b> +2 Jutsus até Rank A no Limite de Jutsus do personagem."
+    },
+    {
+    "indice": "263",
+    "name": "Gênio da Dedicação",
+    "atributo": ["atributo"],
+    "bonus": [0],
+    "code": "<b>Gênio da Dedicação</b><br><b>Requisitos:</b> Sem Clã/Kekkei Genkai &amp; Nível 15.<br><b>Bônus:</b> +4 Jutsus até Rank A no Limite de Jutsus do personagem."
+    },
+    {
+    "indice": "264",
+    "name": "Exemplo de Dedicação",
+    "atributo": ["atributo"],
+    "bonus": [0],
+    "code": "<b>Exemplo de Dedicação</b><br><b>Requisitos:</b> Sem Clã/Kekkei Genkai &amp; Nível 30.<br><b>Bônus:</b> +2 Jutsus Rank S no Limite de Jutsus do personagem."
+    },
+    {
+    "indice": "265",
+    "name": "Verdadeiro Ninja",
+    "atributo": ["atributo"],
+    "bonus": [0],
+    "code": "<b>Verdadeiro Ninja</b><br><b>Requisitos:</b> Sem Clã/Kekkei Genkai &amp; Nível 30.<br><b>Bônus:</b> É possível alcançar os pontos máximos (10) em um atributo adicional à escolha, podendo ficar com 10 pontos em até quatro atributos através deste talento."
+    },
+    {
+    "indice": "266",
+    "name": "Versátil",
+    "atributo": ["atributo"],
+    "bonus": [0],
+    "code": "<b>Versátil</b><br><b>Requisitos:</b> Sem Clã/Kekkei Genkai &amp; Nível 10.<br><b>Bônus:</b> -1 Talento Aprimorador no requerimento de todos os Talentos Principais."
+    },
+    {
+    "indice": "267",
+    "name": "Dedicação em Ninjutsu",
+    "atributo": ["DN","AN","VN"],
+    "bonus": [10,2,2],
+    "code": "<b>Dedicação em Ninjutsu</b><br><b>Requisitos:</b> Sem Clã/Kekkei Genkai, Estudado em Ninjutsu &amp; Nível 10.<br><b>Bônus:</b> +10 Dano Ninjutsu, +2m Alcance Ninjutsu, +2m/s Velocidade em Ninjutsu."
+    },
+    {
+    "indice": "268",
+    "name": "Dedicação em Taijutsu",
+    "atributo": ["DF","VG"],
+    "bonus": [10,1],
+    "code": "<b>Dedicação em Taijutsu</b><br><b>Requisitos:</b> Sem Clã/Kekkei Genkai, Estudado em Taijutsu &amp; Nível 10.<br><b>Bônus:</b> +10 Dano Físico, +1m/s Velocidade dos Golpes."
+    },
+    {
+    "indice": "269",
+    "name": "Dedicação em Genjutsu",
+    "atributo": ["PG"],
+    "bonus": [1],
+    "code": "<b>Dedicação em Genjutsu</b><br><b>Requisitos:</b> Sem Clã/Kekkei Genkai, Estudado em Genjutsu &amp; Nível 10.<br><b>Bônus:</b> +1 Precisão de Genjutsu."
     }
+        
 ]
