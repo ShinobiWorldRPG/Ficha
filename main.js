@@ -1,4 +1,4 @@
-var version = '1.7';
+var version = '1.7.1';
 
 function checkVila(input){
     if(input.toLowerCase() == 'konoha' || input.toLowerCase() == 'konohagakure') return 'vKonoha';
@@ -348,7 +348,7 @@ $(document).ready(function(){fetch("https://shinobiworldrpg.github.io/Ficha/tale
     // CONVERSÂO DA PÁGINA
 
     $('.fichaMain').html(`
-    <div class="fichaMainContainer verde">
+    <div class="fichaMainContainer verde ${checkVila(vila)}">
         <div class="bannerFundo"></div><div class="titleFundo"></div><div class="sideFundoFundo"></div><div class="sideFundo"></div><div class="fTexture"></div>
         <svg class="bannerImage" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="516.783" height="175.001" viewBox="0 0 516.783 175.001"><defs><pattern id="a" width="1" height="1" viewBox="0 334.693 516.783 175.001"><image preserveAspectRatio="xMidYMid slice" width="516.783" href="${banner}"/></pattern></defs><path d="M702,211H185.217a112.51,112.51,0,0,0,0-175H702V211Z" transform="translate(-185.217 -36)" fill="url(#a)"/></svg>
         <div class="perfilImage" style="background-image: url(${avatar});"></div>
