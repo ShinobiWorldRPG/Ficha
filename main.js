@@ -1,4 +1,4 @@
-var version = '1.6';
+var version = '1.6.1';
 
 function checkVila(input){
     if(input.toLowerCase() == 'konoha' || input.toLowerCase() == 'konohagakure') return 'vKonoha';
@@ -165,7 +165,7 @@ function talentGenerator(talentos , lista, i, tipo){
     return talentGenerator(talentos, lista, i + 1, tipo);
 }
 
-$(document).ready(function(){fetch("./talentos.json").then(response => {return response.json();}).then(data => {
+$(document).ready(function(){fetch("https://shinobiworldrpg.github.io/Ficha/talentos.json").then(response => {return response.json();}).then(data => {
 
     console.log(`Ficha Script ${version} Running`);
     console.log(`Talentos: ${data.length}`);
