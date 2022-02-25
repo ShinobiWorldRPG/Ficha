@@ -1,4 +1,4 @@
-var version = '1.7.1';
+var version = '1.7.2';
 
 function checkVila(input){
     if(input.toLowerCase() == 'konoha' || input.toLowerCase() == 'konohagakure') return 'vKonoha';
@@ -448,7 +448,7 @@ $(document).ready(function(){fetch("https://shinobiworldrpg.github.io/Ficha/tale
         </div>
         <div class="bijuuSpoiler fSpoiler">
             <div class="fSpoilerTitle">Bijuu<img src="https://shinobiworldrpg.github.io/Ficha/assets/CloseButton.png" class="fCloseButton"></div>
-            <div class="fSpoilerContent"${bijuu}></div>
+            <div class="fSpoilerContent">${bijuu}</div>
         </div>
         <div class="jutsu1Spoiler fSpoiler">
             <div class="fSpoilerTitle">Jutsus Básicos<img src="https://shinobiworldrpg.github.io/Ficha/assets/CloseButton.png" class="fCloseButton"></div>
