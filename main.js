@@ -1,10 +1,4 @@
-var talentList
-
-fetch("./talentos.json")
-.then(response => {
-   return response.json();
-})
-.then(data => talentList = data);
+var version = '1.5.3';
 
 function checkVila(input){
     if(input.toLowerCase() == 'konoha' || input.toLowerCase() == 'konohagakure') return 'vKonoha';
@@ -34,9 +28,36 @@ function checkPvp(input){
     else return 'pvpOff';
 }
 
-$(document).ready(function(){
-    console.log('Ficha Script 1.5.1 Running');
-    
+function checkBonus(talentos , lista , atributo , i , j , resultado){
+    //console.log('index: ' + i);
+    //console.log(`talento: ${talentos[i]-1}`);
+    //console.log(lista[talentos[i]-1]);
+    if(talentos[i] <= 0) return checkBonus(talentos, lista, atributo , i+1 , 0 , resultado);
+    if(talentos[i]-1 > lista.length) return checkBonus(talentos, lista, atributo , i+1 , 0 , resultado);
+    if(i >= talentos.length) return resultado;
+    if(lista[talentos[i]-1].atributo[j] == atributo) return checkBonus(talentos, lista, atributo , i + 1, 0, resultado + Number(lista[talentos[i]-1].bonus[j]));
+    if(j < lista[talentos[i]-1].atributo.length-1) return checkBonus(talentos, lista, atributo, i, j+1, resultado);
+    else return checkBonus(talentos, lista, atributo , i+1 , 0 , resultado);
+}
+
+function individualidadegenerator(quirk1 , quirk2){
+    var result = '';
+    if(quirk1 !== '') result += `<div class="campo0 fIndividualidade"><span>Individualidade 2</span><br>${quirk1}</div>`;
+    if(quirk2 !== '') result += `<div class="campo0 fIndividualidade"><span>Individualidade 3</span><br>${quirk2}</div>`;
+    return result;
+}
+
+function saque(arma , VS){
+    VS = (arma + VS).toFixed(1);
+    if(VS < 0) VS = 0;
+    return VS;
+}
+
+$(document).ready(function(){fetch("./talentos.json").then(response => {return response.json();}).then(data => {
+
+    console.log(`Ficha Script ${version} Running`);
+    console.log(`Talentos: ${data.length}`);
+
     // VARIÁVEIS
     var banner = $('banner').text();
     var avatar = $('avatar').text();
@@ -93,6 +114,61 @@ $(document).ready(function(){
     var atencao = Number($('atencao').text());
     var carisma = Number($('carisma').text());
 
+    talentos = talentos.split('/').map(Number).sort((a, b) => a - b);
+
+    var bonuscla = $('BonusCla').text().split('/').map(Number);
+
+    //console.log(talentos);
+
+    //Cálculos
+
+    var HP = 100 + bonuscla[0] + constituicao*20 + checkBonus(talentos, data, 'HP', 0, 0, 0);
+    var CH = 100 + bonuscla[1] + constituicao*20 +checkBonus(talentos, data, 'CH', 0, 0, 0);
+    var SM = 100 + bonuscla[2] + inteligencia*20 +checkBonus(talentos, data, 'SM', 0, 0, 0);
+    var ST = 2 + bonuscla[3] + constituicao +checkBonus(talentos, data, 'ST', 0, 0, 0);
+    var VT = 5 + bonuscla[4] + carisma/2 + checkBonus(talentos, data, 'VT', 0, 0, 0);
+    var AN = 2 + ninjutsu*5 + checkBonus(talentos, data, 'AN', 0, 0, 0);
+    var VN = ninjutsu*2 + checkBonus(talentos, data, 'VN', 0, 0, 0);
+    var VC = 15 - ninjutsu + checkBonus(talentos, data, 'VC', 0, 0, 0);
+    var VSM = 3 + checkBonus(talentos, data, 'VSM', 0, 0, 0);
+    var DN = ninjutsu*2 + atencao*2 + checkBonus(talentos, data, 'DN', 0, 0, 0);
+    var DNC = DN + checkBonus(talentos, data, 'DNC', 0, 0, 0);
+    var DND = DN + checkBonus(talentos, data, 'DND', 0, 0, 0);    
+    var AG = 2 + genjutsu*2 + checkBonus(talentos, data, 'AG', 0, 0, 0);
+    var VEG = genjutsu*2 + checkBonus(talentos, data, 'VEG', 0, 0, 0);
+    var PG = genjutsu/2 + carisma/2 + checkBonus(talentos, data, 'PG', 0, 0, 0);
+    var PdG = (genjutsu + inteligencia + atencao)/2 + checkBonus(talentos, data, 'PdG', 0, 0, 0);
+    var DF = taijutsu*2 + forca*2 + checkBonus(talentos, data, 'DF', 0, 0, 0);
+    var DA = atencao*2 + destreza*2 + checkBonus(talentos, data, 'DA', 0, 0, 0);
+    var VAR = 4 + forca*2 + atencao*2 + checkBonus(talentos, data, 'VAR', 0, 0, 0);
+    var PAR = 5 + forca*2 + atencao*2 + checkBonus(talentos, data, 'PAR', 0, 0, 0);
+    var DEFF = constituicao + forca + checkBonus(talentos, data, 'DEFF', 0, 0, 0);
+    var DEFFF = DEFF + checkBonus(talentos, data, 'DEFFF', 0, 0, 0);
+    var DEFE = DEFF + checkBonus(talentos, data, 'DEFE', 0, 0, 0);
+    var CC = 20 + forca*5 + checkBonus(talentos, data, 'CC', 0, 0, 0);
+    var VP = 4 + destreza*2 + checkBonus(talentos, data, 'VP', 0, 0, 0);
+    var VG = 2 + taijutsu + destreza + checkBonus(talentos, data, 'VG', 0, 0, 0);
+    var VS = -destreza*0.1 + checkBonus(talentos, data, 'VS', 0, 0, 0);
+    var RE = 2 + atencao +destreza + checkBonus(talentos, data, 'RE', 0, 0, 0);
+    var PM = 6 + atencao*2 + checkBonus(talentos, data, 'PM', 0, 0, 0);
+    var PMS = (inteligencia + atencao)/2 + checkBonus(talentos, data, 'PMS', 0, 0, 0);
+    var CDA = ((inteligencia + checkBonus(talentos, data, 'CDA', 0, 0, 0))/3).toFixed(1) ;
+    var VPA = 20 - inteligencia + checkBonus(talentos, data, 'VPA', 0, 0, 0);
+    var PA = ((atencao + checkBonus(talentos, data, 'PA', 0, 0, 0))/3).toFixed(1) ;
+    var PE = carisma + inteligencia/2 + checkBonus(talentos, data, 'PE', 0, 0, 0);
+
+    // Extra
+
+    var indialtura = 0;
+    if($('individualidade2').text() !== '' || $('individualidade3').text() !== '') indialtura = 1;
+
+    /*var lista = '';
+    for (let index = 0; index < data.length; index++) {
+        lista += `<b>${index + 1} -</b> ${data[index].name}<br>`;
+    }
+    console.log(lista);*/
+
+
     // CONVERSÂO DA PÁGINA
 
     $('.fichaMain').html(`
@@ -143,7 +219,7 @@ $(document).ready(function(){
                 <div class="campo0 fNivel"><span>Nível</span><br>${level}</div>
                 <div class="campo0 fExp"><span>Exp</span><br>${exp}</div>
                 <div class="campo0 fAssinatura"><span>Técnica Assinatura</span><br>${assinatura}</div>
-                <div class="campo0 fIndividualidade"><span>Individualidade</span><br>${individualidade}</div>
+                <div class="campo0 fIndividualidade"><span>Individualidade</span><br>${individualidade}</div>${individualidadegenerator($('individualidade2').text(), $('individualidade3').text())}
                 <div class="campo0 fKuchyose"><span>Kuchyose</span><br>${kuchyose}</div>
                 <div class="fatributos">
                     <div class="attC"><span>Ninjutsu - ${ninjutsu}</span><div class="barBar" style="width: ${ninjutsu * 10}%;${barCheck(ninjutsu * 10)}"></div><div class="barOutline"></div></div>
@@ -250,38 +326,41 @@ $(document).ready(function(){
             <div class="fSpoilerTitle">Testes<img src="https://shinobiworldrpg.github.io/Ficha/assets/CloseButton.png" class="fCloseButton"></div>
             <div class="fSpoilerContent">
                 <div class="fReservas">
-                    <div class="campo0"><span>Vitalidade</span><br>0</div>
-                    <div class="campo0"><span>Chakra</span><br>0</div>
-                    <div class="campo0"><span>Saúde Mental</span><br>0</div>
-                    <div class="campo0"><span>Stamina</span><br>0</div>
-                    <div class="campo0" style="margin-right: 0px;"><span>Vontade</span><br>0</div>
+                    <div class="campo0"><span>Vitalidade</span><br>${HP}</div>
+                    <div class="campo0"><span>Chakra</span><br>${CH}</div>
+                    <div class="campo0"><span>Saúde Mental</span><br>${SM}</div>
+                    <div class="campo0"><span>Stamina</span><br>${ST}</div>
+                    <div class="campo0" style="margin-right: 0px;"><span>Vontade</span><br>${VT}</div>
                 </div>
                 <div class="fTestes">
-                    <div class="campo0 campo2"><span>Alcance de Ninjutsu (AN)</span><br>0</div>
-                    <div class="campo0 campo2"><span>Velocidade de Ninjutsu (VN)</span><br>0</div>
-                    <div class="campo0 campo2"><span>Velocidade de Conjuração (VC)</span><br>0</div>
-                    <div class="campo0 campo2"><span>Velocidade de Selos de Mãos (VSM)</span><br>0</div>
-                    <div class="campo0 campo2"><span>Dano de Ninjutsu (DN)</span><br>0</div>
-                    <div class="campo0 campo2"><span>Alcance de Genjutsu (AG)</span><br>0</div>
-                    <div class="campo0 campo2"><span>Velocidade de Expansão de Genjutsu (VEG)</span><br>0</div>
-                    <div class="campo0 campo2"><span>Precisão do Genjutsu (PG)</span><br>0</div>
-                    <div class="campo0 campo2"><span>Percepção de Genjutsu (PdG)</span><br>0</div>
-                    <div class="campo0 campo2"><span>Dano Físico (DF)</span><br>0</div>
-                    <div class="campo0 campo2"><span>Dano com Armas (DA)</span><br>0</div>
-                    <div class="campo0 campo2"><span>Velocidade de Arremesso (VAR)</span><br>0</div>
-                    <div class="campo0 campo2"><span>Precisão de Arremesso (PAR)</span><br>0</div>
-                    <div class="campo0 campo2"><span>Defesa Física (DF)</span><br>0</div>
-                    <div class="campo0 campo2"><span>Capacidade de Carga (CC)</span><br>0</div>
-                    <div class="campo0 campo2"><span>Velocidade do Personagem (VP)</span><br>0</div>
-                    <div class="campo0 campo2"><span>Velocidade dos Golpes (VG)</span><br>0</div>
-                    <div class="campo0 campo2"><span>Velocidade do Saque (VS)</span><br>0</div>
-                    <div class="campo0 campo2"><span>Reflexos (RE)</span><br>0</div>
-                    <div class="campo0 campo2"><span>Percepção de Movimentos (PM)</span><br>0</div>
-                    <div class="campo0 campo2"><span>Percepção de Mentiras (PMS)</span><br>0</div>
-                    <div class="campo0 campo2"><span>Criação de Armadilhas (CDA)</span><br>0</div>
-                    <div class="campo0 campo2"><span>Velocidade no Preparo de Armadilhas (VPA)</span><br>0</div>
-                    <div class="campo0 campo2"><span>Percepção de Armadilhas (PA)</span><br>0</div>
-                    <div class="campo0 campo2 campofinal"><span>Persuasão (PE)</span><br>0</div>
+                    <div class="campo0 campo2"><span>Alcance de Ninjutsu (AN)</span><br>${AN}m</div>
+                    <div class="campo0 campo2"><span>Velocidade de Ninjutsu (VN)</span><br>${VN}m/s</div>
+                    <div class="campo0 campo2"><span>Velocidade de Conjuração (VC)</span><br>${VC}seg</div>
+                    <div class="campo0 campo2"><span>Velocidade de Selos de Mãos (VSM)</span><br>${VSM}seg</div>
+                    <div class="campo0 campo2"><span>Dano de Ninjutsu (DN)</span><br>${DN}</div>
+                    <div class="campo0 campo2"><span>Dano de Ninjutsu Concentrado (DNC)</span><br>${DNC}</div>
+                    <div class="campo0 campo2"><span>Dano de Ninjutsu Dispersivo (DND)</span><br>${DND}</div>
+                    <div class="campo0 campo2"><span>Alcance de Genjutsu (AG)</span><br>${AG}m</div>
+                    <div class="campo0 campo2"><span>Velocidade de Expansão de Genjutsu (VEG)</span><br>${VEG}m/s</div>
+                    <div class="campo0 campo2"><span>Precisão do Genjutsu (PG)</span><br>${PG}</div>
+                    <div class="campo0 campo2"><span>Percepção de Genjutsu (PdG)</span><br>${PdG}</div>
+                    <div class="campo0 campo2"><span>Dano Físico (DF)</span><br>${DF}</div>
+                    <div class="campo0 campo2"><span>Dano com Armas (DA)</span><br>${DA}</div>
+                    <div class="campo0 campo2"><span>Velocidade de Arremesso (VAR)</span><br>${VAR}m/s</div>
+                    <div class="campo0 campo2"><span>Precisão de Arremesso (PAR)</span><br>${PAR}m</div>
+                    <div class="campo0 campo2"><span>Defesa Física (DF)</span><br>${DEFFF}</div>
+                    <div class="campo0 campo2"><span>Defesa Física Elemental (DFE)</span><br>${DEFE}</div>                    
+                    <div class="campo0 campo2"><span>Capacidade de Carga (CC)</span><br>${CC}</div>
+                    <div class="campo0 campo2"><span>Velocidade do Personagem (VP)</span><br>${VP}m/s</div>
+                    <div class="campo0 campo2"><span>Velocidade dos Golpes (VG)</span><br>${VG}m/s</div>
+                    <div class="campo0 campo2"><span>Velocidade do Saque (VS)</span><br><div style="font-size: 10px;">${saque(1 , VS)}s(P) / ${saque(1.5 , VS)}s(M) / ${saque(2 , VS)}s(MG) / ${saque(3 , VS)}s(G)</div></div>
+                    <div class="campo0 campo2"><span>Reflexos (RE)</span><br>${RE}m/s</div>
+                    <div class="campo0 campo2"><span>Percepção de Movimentos (PM)</span><br>${PM}</div>
+                    <div class="campo0 campo2"><span>Percepção de Mentiras (PMS)</span><br>${PMS}</div>
+                    <div class="campo0 campo2"><span>Velocidade no Preparo de Armadilhas (VPA)</span><br>${VPA}s</div>
+                    <div class="campo0 campo2"><span>Criação de Armadilhas (CDA)</span><br>${CDA}</div>
+                    <div class="campo0 campo2"><span>Percepção de Armadilhas (PA)</span><br>${PA}</div>
+                    <div class="campo0 campo2"><span>Persuasão (PE)</span><br>${PE}</div>
                 </div>
             </div>
         </div>
@@ -313,6 +392,7 @@ $('.buttonPerfil').click(function(){
 $('.buttonHab').click(function(){
     $('.fichaSecondaryContainer').addClass('habContainer');
     $('.buttonHab').addClass('bActive');  
+    if(indialtura == 1) $('.habContainer').addClass('habContainer2');
 });
 
 $('.buttonArsenal').click(function(){
@@ -410,4 +490,5 @@ $('.buttonTestes').click(function(){
     $('.testesSpoiler').addClass('spoilerActive');
 });
 
-});
+
+});});
