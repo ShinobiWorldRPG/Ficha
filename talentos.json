@@ -464,28 +464,28 @@
     {
     "indice": "67",
     "name": "Estudado em Elemento de Chakra (à escolha)",
-    "atributo": ["atributo"],
+    "atributo": ["EDN", "EVN"],
     "bonus": [25,2],
     "code": "<b>Estudado em Elemento de Chakra (à escolha)</b><br><b>Requisito:</b> 3 pontos em Ninjutsu &amp; elemento escolhido<br><b>Bônus:</b> +25 de dano nas técnicas de ninjutsu do elemento escolhido; +2m/s de velocidade nas técnicas de ninjutsu do elemento escolhido"
     },
     {
     "indice": "68",
     "name": "Alcance Elemental",
-    "atributo": ["atributo"],
+    "atributo": ["EAN"],
     "bonus": [5],
     "code": "<b>Alcance Elemental</b><br><b>Requisito:</b> Estudado em Elemento de Chakra (escolhido)<br><b>Bônus:</b> +05m de alcance em técnicas de ninjutsu do elemento escolhido"
     },
     {
     "indice": "69",
     "name": "Velocidade Elemental",
-    "atributo": ["atributo"],
+    "atributo": ["EVN"],
     "bonus": [1],
     "code": "<b>Velocidade Elemental</b><br><b>Requisito:</b>  Estudado em Elemento de Chakra (escolhido)<br><b>Bônus:</b> +01m/s de velocidade nas técnicas de ninjutsu do elemento escolhido"
     },
     {
     "indice": "70",
     "name": "Elemento Destruidor",
-    "atributo": ["atributo"],
+    "atributo": ["EDN"],
     "bonus": [25],
     "code": "<b>Elemento Destruidor</b><br><b>Requisito:</b>  Estudado em Elemento de Chakra (escolhido)<br><b>Bônus:</b> +25 de dano nas técnicas de ninjutsu do elemento escolhido"
     },
@@ -499,35 +499,35 @@
     {
     "indice": "72",
     "name": "Versado em Elemento de Chakra (escolhido)",
-    "atributo": ["atributo"],
+    "atributo": ["EDN", "EVN"],
     "bonus": [75,2],
     "code": "<b>Versado em Elemento de Chakra (escolhido)</b><br><b>Requisito:</b> Estudado em Elemento de Chakra (escolhido), 6 pontos em Ninjutsu &amp; 2 Talentos Aprimoradores<br><b>Bônus:</b> +75 de dano nas técnicas de ninjutsu do elemento escolhido; +2m/s de velocidade nas técnicas de ninjutsu do elemento escolhido"
     },
     {
     "indice": "73",
     "name": "Grande Alcance Elemental",
-    "atributo": ["atributo"],
+    "atributo": ["EAN"],
     "bonus": [5],
     "code": "<b>Grande Alcance Elemental</b><br><b>Requisito:</b> Versado em Elemento de Chakra (escolhido)<br><b>Bônus:</b> +05m de alcance em técnicas de ninjutsu do elemento escolhido"
     },
     {
     "indice": "74",
     "name": "Potencializador de Elemento Concentrado",
-    "atributo": ["atributo"],
+    "atributo": ["EDNC"],
     "bonus": [75],
     "code": "<b>Potencializador de Elemento Concentrado</b><br><b>Requisito:</b> Versado em Elemento de Chakra (escolhido)<br><b>Bônus:</b> +75 de dano nas técnicas de ninjutsu (do tipo concentrado¹) do elemento escolhido"
     },
     {
     "indice": "75",
     "name": "Potencializador de Elemento Dispersivo",
-    "atributo": ["atributo"],
+    "atributo": ["EDND"],
     "bonus": [75],
     "code": "<b>Potencializador de Elemento Dispersivo</b><br><b>Requisito:</b> Versado em Elemento de Chakra (escolhido)<br><b>Bônus:</b> +75 de dano nas técnicas de ninjutsu (do tipo dispersivo) do elemento escolhido"
     },
     {
     "indice": "76",
     "name": "Grande Velocidade Elemental",
-    "atributo": ["atributo"],
+    "atributo": ["EVN"],
     "bonus": [1],
     "code": "<b>Grande Velocidade Elemental</b><br><b>Requisito:</b> Versado em Elemento de Chakra (escolhido)<br><b>Bônus:</b> +1m/s de velocidade nas técnicas de ninjutsu do elemento escolhido"
     },
@@ -541,21 +541,21 @@
     {
     "indice": "78",
     "name": "Mestre em Elemento de Chakra (escolhido)",
-    "atributo": ["atributo"],
+    "atributo": ["EDN" , "EVN"],
     "bonus": [100,4],
     "code": "<b>Mestre em Elemento de Chakra (escolhido)</b><br><b>Requisito:</b> Versado em Elemento de Chakra (escolhido), 10 pontos em Ninjutsu &amp; 3 Talentos Aprimoradores<br><b>Bônus:</b> +100 de dano nas técnicas de ninjutsu do elemento escolhido; +4m/s de velocidade nas técnicas de ninjutsu do elemento escolhido"
     },
     {
     "indice": "79",
     "name": "Elemento Devastador",
-    "atributo": ["atributo"],
+    "atributo": ["EVN"],
     "bonus": [100],
     "code": "<b>Elemento Devastador</b><br><b>Requisito:</b> Mestre em Elemento de Chakra (escolhido)<br><b>Bônus:</b> +100 de dano nas técnicas de ninjutsu do elemento escolhido"
     },
     {
     "indice": "80",
     "name": "Verdadeiro Alcance Elemental",
-    "atributo": ["atributo"],
+    "atributo": ["EAN"],
     "bonus": [20],
     "code": "<b>Verdadeiro Alcance Elemental</b><br><b>Requisito:</b> Mestre em Elemento de Chakra (escolhido)<br><b>Bônus:</b> +20m de alcance em técnicas de ninjutsu do elemento escolhido"
     },
