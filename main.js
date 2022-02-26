@@ -1,4 +1,4 @@
-var version = '1.8.3';
+var version = '1.8.4';
 
 function checkVila(input){
     if(input.toLowerCase() == 'konoha' || input.toLowerCase() == 'konohagakure') return 'vKonoha';
@@ -200,7 +200,7 @@ function elementCalc(talentos, lista, i, j , DN, VN, AN, DND , DNC){
         </div>`
 
         //console.log(talentos[1]);
-        if(talentos[1] !== undefined && talentos[1] !== 0) return texto;
+        if(talentos[1] !== undefined && talentos[talentos.length] !== 0) return texto;
         else return '';
     }
 
@@ -248,7 +248,7 @@ function bukiCalc(talentos, lista, i, j , DA, VG, VAR, PAR ){
         </div>`
 
         //console.log(talentos[1]);
-        if(talentos[1] !== undefined && talentos[1] !== 0) return texto;
+        if(talentos[1] !== undefined && talentos[talentos.length] !== 0) return texto;
         else return '';
     }
 
@@ -259,6 +259,18 @@ function bukiCalc(talentos, lista, i, j , DA, VG, VAR, PAR ){
 
     if(j < lista[talentos[i]-1].atributo.length-1) return bukiCalc(talentos, lista, i, j+1, DA, VG, VAR, PAR );
     else return bukiCalc(talentos, lista , i+1 , 0 , DA, VG, VAR, PAR );
+}
+
+function ordenar(array, i, j){
+    if(i >= array.length - 1) return array;
+    if(j >= array.length) return ordenar(array, i+1, i+2);
+    if(array[i] > array[j]){
+        var troca = array[i];
+        array[i] = array[j];
+        array[j] = troca;
+
+    }
+    return ordenar(array, i, j+1);
 }
 
 $(document).ready(function(){fetch("https://shinobiworldrpg.github.io/Ficha/talentos.json").then(response => {return response.json();}).then(data => {
@@ -382,8 +394,10 @@ $(document).ready(function(){fetch("https://shinobiworldrpg.github.io/Ficha/tale
         for (let j = 1; j < elemental[index].length; j++) {
             elemental[index][j] = Number(elemental[index][j]);           
         }
-        elemental[index].sort((a, b) => (a & 1) - (b & 1) || a - b);
+        elemental[index] = ordenar(elemental[index] , 1, 2);
         elementalfinal += elementGenerator(elemental[index], data, 1, ["","","","","","","","","","","","","","","","","","","","",""]);
+        console.log(elemental[index]);
+        //console.log(elemental[index][0]);
         if(elemental[index][0] != '') elementtestes += elementCalc(elemental[index], data, 1, 0, DN, VN, AN, DND, DNC);
     }
 
@@ -398,7 +412,8 @@ $(document).ready(function(){fetch("https://shinobiworldrpg.github.io/Ficha/tale
         for (let j = 1; j < bukiT[index].length; j++) {
             bukiT[index][j] = Number(bukiT[index][j]);           
         }
-        bukiT[index].sort((a, b) => (a & 1) - (b & 1) || a - b);
+        bukiT[index] = ordenar(bukiT[index] , 1, 2);
+        console.log(bukiT[index]);
         bukiTfinal += bukiGenerator(bukiT[index], data, 1, ["","","","","","","","","","","","","","","","","","","","",""]);
         if(bukiT[index][0] != '') bukiTtestes += bukiCalc(bukiT[index], data, 1, 0, DA, VG, VAR, PAR);
     }
