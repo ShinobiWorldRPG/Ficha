@@ -1164,15 +1164,15 @@
     {
     "indice": "167",
     "name": "Mestre Perceptivo",
-    "atributo": ["atributo"],
-    "bonus": [0],
+    "atributo": ["PMS"],
+    "bonus": [2],
     "code": "<b>Mestre Perceptivo</b><br><b>Requisito:</b> Envolvente<br><b>Bônus:</b> +2 em Percepção de Mentiras"
     },
     {
     "indice": "168",
     "name": "Mestre Persuasivo",
-    "atributo": ["atributo"],
-    "bonus": [0],
+    "atributo": ["PE"],
+    "bonus": [2],
     "code": "<b>Mestre Persuasivo</b><br><b>Requisito:</b> Envolvente<br><b>Bônus:</b> +2 em Persuasão"
     },
     {
@@ -1192,15 +1192,15 @@
     {
     "indice": "171",
     "name": "Gênio Perceptivo",
-    "atributo": ["atributo"],
-    "bonus": [0],
+    "atributo": ["PMS"],
+    "bonus": [2],
     "code": "<b>Gênio Perceptivo</b><br><b>Requisito:</b> Grande Lábia<br><b>Bônus:</b> +2 em Percepção de Mentiras"
     },
     {
     "indice": "172",
     "name": "Gênio Persuasivo",
-    "atributo": ["atributo"],
-    "bonus": [0],
+    "atributo": ["PE"],
+    "bonus": [2],
     "code": "<b>Gênio Persuasivo</b><br><b>Requisito:</b> Grande Lábia<br><b>Bônus:</b> +2 em Persuasão"
     },
     {
