@@ -548,7 +548,7 @@
     {
     "indice": "79",
     "name": "Elemento Devastador",
-    "atributo": ["EVN"],
+    "atributo": ["EDN"],
     "bonus": [100],
     "code": "<b>Elemento Devastador</b><br><b>Requisito:</b> Mestre em Elemento de Chakra (escolhido)<br><b>Bônus:</b> +100 de dano nas técnicas de ninjutsu do elemento escolhido"
     },
