@@ -193,14 +193,14 @@
     "name": "Mestre em Controle de Chakra",
     "atributo": [""],
     "bonus": [0],
-    "code": "<b>Mestre em Controle de Chakra</b><br><b>&gt;Requisito:</b> Grande Controle de Chakra, 8 pontos em Inteligência, 8 pontos em Atenção &amp; 2 Talentos Aprimoradores<br><b>Bônus:</b> 50% a menos no consumo de chakra em qualquer técnica, desde que não possuam este talento como requerimento; este valor substitui o do talento anterior"
+    "code": "<b>Mestre em Controle de Chakra</b><br><b>Requisito:</b> Grande Controle de Chakra, 8 pontos em Inteligência, 8 pontos em Atenção &amp; 2 Talentos Aprimoradores<br><b>Bônus:</b> 50% a menos no consumo de chakra em qualquer técnica, desde que não possuam este talento como requerimento; este valor substitui o do talento anterior"
     },
     {
     "indice": "29",
     "name": "Mestre no Controle de Expansão (Ninjutsu)",
     "atributo": ["AN"],
     "bonus": [15],
-    "code": "<b>Mestr&gt;e no Controle de Expansão (Ninjutsu)</b><br><b>Requisito:</b> Mestre em Controle de Chakra<br><b>Bônus:</b> +15m de alcance em técnicas de ninjutsu (puros ou elementais)"
+    "code": "<b>Mestre no Controle de Expansão (Ninjutsu)</b><br><b>Requisito:</b> Mestre em Controle de Chakra<br><b>Bônus:</b> +15m de alcance em técnicas de ninjutsu (puros ou elementais)"
     },
     {
     "indice": "30",
