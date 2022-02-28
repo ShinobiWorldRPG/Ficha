@@ -1,4 +1,35 @@
-var version = '1.8.4';
+var version = '1.9';
+
+$.fn.textWidth = function(){
+    var html_org = $(this).html();
+    var html_calc = '<span>' + html_org + '</span>';
+    $(this).html(html_calc);
+    var width = $(this).find('span:first').width();
+    $(this).html(html_org);
+    return width;
+  };
+
+  $.fn.resize = function(){
+    var fontSize = parseInt($(this).children('div').css("font-size"));
+      
+    while($(this).children('div').textWidth() > $(this).width()){
+        fontSize -= 0.1 ;
+        $(this).children('div').css("font-size" , fontSize + "px") ;
+    }
+
+      return;
+  }
+
+  $.fn.bannerResize = function(){
+  var fontSize = parseInt($(this).css("font-size"));
+    
+  while($(this).textWidth() > $(this).width()){
+      fontSize -= 0.1 ;
+      $(this).css("font-size" , fontSize + "px") ;
+  }
+
+    return;
+}
 
 function checkVila(input){
     if(input.toLowerCase() == 'konoha' || input.toLowerCase() == 'konohagakure') return 'vKonoha';
@@ -35,15 +66,16 @@ function checkBonus(talentos , lista , atributo , i , j , resultado){
     if(talentos[i] <= 0) return checkBonus(talentos, lista, atributo , i+1 , 0 , resultado);
     if(talentos[i]-1 > lista.length) return checkBonus(talentos, lista, atributo , i+1 , 0 , resultado);
     if(i >= talentos.length) return resultado;
-    if(lista[talentos[i]-1].atributo[j] == atributo) return checkBonus(talentos, lista, atributo , i + 1, 0, resultado + Number(lista[talentos[i]-1].bonus[j]));
-    if(j < lista[talentos[i]-1].atributo.length-1) return checkBonus(talentos, lista, atributo, i, j+1, resultado);
-    else return checkBonus(talentos, lista, atributo , i+1 , 0 , resultado);
+    if(j >= lista[talentos[i]-1].atributo.length) return checkBonus(talentos, lista, atributo, i + 1, 0, resultado);
+    if(lista[talentos[i]-1].atributo[j] == atributo) return checkBonus(talentos, lista, atributo , i, j + 1, resultado + Number(lista[talentos[i]-1].bonus[j]));
+    
+    return checkBonus(talentos, lista, atributo , i , j + 1 , resultado);
 }
 
 function individualidadegenerator(quirk1 , quirk2){
     var result = '';
-    if(quirk1 !== '') result += `<div class="campo0 fIndividualidade"><span>Individualidade 2</span><br>${quirk1}</div>`;
-    if(quirk2 !== '') result += `<div class="campo0 fIndividualidade"><span>Individualidade 3</span><br>${quirk2}</div>`;
+    if(quirk1 !== '') result += `<div class="campo0 fIndividualidade"><span>Individualidade 2</span><br><div>${quirk1}</div></div>`;
+    if(quirk2 !== '') result += `<div class="campo0 fIndividualidade"><span>Individualidade 3</span><br><div>${quirk2}</div></div>`;
     return result;
 }
 
@@ -186,32 +218,35 @@ function elementGenerator(talentos , lista, i, tipo){
 }
 
 function elementCalc(talentos, lista, i, j , DN, VN, AN, DND , DNC){
-    if(talentos[i] <= 0) return elementCalc(talentos, lista, i + 1, j , DN, VN, AN, DND , DNC);
-    if(talentos[i]-1 > lista.length) return elementCalc(talentos, lista, i + 1, j , DN, VN, AN, DND , DNC);
+    if(talentos[i] <= 0) return elementCalc(talentos, lista, i + 1, 0 , DN, VN, AN, DND , DNC);
+    if(talentos[i]-1 > lista.length) return elementCalc(talentos, lista, i + 1, 0 , DN, VN, AN, DND , DNC);
     if(i >= talentos.length){
         var texto = `
         <div class="campofinal elementTitle">${talentos[0]}</div>
         <div class="fTestes">
-            <div class="campo0 campo2"><span>Alcance de Ninjutsu (AN)</span><br>${AN}m</div>
-            <div class="campo0 campo2"><span>Velocidade de Ninjutsu (VN)</span><br>${VN}m/s</div>
-            <div class="campo0 campo2"><span>Dano de Ninjutsu (DN)</span><br>${DN}</div>
-            <div class="campo0 campo2"><span>Dano de Ninjutsu Concentrado (DNC)</span><br>${DNC}</div>
-            <div class="campo0 campo2 campofinal"><span>Dano de Ninjutsu Dispersivo (DND)</span><br>${DND}</div>
+        <div class="campo0 campo2"><span>Alcance de Ninjutsu (AN)</span><br>${AN}m</div>
+        <div class="campo0 campo2"><span>Velocidade de Ninjutsu (VN)</span><br>${VN}m/s</div>
+        <div class="campo0 campo2"><span>Dano de Ninjutsu (DN)</span><br>${DN}</div>
+        <div class="campo0 campo2"><span>Dano de Ninjutsu Concentrado (DNC)</span><br>${DNC}</div>
+        <div class="campo0 campo2 campofinal"><span>Dano de Ninjutsu Dispersivo (DND)</span><br>${DND}</div>
         </div>`
-
+        
         //console.log(talentos[1]);
         if(talentos[1] !== undefined && talentos[talentos.length] !== 0) return texto;
         else return '';
     }
+    //console.log(lista[talentos[i]-1].atributo);
+    //console.log(i);
+    //console.log(j);
+    if(j >= lista[talentos[i]-1].atributo.length) return elementCalc(talentos, lista, i+1, 0, DN, VN, AN, DND , DNC);
+    
+    if(lista[talentos[i]-1].atributo[j] == 'EDN') return elementCalc(talentos, lista , i, j + 1, DN + lista[talentos[i]-1].bonus[j] , VN, AN, DND , DNC);
+    if(lista[talentos[i]-1].atributo[j] == 'EVN') return elementCalc(talentos, lista , i, j + 1, DN , VN + lista[talentos[i]-1].bonus[j] , AN, DND , DNC);
+    if(lista[talentos[i]-1].atributo[j] == 'EAN') return elementCalc(talentos, lista , i, j + 1, DN , VN, AN + lista[talentos[i]-1].bonus[j] , DND , DNC);
+    if(lista[talentos[i]-1].atributo[j] == 'EDND') return elementCalc(talentos, lista , i, j + 1, DN , VN, AN, DND+ lista[talentos[i]-1].bonus[j] , DNC);
+    if(lista[talentos[i]-1].atributo[j] == 'EDNC') return elementCalc(talentos, lista , i, j + 1, DN , VN, AN, DND , DNC + lista[talentos[i]-1].bonus[j] );
 
-    if(lista[talentos[i]-1].atributo[j] == 'EDN') return elementCalc(talentos, lista , i + 1, 0, DN + lista[talentos[i]-1].bonus[j] , VN, AN, DND , DNC);
-    if(lista[talentos[i]-1].atributo[j] == 'EVN') return elementCalc(talentos, lista , i + 1, 0, DN , VN + lista[talentos[i]-1].bonus[j] , AN, DND , DNC);
-    if(lista[talentos[i]-1].atributo[j] == 'EAN') return elementCalc(talentos, lista , i + 1, 0, DN , VN, AN + lista[talentos[i]-1].bonus[j] , DND , DNC);
-    if(lista[talentos[i]-1].atributo[j] == 'EDND') return elementCalc(talentos, lista , i + 1, 0, DN , VN, AN, DND+ lista[talentos[i]-1].bonus[j] , DNC);
-    if(lista[talentos[i]-1].atributo[j] == 'EDNC') return elementCalc(talentos, lista , i + 1, 0, DN , VN, AN, DND , DNC + lista[talentos[i]-1].bonus[j] );
-
-    if(j < lista[talentos[i]-1].atributo.length-1) return elementCalc(talentos, lista, i, j+1, DN, VN, AN, DND , DNC);
-    else return elementCalc(talentos, lista , i+1 , 0 , DN, VN, AN, DND , DNC);
+    return elementCalc(talentos, lista , i , j + 1 , DN, VN, AN, DND , DNC);
 }
 
 function bukiGenerator(talentos , lista, i, tipo){
@@ -235,8 +270,8 @@ function bukiGenerator(talentos , lista, i, tipo){
 }
 
 function bukiCalc(talentos, lista, i, j , DA, VG, VAR, PAR ){
-    if(talentos[i] <= 0) return bukiCalc(talentos, lista, i + 1, j , DA, VG, VAR, PAR );
-    if(talentos[i]-1 > lista.length) return bukiCalc(talentos, lista, i + 1, j , DA, VG, VAR, PAR );
+    if(talentos[i] <= 0) return bukiCalc(talentos, lista, i + 1, 0 , DA, VG, VAR, PAR );
+    if(talentos[i]-1 > lista.length) return bukiCalc(talentos, lista, i + 1, 0 , DA, VG, VAR, PAR );
     if(i >= talentos.length){
         var texto = `
         <div class="campofinal elementTitle">${talentos[0]}</div>
@@ -252,13 +287,14 @@ function bukiCalc(talentos, lista, i, j , DA, VG, VAR, PAR ){
         else return '';
     }
 
-    if(lista[talentos[i]-1].atributo[j] == 'ADA') return bukiCalc(talentos, lista , i + 1, 0, DA + lista[talentos[i]-1].bonus[j] , VG, VAR, PAR );
-    if(lista[talentos[i]-1].atributo[j] == 'AVG') return bukiCalc(talentos, lista , i + 1, 0, DA , VG + lista[talentos[i]-1].bonus[j] , VAR, PAR );
-    if(lista[talentos[i]-1].atributo[j] == 'AVAR') return bukiCalc(talentos, lista , i + 1, 0, DA , VG, VAR + lista[talentos[i]-1].bonus[j] , PAR );
-    if(lista[talentos[i]-1].atributo[j] == 'APAR') return bukiCalc(talentos, lista , i + 1, 0, DA , VG, VAR, PAR+ lista[talentos[i]-1].bonus[j] );
+    if(j >= lista[talentos[i]-1].atributo.length) return bukiCalc(talentos, lista, i + 1, 0, DA, VG, VAR, PAR );
 
-    if(j < lista[talentos[i]-1].atributo.length-1) return bukiCalc(talentos, lista, i, j+1, DA, VG, VAR, PAR );
-    else return bukiCalc(talentos, lista , i+1 , 0 , DA, VG, VAR, PAR );
+    if(lista[talentos[i]-1].atributo[j] == 'ADA') return bukiCalc(talentos, lista , i, j + 1, DA + lista[talentos[i]-1].bonus[j] , VG, VAR, PAR );
+    if(lista[talentos[i]-1].atributo[j] == 'AVG') return bukiCalc(talentos, lista , i, j + 1, DA , VG + lista[talentos[i]-1].bonus[j] , VAR, PAR );
+    if(lista[talentos[i]-1].atributo[j] == 'AVAR') return bukiCalc(talentos, lista , i, j + 1, DA , VG, VAR + lista[talentos[i]-1].bonus[j] , PAR );
+    if(lista[talentos[i]-1].atributo[j] == 'APAR') return bukiCalc(talentos, lista , i, j + 1, DA , VG, VAR, PAR+ lista[talentos[i]-1].bonus[j] );
+
+    else return bukiCalc(talentos, lista , i , j + 1 , DA, VG, VAR, PAR );
 }
 
 function ordenar(array, i, j){
@@ -396,9 +432,9 @@ $(document).ready(function(){fetch("https://shinobiworldrpg.github.io/Ficha/tale
         }
         elemental[index] = ordenar(elemental[index] , 1, 2);
         elementalfinal += elementGenerator(elemental[index], data, 1, ["","","","","","","","","","","","","","","","","","","","",""]);
-        console.log(elemental[index]);
+        //console.log(elemental[index]);
         //console.log(elemental[index][0]);
-        if(elemental[index][0] != '') elementtestes += elementCalc(elemental[index], data, 1, 0, DN, VN, AN, DND, DNC);
+        if(elemental[index][0] != '' && elemental[index][0] != 'Elemento1' && elemental[index][0] != ' Elemento2') elementtestes += elementCalc(elemental[index], data, 1, 0, DN, VN, AN, DND, DNC);
     }
 
     var bukiT = $('buki').text();
@@ -413,9 +449,9 @@ $(document).ready(function(){fetch("https://shinobiworldrpg.github.io/Ficha/tale
             bukiT[index][j] = Number(bukiT[index][j]);           
         }
         bukiT[index] = ordenar(bukiT[index] , 1, 2);
-        console.log(bukiT[index]);
+        //console.log(bukiT[index]);
         bukiTfinal += bukiGenerator(bukiT[index], data, 1, ["","","","","","","","","","","","","","","","","","","","",""]);
-        if(bukiT[index][0] != '') bukiTtestes += bukiCalc(bukiT[index], data, 1, 0, DA, VG, VAR, PAR);
+        if(bukiT[index][0] != '' && bukiT[index][0] != 'Arma1' && bukiT[index][0] != ' Arma2') bukiTtestes += bukiCalc(bukiT[index], data, 1, 0, DA, VG, VAR, PAR);
     }
 
     /*var lista = '';
@@ -444,13 +480,13 @@ $(document).ready(function(){fetch("https://shinobiworldrpg.github.io/Ficha/tale
         </div>
         <div class="fichaSecondaryContainer perfilContainer">
             <div class="perfilContent">
-                <div class="campo0 fNome"><span>Nome</span><br>${nome}</div>
-                <div class="campo0 fCla"><span>Clã / KG / HI</span><br>${cla}</div>
-                <div class="campo0 fIdade"><span>Idade</span><br>${idade} anos</div>
-                <div class="campo0 fNiver"><span>Aniversário</span><br>${niver}</div>
-                <div class="campo0 fGenero"><span>Gênero</span><br>${genero}</div>
-                <div class="campo0 fTendencia"><span>Tendência</span><br>${tendencia}</div>
-                <div class="campo0 fPP"><span>Personagem Base</span><br>${origem}</div>
+                <div class="campo0 fNome"><span>Nome</span><br><div>${nome}</div></div>
+                <div class="campo0 fCla"><span>Clã / KG / HI</span><br><div>${cla}</div></div>
+                <div class="campo0 fIdade"><span>Idade</span><br><div>${idade} anos</div></div>
+                <div class="campo0 fNiver"><span>Aniversário</span><br><div>${niver}</div></div>
+                <div class="campo0 fGenero"><span>Gênero</span><br><div>${genero}</div></div>
+                <div class="campo0 fTendencia"><span>Tendência</span><br><div>${tendencia}</div></div>
+                <div class="campo0 fPP"><span>Personagem Base</span><br><div>${origem}</div></div>
                 <div class="perfilButtons">
                     <div class="pButton"><img src="https://shinobiworldrpg.github.io/Ficha/assets/Defeitos.svg" class="buttonDefeitos"></div>
                     <div class="pButton"><img src="https://shinobiworldrpg.github.io/Ficha/assets/Historia.svg" class="buttonHistoria"></div>
@@ -461,22 +497,22 @@ $(document).ready(function(){fetch("https://shinobiworldrpg.github.io/Ficha/tale
             </div>
             <div class="repContent">
                 <div class="campo0 fVIla"><span>Vila</span><br>${checkVila2(vila)}</div>
-                <div class="campo0 fGraduação"><span>Graduação</span><br>${graduation}</div>
-                <div class="campo0 fSpecial"><span>Cargo Especial</span><br>${especial}</div>
-                <div class="campo0 fAlcunhaLocal"><span>Alcunha Local</span><br>${alcunhaLocal}</div>
-                <div class="campo0 fAlcunhaMundial"><span>Alcunha Mundial</span><br>${alcunhaMundial}</div>
-                <div class="campo0 fRep"><span>Reputação</span><br>${rep}</div>
-                <div class="campo0 fOrg"><span>Organização / Time</span><br>${time}</div>
-                <div class="campo0 fPatente"><span>Profissão e Patente</span><br>${profissao}</div>
+                <div class="campo0 fGraduação"><span>Graduação</span><br><div>${graduation}</div></div>
+                <div class="campo0 fSpecial"><span>Cargo Especial</span><br><div>${especial}</div></div>
+                <div class="campo0 fAlcunhaLocal"><span>Alcunha Local</span><br><div>${alcunhaLocal}</div></div>
+                <div class="campo0 fAlcunhaMundial"><span>Alcunha Mundial</span><br><div>${alcunhaMundial}</div></div>
+                <div class="campo0 fRep"><span>Reputação</span><br><div>${rep}</div></div>
+                <div class="campo0 fOrg"><span>Organização / Time</span><br><div>${time}</div></div>
+                <div class="campo0 fPatente"><span>Profissão e Patente</span><br><div>${profissao}</div></div>
                 <div class="fMissões"><center><span>Missões</span></center><hr>
                     ${missoes}</div>
             </div>
             <div class="habContent">
                 <div class="campo0 fNivel"><span>Nível</span><br>${level}</div>
                 <div class="campo0 fExp"><span>Exp</span><br>${exp}</div>
-                <div class="campo0 fAssinatura"><span>Técnica Assinatura</span><br>${assinatura}</div>
-                <div class="campo0 fIndividualidade"><span>Individualidade</span><br>${individualidade}</div>${individualidadegenerator($('individualidade2').text(), $('individualidade3').text())}
-                <div class="campo0 fKuchyose"><span>Kuchyose</span><br>${kuchyose}</div>
+                <div class="campo0 fAssinatura"><span>Técnica Assinatura</span><br><div>${assinatura}</div></div>
+                <div class="campo0 fIndividualidade"><span>Individualidade</span><br><div>${individualidade}</div></div>${individualidadegenerator($('individualidade2').text(), $('individualidade3').text())}
+                <div class="campo0 fKuchyose"><span>Kuchyose</span><br><div>${kuchyose}</div></div>
                 <div class="fatributos">
                     <div class="attC"><span>Ninjutsu - ${ninjutsu}</span><div class="barBar" style="width: ${ninjutsu * 10}%;${barCheck(ninjutsu * 10)}"></div><div class="barOutline"></div></div>
                     <div class="attC"><span>Taijutsu - ${taijutsu}</span><div class="barBar" style="width: ${taijutsu * 10}%;${barCheck(taijutsu * 10)}"></div><div class="barOutline"></div></div>
@@ -507,7 +543,7 @@ $(document).ready(function(){fetch("https://shinobiworldrpg.github.io/Ficha/tale
                 <div class="fButton"><img src="https://shinobiworldrpg.github.io/Ficha/assets/Relacionamentos.svg" class="buttonRelacionamentos"></div>
                 <div class="fButton"><img src="https://shinobiworldrpg.github.io/Ficha/assets/Links.svg" class="buttonLinks"></div>
                 <div class="fButton"><img src="https://shinobiworldrpg.github.io/Ficha/assets/Notas.svg" class="buttonNotas"></div>
-                <div class="fMoney"><span>Dinheiro</span> ${dinheiro} RY$</div>
+                <div class="fMoney"><span>Dinheiro</span><br> ${dinheiro} RY$</div>
             </div>
         </div>
         <div class="defeitosSpoiler fSpoiler">
@@ -624,7 +660,18 @@ $(document).ready(function(){fetch("https://shinobiworldrpg.github.io/Ficha/tale
         </div>
     </div>
     `)
+//     FUNÇÕES
 
+$('.fNome').resize();
+$('.fCla').resize();
+$('.fIdade').resize();
+$('.fNiver').resize();
+$('.fGenero').resize();
+$('.fTendencia').resize();
+$('.fPP').resize();
+
+$('.bannerName').bannerResize();
+$('.bannerTitle').bannerResize();
 
 //     BOTÕES    
 
@@ -639,7 +686,13 @@ $('.fichaMenu img').click(function(){
 
 $('.buttonRep').click(function(){
     $('.fichaSecondaryContainer').addClass('repContainer');
-    $('.buttonRep').addClass('bActive');  
+    $('.buttonRep').addClass('bActive');
+    $('.fGraduação').resize();
+    $('.fSpecial').resize();
+    $('.fAlcunhaLocal').resize();
+    $('.fRep').resize();
+    $('.fOrg').resize();
+    $('.fPatente').resize();
 });
 
 $('.buttonPerfil').click(function(){
@@ -651,6 +704,9 @@ $('.buttonHab').click(function(){
     $('.fichaSecondaryContainer').addClass('habContainer');
     $('.buttonHab').addClass('bActive');  
     if(indialtura == 1) $('.habContainer').addClass('habContainer2');
+    $('.fAssinatura').resize();
+    $('.fIndividualidade').resize();
+    $('.fKuchyose').resize();
 });
 
 $('.buttonArsenal').click(function(){
