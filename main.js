@@ -1,4 +1,4 @@
-var version = '1.9.1';
+var version = '1.9.2';
 
 $.fn.textWidth = function(){
     var html_org = $(this).html();
@@ -74,8 +74,8 @@ function checkBonus(talentos , lista , atributo , i , j , resultado){
 
 function individualidadegenerator(quirk1 , quirk2){
     var result = '';
-    if(quirk1 !== '') result += `<div class="campo0 fIndividualidade"><span>Individualidade 2</span><br><div>${quirk1}</div></div>`;
-    if(quirk2 !== '') result += `<div class="campo0 fIndividualidade"><span>Individualidade 3</span><br><div>${quirk2}</div></div>`;
+    if(quirk1 !== '') result += `<div class="campo0 fIndividualidade fff2"><span>Individualidade 2</span><br><div>${quirk1}</div></div>`;
+    if(quirk2 !== '') result += `<div class="campo0 fIndividualidade fff3"><span>Individualidade 3</span><br><div>${quirk2}</div></div>`;
     return result;
 }
 
@@ -462,7 +462,8 @@ $(document).ready(function(){fetch("https://shinobiworldrpg.github.io/Ficha/tale
 
 
     // CONVERSÂO DA PÁGINA
-
+    console.log($('individualidade2').text());
+    console.log($('individualidade3').text());
     $('.fichaMain').html(`
     <div class="fichaMainContainer verde ${checkVila(vila)}">
         <div class="bannerFundo"></div><div class="titleFundo"></div><div class="sideFundoFundo"></div><div class="sideFundo"></div><div class="fTexture"></div>
@@ -511,7 +512,7 @@ $(document).ready(function(){fetch("https://shinobiworldrpg.github.io/Ficha/tale
                 <div class="campo0 fNivel"><span>Nível</span><br>${level}</div>
                 <div class="campo0 fExp"><span>Exp</span><br>${exp}</div>
                 <div class="campo0 fAssinatura"><span>Técnica Assinatura</span><br><div>${assinatura}</div></div>
-                <div class="campo0 fIndividualidade"><span>Individualidade</span><br><div>${individualidade}</div></div>${individualidadegenerator($('individualidade2').text(), $('individualidade3').text())}
+                <div class="campo0 fIndividualidade fff1"><span>Individualidade</span><br><div>${individualidade}</div></div>${individualidadegenerator($('individualidade2').text(), $('individualidade3').text())}
                 <div class="campo0 fKuchyose"><span>Kuchyose</span><br><div>${kuchyose}</div></div>
                 <div class="fatributos">
                     <div class="attC"><span>Ninjutsu - ${ninjutsu}</span><div class="barBar" style="width: ${ninjutsu * 10}%;${barCheck(ninjutsu * 10)}"></div><div class="barOutline"></div></div>
@@ -705,7 +706,9 @@ $('.buttonHab').click(function(){
     $('.buttonHab').addClass('bActive');  
     if(indialtura == 1) $('.habContainer').addClass('habContainer2');
     $('.fAssinatura').resize();
-    $('.fIndividualidade').resize();
+    $('.fff1').resize();
+    $('.fff2').resize();
+    $('.fff3').resize();
     $('.fKuchyose').resize();
 });
 
