@@ -1,4 +1,4 @@
-var version = '1.9';
+var version = '1.9.1';
 
 $.fn.textWidth = function(){
     var html_org = $(this).html();
@@ -240,7 +240,7 @@ function elementCalc(talentos, lista, i, j , DN, VN, AN, DND , DNC){
     //console.log(j);
     if(j >= lista[talentos[i]-1].atributo.length) return elementCalc(talentos, lista, i+1, 0, DN, VN, AN, DND , DNC);
     
-    if(lista[talentos[i]-1].atributo[j] == 'EDN') return elementCalc(talentos, lista , i, j + 1, DN + lista[talentos[i]-1].bonus[j] , VN, AN, DND , DNC);
+    if(lista[talentos[i]-1].atributo[j] == 'EDN') return elementCalc(talentos, lista , i, j + 1, DN + lista[talentos[i]-1].bonus[j] , VN, AN, DND + lista[talentos[i]-1].bonus[j], DNC + lista[talentos[i]-1].bonus[j]);
     if(lista[talentos[i]-1].atributo[j] == 'EVN') return elementCalc(talentos, lista , i, j + 1, DN , VN + lista[talentos[i]-1].bonus[j] , AN, DND , DNC);
     if(lista[talentos[i]-1].atributo[j] == 'EAN') return elementCalc(talentos, lista , i, j + 1, DN , VN, AN + lista[talentos[i]-1].bonus[j] , DND , DNC);
     if(lista[talentos[i]-1].atributo[j] == 'EDND') return elementCalc(talentos, lista , i, j + 1, DN , VN, AN, DND+ lista[talentos[i]-1].bonus[j] , DNC);
