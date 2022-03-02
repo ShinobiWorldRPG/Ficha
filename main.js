@@ -1,4 +1,4 @@
-var version = '1.9.2';
+var version = '1.9.3';
 
 $.fn.textWidth = function(){
     var html_org = $(this).html();
@@ -434,7 +434,7 @@ $(document).ready(function(){fetch("https://shinobiworldrpg.github.io/Ficha/tale
         elementalfinal += elementGenerator(elemental[index], data, 1, ["","","","","","","","","","","","","","","","","","","","",""]);
         //console.log(elemental[index]);
         //console.log(elemental[index][0]);
-        if(elemental[index][0] != '' && elemental[index][0] != 'Elemento1' && elemental[index][0] != ' Elemento2') elementtestes += elementCalc(elemental[index], data, 1, 0, DN, VN, AN, DND, DNC);
+        if(elemental[index][0] != '' && elemental[index][0] != 'Elemento1' && elemental[index][0] != ' Elemento2') elementtestes += elementCalc(elemental[index], data, 1, 0, ninjutsu*2 + atencao*2 , ninjutsu*2, 2 + ninjutsu*5, ninjutsu*2 + atencao*2, ninjutsu*2 + atencao*2);
     }
 
     var bukiT = $('buki').text();
