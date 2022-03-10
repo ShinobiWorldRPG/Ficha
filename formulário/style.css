@@ -17,6 +17,19 @@ form {
   border-radius: 5px;
 }
 
+.formulario input, .formulario textarea {
+  border-radius: 3px;
+  border-color: black;
+}
+
+.formulario input:disabled, .formulario textarea:disabled {
+  background-color: #afafaf;
+}
+
+.formulario input:required, .formulario textarea:required {
+  border-color: #e73939;
+}
+
 .formulario .avatar, .formulario .banner {
   background-color: #616161;
   background-size: cover;
@@ -46,6 +59,9 @@ form {
           clip-path: circle();
   position: relative;
   left: 0px;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 3;
 }
 
 .formulario .banner {
@@ -53,6 +69,7 @@ form {
   position: absolute;
   right: 0px;
   border-radius: 5px;
+  overflow: hidden;
 }
 
 .formulario .banner div {
@@ -60,15 +77,155 @@ form {
           transform: translateY(calc(50% - 15px));
 }
 
+.formulario .banner0 {
+  -ms-grid-column: 3;
+      grid-column-start: 3;
+  grid-column-end: 7;
+}
+
+.formulario .nome, .formulario .level, .formulario .invocação {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.formulario .idadecla {
+  -ms-grid-column: 3;
+      grid-column-start: 3;
+  grid-column-end: 5;
+}
+
+.formulario .tendencia, .formulario .alcunhaLocal {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.formulario .alcunhaMundial {
+  -ms-grid-column: 3;
+      grid-column-start: 3;
+  grid-column-end: 5;
+}
+
+.formulario .origem {
+  -ms-grid-column: 3;
+      grid-column-start: 3;
+  grid-column-end: 6;
+}
+
+.formulario .rankespecial {
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  grid-column-end: 5;
+}
+
+.formulario .profissão, .formulario .reputação {
+  -ms-grid-column: 5;
+      grid-column-start: 5;
+  grid-column-end: 7;
+}
+
+.formulario .assinatura {
+  -ms-grid-column: 4;
+      grid-column-start: 4;
+  grid-column-end: 7;
+}
+
+.formulario .time, .formulario .atributos, .formulario .bonusCla, .formulario .talentos, .formulario .elementos, .formulario .addRemove, .formulario .armas {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 7;
+}
+
+.formulario .missões, .formulario .individualidade {
+  -ms-grid-column: 3;
+      grid-column-start: 3;
+  grid-column-end: 7;
+}
+
+.formulario .missões div, .formulario .individualidade div {
+  margin: auto;
+}
+
+.formulario .missõesTitle, .formulario .attTitle, .formulario .formTitle2 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 3;
+  width: 100%;
+  height: 50px;
+  background-color: #7e3a3a;
+  border-top-right-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 1.86px;
+}
+
+.formulario .missõesTitle span, .formulario .attTitle span, .formulario .formTitle2 span {
+  -webkit-transform: translateY(30%);
+          transform: translateY(30%);
+}
+
+.formulario .formTitle {
+  font-size: 16px;
+  margin-bottom: -18px;
+}
+
+.formulario .attTitle, .formulario .claTitle {
+  grid-column-end: 7;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.formulario .idadecla, .formulario .rankespecial {
+  position: relative;
+}
+
+.formulario .idade, .formulario .especial {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+.formulario #idade {
+  width: 30px;
+}
+
+.formulario #org, .formulario #assinatura {
+  width: calc(100% - 6px);
+}
+
+.formulario #niver, .formulario #pvp {
+  height: 22px;
+}
+
+.formulario .pvp {
+  position: relative;
+  right: 13px;
+}
+
 .formulario .perfil, .formulario .rep, .formulario .habilidades, .formulario .camposTexto {
   margin: auto;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: auto auto;
-      grid-template-columns: auto auto;
+  -ms-grid-columns: (minmax(auto, calc(573px/6)))[6];
+      grid-template-columns: repeat(6, minmax(auto, calc(573px/6)));
   grid-gap: 15px;
   margin-bottom: 20px;
   width: 650px;
+}
+
+.formulario .camposTexto {
+  -ms-grid-columns: (auto)[2];
+      grid-template-columns: repeat(2, auto);
 }
 
 .formulario .missões, .formulario .level, .formulario .individualidade, .formulario .atributos, .formulario .bonusCla, .formulario .elementos, .formulario .armas {
@@ -78,23 +235,40 @@ form {
       grid-template-columns: repeat(6, auto);
   grid-row-gap: 10px;
   width: 100%;
+  position: relative;
 }
 
 .formulario .missões input[type="number"], .formulario .missões .att, .formulario .level input[type="number"], .formulario .level .att, .formulario .individualidade input[type="number"], .formulario .individualidade .att, .formulario .atributos input[type="number"], .formulario .atributos .att, .formulario .bonusCla input[type="number"], .formulario .bonusCla .att, .formulario .elementos input[type="number"], .formulario .elementos .att, .formulario .armas input[type="number"], .formulario .armas .att {
   width: 40px;
 }
 
+.formulario .bonusCla {
+  -ms-grid-columns: (auto)[5];
+      grid-template-columns: repeat(5, auto);
+}
+
+.formulario .bonusCla div {
+  margin: auto;
+}
+
+.formulario .atributos {
+  -ms-grid-columns: (calc(100%/6))[6];
+      grid-template-columns: repeat(6, calc(100%/6));
+  grid-column-gap: 10px;
+  grid-row-gap: 20px;
+}
+
 .formulario .level input[type="number"] {
   width: 50px;
 }
 
-.formulario .individualidade, .formulario .atributos, .formulario .bonusCla, .formulario .talentos, .formulario .elementos, .formulario .armas, .formulario .formTitle, .formulario .addRemove, .formulario .historia {
+.formulario .formTitle, .formulario .historia, .formulario .notas {
   -ms-grid-column: 1;
       grid-column-start: 1;
   grid-column-end: 3;
 }
 
-.formulario #talentos, .formulario .talentosElementais, .formulario .talentosBuki, .formulario #historia {
+.formulario #talentos, .formulario .talentosElementais, .formulario .talentosBuki, .formulario #historia, .formulario #notas {
   width: 100%;
   max-width: 644px;
 }
@@ -120,6 +294,11 @@ form {
   grid-column-end: 7;
 }
 
+.formulario .elementos input, .formulario .armas input, .formulario .talentos input {
+  height: 26px;
+  border-radius: 5px;
+}
+
 .formulario .addRemove {
   display: -ms-grid;
   display: grid;
@@ -140,6 +319,8 @@ form {
   /* will prevent resizing horizontally */
   resize: vertical;
   width: 310px;
+  height: 100px;
+  border-radius: 5px;
 }
 
 .formulario #copy, .formulario #finalizar {
