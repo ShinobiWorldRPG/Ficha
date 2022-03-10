@@ -1,4 +1,4 @@
-var vernsionControl = 1.2;
+var vernsionControl = 1.3;
 var elementCount = 1;
 var bukiCount = 1;
 var postFicha = '';
@@ -302,7 +302,7 @@ ORIGEM É REFERENTE A QUE OBRA VEM A IMAGEM DE SEU PERSONAGEM
 <br>GAIDEN - ${$('#gaiden').val()}</missoes>
 
 <level>${levelCheck($('#level').val())}</level>
-<exp>${$('#exp').val()} / ${expCheck($('#D').val())}</exp>
+<exp>${$('#exp').val()} / ${expCheck($('#exp').val())}</exp>
 <dinheiro>${$('#dinheiro').val().toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')}</dinheiro>
 
 <assinatura>${$('#assinatura').val()}</assinatura>
