@@ -121,8 +121,8 @@
     {
     "indice": "18",
     "name": "Bom Controle de Expansão (Ninjutsu)",
-    "atributo": ["AN"],
-    "bonus": [5],
+    "atributo": ["AN","EAN"],
+    "bonus": [5 , 5],
     "code": "<b>Bom Controle de Expansão (Ninjutsu)</b><br><b>Requisito:</b> Bom Controle de Chakra<br><b>Bônus:</b> +05m de alcance em técnicas de ninjutsu (puros ou elementais)"
     },
     {
@@ -156,8 +156,8 @@
     {
     "indice": "23",
     "name": "Grande Controle de Expansão (Ninjutsu)",
-    "atributo": ["AN"],
-    "bonus": [10],
+    "atributo": ["AN" , "EAN"],
+    "bonus": [10 , 10],
     "code": "<b>Grande Controle de Expansão (Ninjutsu)</b><br><b>Requisito:</b> Grande Controle de Chakra<br><b>Bônus:</b> +10m de alcance em técnicas de ninjutsu (puros ou elementais)"
     },
     {
@@ -198,8 +198,8 @@
     {
     "indice": "29",
     "name": "Mestre no Controle de Expansão (Ninjutsu)",
-    "atributo": ["AN"],
-    "bonus": [15],
+    "atributo": ["AN" , "EAN"],
+    "bonus": [15 , 15],
     "code": "<b>Mestre no Controle de Expansão (Ninjutsu)</b><br><b>Requisito:</b> Mestre em Controle de Chakra<br><b>Bônus:</b> +15m de alcance em técnicas de ninjutsu (puros ou elementais)"
     },
     {
@@ -1437,8 +1437,8 @@
     {
     "indice": "206",
     "name": "Ninjutsus Expansivos",
-    "atributo": ["AN"],
-    "bonus": [5],
+    "atributo": ["AN" , "EAN"],
+    "bonus": [5 , 5],
     "code": "<b>Ninjutsus Expansivos</b><br><b>Requisito:</b> Reservas Sobre-humanas<br><b>Bônus:</b> +5m no alcance de ninjutsus"
     },
     {
@@ -1486,8 +1486,8 @@
     {
     "indice": "213",
     "name": "Ninjutsus Mega Expansivos",
-    "atributo": ["AN"],
-    "bonus": [5],
+    "atributo": ["AN" , "EAN"],
+    "bonus": [5 , 5],
     "code": "<b>Ninjutsus Mega Expansivos</b><br><b>Requisito:</b> Reservas Monstruosas &amp; Ninjutsus Expansivos<br><b>Bônus:</b> +5m no alcance de ninjutsus"
     },
     {
@@ -1514,8 +1514,8 @@
     {
     "indice": "217",
     "name": "Ninjutsus Ultra Expansivos",
-    "atributo": ["AN"],
-    "bonus": [15],
+    "atributo": ["AN" , "EAN"],
+    "bonus": [15 , 15],
     "code": "<b>Ninjutsus Ultra Expansivos</b><br><b>Requisito:</b> Reservas Colossais &amp; Ninjutsus Mega Expansivos<br><b>Bônus:</b> +15m no alcance de ninjutsus"
     },
     {
