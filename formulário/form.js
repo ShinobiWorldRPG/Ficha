@@ -1,4 +1,4 @@
-var vernsionControl = 1;
+var vernsionControl = 1.1;
 var elementCount = 1;
 var bukiCount = 1;
 var postFicha = '';
@@ -31,9 +31,10 @@ $('#copy').click(function(){
     alert('código copiado');
 });
 
-$('#finalizar').click(function(){
+function postar(){
     postContent();
-});
+    return postFicha;
+}
 
 $('#newElement').click(function(){
     elementCount += 1;
