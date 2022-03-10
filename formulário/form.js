@@ -1,4 +1,4 @@
-var vernsionControl = 1.3;
+var vernsionControl = 1.4;
 var elementCount = 1;
 var bukiCount = 1;
 var postFicha = '';
@@ -267,7 +267,7 @@ Insira os dados sempre no meio das "tags" com o nome do dado, ex: <Dado>INSIRA A
 
 ----------------------------
 LINK DO BANNER DA FICHA
-<banner>${$('.avatar').css("background-image").split('"')[1]}</Banner>
+<banner>${$('.banner').css("background-image").split('"')[1]}</Banner>
 
 LINK DO AVATAR DA FICHA
 <avatar>${$('.avatar').css("background-image").split('"')[1]}</avatar>
