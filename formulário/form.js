@@ -1,4 +1,4 @@
-var vernsionControl = 1.1;
+var vernsionControl = 1.2;
 var elementCount = 1;
 var bukiCount = 1;
 var postFicha = '';
@@ -31,10 +31,10 @@ $('#copy').click(function(){
     alert('código copiado');
 });
 
-function postar(){
+$('#finalizar').click(function(){
     postContent();
-    return postFicha;
-}
+    shinobiworld.message.value = postFicha;
+})
 
 $('#newElement').click(function(){
     elementCount += 1;
