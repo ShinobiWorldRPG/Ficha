@@ -1,4 +1,4 @@
-var version = '1.9.4';
+var version = '1.9.5';
 
 $.fn.textWidth = function(){
     var html_org = $(this).html();
@@ -237,7 +237,7 @@ function elementCalc(talentos, lista, i, j , DN, VN, AN, DND , DNC){
     }
     //console.log(lista[talentos[i]-1].atributo);
     //console.log(i);
-    console.log(lista[talentos[i]-1].atributo[j]);
+    //console.log(lista[talentos[i]-1].atributo[j]);
     if(j >= lista[talentos[i]-1].atributo.length) return elementCalc(talentos, lista, i+1, 0, DN, VN, AN, DND , DNC);
     
     if(lista[talentos[i]-1].atributo[j] == 'EDN') return elementCalc(talentos, lista , i, j + 1, DN + lista[talentos[i]-1].bonus[j] , VN, AN, DND + lista[talentos[i]-1].bonus[j], DNC + lista[talentos[i]-1].bonus[j]);
