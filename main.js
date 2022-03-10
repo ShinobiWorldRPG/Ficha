@@ -1,4 +1,4 @@
-var version = '1.9.3';
+var version = '1.9.4';
 
 $.fn.textWidth = function(){
     var html_org = $(this).html();
@@ -237,7 +237,7 @@ function elementCalc(talentos, lista, i, j , DN, VN, AN, DND , DNC){
     }
     //console.log(lista[talentos[i]-1].atributo);
     //console.log(i);
-    //console.log(j);
+    console.log(lista[talentos[i]-1].atributo[j]);
     if(j >= lista[talentos[i]-1].atributo.length) return elementCalc(talentos, lista, i+1, 0, DN, VN, AN, DND , DNC);
     
     if(lista[talentos[i]-1].atributo[j] == 'EDN') return elementCalc(talentos, lista , i, j + 1, DN + lista[talentos[i]-1].bonus[j] , VN, AN, DND + lista[talentos[i]-1].bonus[j], DNC + lista[talentos[i]-1].bonus[j]);
@@ -434,7 +434,10 @@ $(document).ready(function(){fetch("https://shinobiworldrpg.github.io/Ficha/tale
         elementalfinal += elementGenerator(elemental[index], data, 1, ["","","","","","","","","","","","","","","","","","","","",""]);
         //console.log(elemental[index]);
         //console.log(elemental[index][0]);
-        if(elemental[index][0] != '' && elemental[index][0] != 'Elemento1' && elemental[index][0] != ' Elemento2') elementtestes += elementCalc(elemental[index], data, 1, 0, ninjutsu*2 + atencao*2 , ninjutsu*2, 2 + ninjutsu*5, ninjutsu*2 + atencao*2, ninjutsu*2 + atencao*2);
+        if(elemental[index][0] != '' && elemental[index][0] != 'Elemento1' && elemental[index][0] != ' Elemento2'){
+            //console.log(elemental[index].concat(talentos));
+             elementtestes += elementCalc(elemental[index].concat(talentos), data, 1, 0, ninjutsu*2 + atencao*2 , ninjutsu*2, 2 + ninjutsu*5, ninjutsu*2 + atencao*2, ninjutsu*2 + atencao*2);
+        }
     }
 
     var bukiT = $('buki').text();
@@ -462,8 +465,8 @@ $(document).ready(function(){fetch("https://shinobiworldrpg.github.io/Ficha/tale
 
 
     // CONVERSÂO DA PÁGINA
-    console.log($('individualidade2').text());
-    console.log($('individualidade3').text());
+    //console.log($('individualidade2').text());
+    //console.log($('individualidade3').text());
     $('.fichaMain').html(`
     <div class="fichaMainContainer verde ${checkVila(vila)}">
         <div class="bannerFundo"></div><div class="titleFundo"></div><div class="sideFundoFundo"></div><div class="sideFundo"></div><div class="fTexture"></div>
