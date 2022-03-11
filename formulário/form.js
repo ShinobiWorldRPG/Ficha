@@ -1,4 +1,4 @@
-var vernsionControl = 1.4;
+var vernsionControl = 2.0;
 var elementCount = 1;
 var bukiCount = 1;
 var postFicha = '';
@@ -416,3 +416,157 @@ function fallbackCopyTextToClipboard(text) {
 
     document.body.removeChild(textArea);
 }
+
+$('#fechar').click(function(){
+    $('.intro').remove();
+});
+
+$('#editar').click(function(){
+    
+    $.get(`${$('.intro2 input').val()}`).then(function (html) {
+    // Success response
+    var $mainbar = $(html).find('.conteudo-shinobiw');
+    //console.log($mainbar.find('nome').html());
+    //$mainbar.find('nome').html()
+    $('.banner').css("background-image", `url(${$mainbar.find('banner').text()})`)
+    $('.avatar').css("background-image", `url(${$mainbar.find('avatar').text()})`)
+    $('#pvp').val($mainbar.find('pvp').text().toUpperCase());
+    $('#nome').val($mainbar.find('nome').text());
+    $('#cla').val($mainbar.find('cla').text());
+    $('#idade').val($mainbar.find('idade').text());
+    $('#niver').val($mainbar.find('niver').text());
+    $('#genero').val($mainbar.find('genero').text());
+    $('#tendencia').val($mainbar.find('tendencia').text());
+    $('#origem').val($mainbar.find('origem').text());
+    $('#vila').val($mainbar.find('vila').text());
+    $('#graduação').val($mainbar.find('graduation').text());
+    $('#especial').val($mainbar.find('especial').text());
+    $('#profissão').val($mainbar.find('profissao').text());
+    $('#local').val($mainbar.find('local').text());
+    $('#mundial').val($mainbar.find('mundial').text());
+    $('#reputação').val($mainbar.find('reputacao').text());
+    $('#org').val($mainbar.find('time').text());
+
+    //Missões, buga caso missão gaiden tenho só 1 algarismo
+    let mission = $mainbar.find('missoes').text().split('- ');
+    $('#S').val(mission[1][0] + mission[1][1]);
+    $('#A').val(mission[2][0] + mission[2][1]);
+    $('#B').val(mission[3][0] + mission[3][1]);
+    $('#C').val(mission[4][0] + mission[4][1]);
+    $('#D').val(mission[5][0] + mission[5][1]);
+    $('#gaiden').val(Number(mission[6][0] + mission[6][1]));
+
+    $('#level').val($mainbar.find('level').text());
+    $('#exp').val(Number($mainbar.find('exp').text().split('/')[0]));
+
+    //Converter dinheiro
+    if($mainbar.find('dinheiro').text().indexOf('.') >= 0) $('#dinheiro').val(Number($mainbar.find('dinheiro').text().split('.')[0] + $mainbar.find('dinheiro').text().split('.')[1]));
+    else if ($mainbar.find('dinheiro').text().indexOf(',') >= 0) $('#dinheiro').val(Number($mainbar.find('dinheiro').text().split(',')[0] + $mainbar.find('dinheiro').text().split(',')[1]));
+
+    $('#assinatura').val($mainbar.find('assinatura').text());
+    $('#quirk1').val($mainbar.find('individualidade').text());
+    $('#quirk2').val($mainbar.find('individualidade2').text());
+    $('#quirk3').val($mainbar.find('individualidade3').text());
+    $('#invocação').val($mainbar.find('invocacao').text());
+
+    $('#ninjutsu').val($mainbar.find('ninjutsu').text());
+    $('#taijutsu').val($mainbar.find('taijutsu').text());
+    $('#genjutsu').val($mainbar.find('genjutsu').text());
+    $('#força').val($mainbar.find('forca').text());
+    $('#destreza').val($mainbar.find('destreza').text());
+    $('#constituição').val($mainbar.find('constituicao').text());
+    $('#inteligência').val($mainbar.find('inteligencia').text());
+    $('#atenção').val($mainbar.find('atencao').text());
+    $('#carisma').val($mainbar.find('carisma').text());
+
+    //Talentos
+    $('#talentos').val($mainbar.find('talentos').text().split('/'));
+    $('#talentos').select2({closeOnSelect: false, placeholder: "Selecione seus Talentos", allowClear: true});
+
+    let ele = $mainbar.find('Elementais').text().split('&');
+
+    for (let index = 0; index < ele.length; index++) {
+        ele[index] = ele[index].split('/');
+        if(ele[index][0] == '' || ele[index][0] == 'Elemento1' || ele[index][0] == ' Elemento2') break;
+        if(index > 0){
+            elementCount += 1;
+            $('.elementos').last().after(
+                `<div class="elementos">
+                    <span class="formTitle">Elemento ${elementCount}</span>` +
+                    `<label class="elementais">
+                        <br><input type="text" class="elementName" placeholder="Nome do elemento">
+                    </label>       
+                    <label class="elementTalent element${elementCount}">
+                        Talentos Elementais<br>
+                        <select name="talentosElementais" class="talentosElementais" multiple>${$('.talentosElementais').html()}</select>
+                    </label>
+                </div>`
+            )
+        };
+        $('.elementos').last().find('.elementName').val(ele[index][0]);
+        ele[index].shift();
+        $('.elementos').last().find('.talentosElementais').val(ele[index].map(Number));
+        $('.talentosElementais').select2({closeOnSelect: false, placeholder: "Selecione seus Talentos", allowClear: true});
+    }
+
+    let arm = $mainbar.find('buki').text().split('&');
+
+    for (let index = 0; index < arm.length; index++) {
+        arm[index] = arm[index].split('/');
+        if(arm[index][0] == '' || arm[index][0] == 'Arma1' | arm[index][0] == ' Arma2') break;
+        if(index > 0){
+            bukiCount += 1;
+            $('.armas').last().after(
+                `<div class="armas">
+                    <span class="formTitle">Arma ${bukiCount}</span>` +
+                    `<label class="buki">
+                        <br><input type="text" class="bukiName" placeholder="Nome da Arma">
+                    </label>       
+                    <label class="bukiTalent">
+                        Talentos de Arma<br>
+                        <select name="talentosBuki" class="talentosBuki" multiple>${$('.talentosBuki').html()}</select>
+                    </label>
+                </div>`
+            )
+        };
+        $('.armas').last().find('.bukiName').val(arm[index][0]);
+        arm[index].shift();
+        $('.armas').last().find('.talentosBuki').val(arm[index].map(Number));
+        $('.talentosBuki').select2({closeOnSelect: false, placeholder: "Selecione seus Talentos", allowClear: true});    
+    }
+
+    //Bônus
+    //$('#nome').val($mainbar.find('nome').html());
+    let bbcla = $mainbar.find('BonusCla').text().split('/');
+    $('#vitalidade').val(bbcla[0]);
+    $('#chakra').val(bbcla[1]);
+    $('#sanidade').val(bbcla[2]);
+    $('#stamina').val(bbcla[3]);
+    $('#vontade').val(bbcla[0]);
+
+    //Campos com HTML
+    $('#historia').val($mainbar.find('historia').html());
+    $('#descFisica').val($mainbar.find('aparencia').html());
+    $('#descMental').val($mainbar.find('personalidade').html());
+    $('#relacionamentos').val($mainbar.find('relacionamentos').html());
+    $('#defeitos').val($mainbar.find('defeitos').html());
+    $('#links').val($mainbar.find('links').html());
+    $('#notas').val($mainbar.find('notas').html());
+
+    $('#jBasicos').val($mainbar.find('jutsusBasicos').html());
+    $('#jGerais').val($mainbar.find('jutsusGerais').html());
+    $('#bornal').val($mainbar.find('armamentos').html());
+    $('#edl').val($mainbar.find('EDL').html());
+    $('#descCla').val($mainbar.find('DescricaoCla').html());
+    $('#descQuirk').val($mainbar.find('DescricaoIndividualidade').html());
+    $('#descElementos').val($mainbar.find('elementos').html());
+    $('#descInvicação').val($mainbar.find('kuchyose').html());
+    $('#bijuu').val($mainbar.find('bijuu').html());
+    
+}, function () {
+    // Error response
+    alert('Erro ao carregar a ficha');
+});
+
+$('.intro').remove();
+});
