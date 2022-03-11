@@ -352,4 +352,81 @@ form {
 .select2-results {
   color: black;
 }
+
+.intro {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.intro .intro2 {
+  width: 500px;
+  height: 500px;
+  background-color: black;
+  border-radius: 15px;
+  position: absolute;
+  top: calc(50% - 300px);
+  padding: 20px;
+  overflow: hidden;
+  text-align: justify;
+  color: white;
+}
+
+.intro .intro2 .introImage {
+  width: calc(100% + 40px);
+  height: 375px;
+  background-image: url(https://media.discordapp.net/attachments/928054920551215195/934982376738652201/Shinobi_world_modelo_1.png);
+  background-size: 201%;
+  background-position-y: 40%;
+  position: relative;
+  right: 20px;
+  top: -80px;
+  -webkit-transform: scale(60%);
+          transform: scale(60%);
+  margin-bottom: -130px;
+}
+
+.intro .intro2 input {
+  margin-top: 20px;
+  width: 100%;
+  height: 30px;
+  border-radius: 10px;
+}
+
+.intro .intro2 .introB {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 30px;
+}
+
+.intro .intro2 .introB button {
+  margin-right: 10px;
+  margin-left: 10px;
+  width: 150px;
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+  background-color: #232323;
+  color: white;
+  font-weight: 600;
+}
+
+.intro .intro2 .introB button:hover {
+  background-color: #7e3a3a;
+  cursor: pointer;
+}
 /*# sourceMappingURL=style.css.map */
