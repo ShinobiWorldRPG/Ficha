@@ -1,4 +1,4 @@
-var vernsionControl = 2.0;
+var vernsionControl = 2.1;
 var elementCount = 1;
 var bukiCount = 1;
 var postFicha = '';
@@ -454,7 +454,7 @@ $('#editar').click(function(){
     $('#B').val(mission[3][0] + mission[3][1]);
     $('#C').val(mission[4][0] + mission[4][1]);
     $('#D').val(mission[5][0] + mission[5][1]);
-    $('#gaiden').val(Number(mission[6][0] + mission[6][1]));
+    $('#gaiden').val('0' + Number(mission[6][0] + mission[6][1]));
 
     $('#level').val($mainbar.find('level').text());
     $('#exp').val(Number($mainbar.find('exp').text().split('/')[0]));
