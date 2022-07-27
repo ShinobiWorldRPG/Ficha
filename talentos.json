@@ -1775,28 +1775,28 @@
     "name": "Estudado em Invocação",
     "atributo": ["atributo"],
     "bonus": [0],
-    "code": "<b>Estudado em Invocação</b><br><b>Requerimento:</b> 3 pontos Ninjutsu &amp; 2 pontos em Carisma<br><b>Descrição:</b> Habilidade de formar um pacto com alguma espécie de kuchiyose e convocar até o rank B delas"
+    "code": "<b>Estudado em Invocação</b><br><b>Requerimento:</b> 2 Pontos em Ninjutsu &amp; Bom controle de Chakra ou Reserva Sobre-Humanas<br><b>Descrição:</b> Habilidade de formar um pacto com alguma espécie de kuchiyose e convocar até o rank B delas"
     },
     {
     "indice": "255",
     "name": "Versado em Invocação",
     "atributo": ["atributo"],
     "bonus": [0],
-    "code": "<b>Versado em Invocação</b><br><b>Requerimento:</b> Estudado em Invocação, 6 pontos em Ninjutsu, 4 pontos em Carisma &amp; Bom Controle de Chakra<br><b>Descrição:</b> Habilidade de convocar até o rank A da espécie contratual"
+    "code": "<b>Versado em Invocação</b><br><b>Requerimento:</b> Estudado em Invocação, 3 Pontos em Ninjutsu &amp; Grande Controle de Chakra ou Reservas Monstruosas<br><b>Descrição:</b> Habilidade de convocar até o rank A da espécie contratual"
     },
     {
     "indice": "256",
     "name": "Mestre em Invocação",
     "atributo": ["atributo"],
     "bonus": [0],
-    "code": "<b>Mestre em Invocação</b><br><b>Requerimento:</b> Versado em Invocação, 10 pontos em Ninjutsu, 6 pontos em Carisma &amp; Grande Controle de Chakra<br><b>Descrição:</b> Habilidade de convocar até o rank S da espécie contratual"
+    "code": "<b>Mestre em Invocação</b><br><b>Requerimento:</b> Versado em Invocação, 6 Pontos em Ninjutsu &amp; Mestre em Controle de Chakra ou Reservas Colossais<br><b>Descrição:</b> Habilidade de convocar até o rank S da espécie contratual"
     },
     {
     "indice": "257",
     "name": "Múltiplos Pactos",
     "atributo": ["atributo"],
     "bonus": [0],
-    "code": "<b>Múltiplos Pactos</b><br><b>Requerimento:</b> Mestre em Invocação &amp; Reservas Monstruosas<br><b>Descrição:</b> Habilidade de realizar um segundo contrato de Invocação"
+    "code": "<b>Múltiplos Pactos</b><br><b>Requerimento:</b> Mestre em Invocação, 10 Pontos em Ninjutsu, Reservas Monstruosas &amp; Mestre em Controle de Chakra<br><b>Descrição:</b> Habilidade de realizar um segundo contrato de Invocação"
     },
     {
     "indice": "258",
