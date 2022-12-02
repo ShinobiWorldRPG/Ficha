@@ -1,4 +1,4 @@
-var vernsionControl = 2.1;
+var vernsionControl = 2.2;
 var elementCount = 1;
 var bukiCount = 1;
 var postFicha = '';
@@ -12,6 +12,7 @@ $(document).ready(function(){
         var bukiList = '';
 
         for (let index = 0; index < data.length; index++) {
+            if(index + 1 === 57 || index + 1 === 58 || index + 1 === 60 || index + 1 === 61 || index + 1 === 64 || index + 1 === 65) continue;
             if(index > 65 && index < 80) elementList += `<option value="${index + 1}">${index+1}- ${data[index].name}</option>`;
             else if(index > 234 && index < 253) bukiList += `<option value="${index + 1}">${index+1}- ${data[index].name}</option>`;
             else talentList += `<option value="${index + 1}">${index+1}- ${data[index].name}</option>`;
