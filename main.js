@@ -1,4 +1,4 @@
-var version = '1.9.5';
+var version = '2.0';
 
 $.fn.textWidth = function(){
     var html_org = $(this).html();
@@ -385,7 +385,7 @@ $(document).ready(function(){fetch("https://shinobiworldrpg.github.io/Ficha/tale
     var AN = 2 + ninjutsu*5 + checkBonus(talentos, data, 'AN', 0, 0, 0);
     var VN = ninjutsu*2 + checkBonus(talentos, data, 'VN', 0, 0, 0);
     var VC = 15 - ninjutsu + checkBonus(talentos, data, 'VC', 0, 0, 0);
-    var VSM = 3 + checkBonus(talentos, data, 'VSM', 0, 0, 0);
+    var VSM = 1 + checkBonus(talentos, data, 'VSM', 0, 0, 0);
     var DN = ninjutsu*2 + atencao*2 + checkBonus(talentos, data, 'DN', 0, 0, 0);
     var DNC = DN + checkBonus(talentos, data, 'DNC', 0, 0, 0);
     var DND = DN + checkBonus(talentos, data, 'DND', 0, 0, 0);    
