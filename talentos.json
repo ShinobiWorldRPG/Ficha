@@ -389,42 +389,42 @@
     "name": "Estudado em Selos",
     "atributo": ["VSM"],
     "bonus": [-0.25],
-    "code": "<b>Estudado em Selos</b><br><b>Requisito:</b> 3 pontos em Inteligência &amp; 1 ponto em Destreza.<br><b>Bônus:</b> -0,25s na formação de um selo de mão"
+    "code": "<b>Estudado em Selos</b><br><b>Requisito:</b> 3 pontos em Inteligência &amp; 1 ponto em Destreza.<br><b>Bônus:</b> -0,25s na formação de um selo de mão, -1 selo de mão (não podendo reduzir a zero)"
     },
     {
     "indice": "57",
-    "name": "Bom Controle de Selos",
+    "name": "Talento Removido",
     "atributo": [""],
     "bonus": [0],
-    "code": "<b>Bom Controle de Selos</b><br><b>Requisito:</b> Estudado em Selos<br><b>Bônus:</b> -1 selo de mão, não podendo reduzir a zero"
+    "code": "Favor Pedir remoção da ficha"
     },
     {
     "indice": "58",
-    "name": "Selos Ágeis",
-    "atributo": ["VSM"],
-    "bonus": [-0.25],
-    "code": "<b>Selos Ágeis</b><br><b>Requisito:</b> Estudado em Selos<br><b>Bônus:</b> -0,25s na formação de um selo de mão"
+    "name": "Talento Removido",
+    "atributo": [""],
+    "bonus": [0],
+    "code": "Favor Pedir remoção da ficha"
     },
     {
     "indice": "59",
     "name": "Versado em Selos",
     "atributo": ["VSM"],
     "bonus": [-0.25],
-    "code": "<b>Versado em Selos</b><br><b>Requisito:</b> 5 pontos em Inteligência, 2 pontos em Destreza &amp; Estudado em Selos<br><b>Bônus:</b> -0,25s na formação de um selo de mão"
+    "code": "<b>Versado em Selos</b><br><b>Requisito:</b> 5 pontos em Inteligência, 3 pontos em Destreza &amp; Estudado em Selos<br><b>Bônus:</b> -0,25s na formação de um selo de mão, -2 selos de mão (não podendo reduzir a zero)"
     },
     {
     "indice": "60",
-    "name": "Grande Controle de Selos",
+    "name": "Talento Removido",
     "atributo": [""],
     "bonus": [],
-    "code": "<b>Grande Controle de Selos</b><br><b>Requisito:</b> Versado em Selos<br><b>Bônus:</b> -2 selo de mão, não podendo reduzir a zero"
+    "code": "Favor Pedir remoção da ficha"
     },
     {
     "indice": "61",
-    "name": "Selos Rápidos",
-    "atributo": ["VSM"],
-    "bonus": [-0.25],
-    "code": "<b>Selos Rápidos</b><br><b>Requisito:</b> Versado em Selos<br><b>Bônus:</b> -0,25s na formação de um selo de mão"
+    "name": "Talento Removido",
+    "atributo": [""],
+    "bonus": [0],
+    "code": "Favor Pedir remoção da ficha"
     },
     {
     "indice": "62",
@@ -437,21 +437,21 @@
     "indice": "63",
     "name": "Mestre em Selos",
     "atributo": ["VSM"],
-    "bonus": [-0.5],
-    "code": "<b>Mestre em Selos</b><br><b>Requisito:</b> 8 pontos em Inteligência, 3 pontos em Destreza &amp; Versado em Selos<br><b>Bônus:</b> -0,50s na formação de um selo de mão"
+    "bonus": [-0.25],
+    "code": "<b>Mestre em Selos</b><br><b>Requisito:</b> 8 pontos em Inteligência, 5 pontos em Destreza &amp; Versado em Selos<br><b>Bônus:</b> -0,25s na formação de um selo de mão, -3 selos de mão (não podendo reduzir a zero)"
     },
     {
     "indice": "64",
-    "name": "Mestre no Controle de Selos",
-    "atributo": ["atributo"],
-    "bonus": [111],
-    "code": "<b>Mestre no Controle de Selos</b><br><b>Requisito:</b> Mestre em Selos<br><b>Bônus:</b> Reduz pela metade os selos necessários (se for número quebrado, arredonda para o menor e não pode zerar)"
+    "name": "Talento Removido",
+    "atributo": [""],
+    "bonus": [0],
+    "code": "Favor Pedir remoção da ficha"
     },
     {
     "indice": "65",
-    "name": "Selos Ultra Sônicos",
-    "atributo": ["VSM"],
-    "bonus": [-1],
+    "name": "Talento Removido",
+    "atributo": [""],
+    "bonus": [0],
     "code": "<b>Selos Ultra Sônicos</b><br><b>Requisito:</b> Mestre em Selos<br><b>Bônus:</b> -1s na formação de um selo de mão"
     },
     {
