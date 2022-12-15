@@ -1881,6 +1881,1545 @@
     "atributo": ["PG"],
     "bonus": [1],
     "code": "<b>Dedicação em Genjutsu</b><br><b>Requisitos:</b> Sem Clã/Kekkei Genkai, Estudado em Genjutsu &amp; Nível 10.<br><b>Bônus:</b> +1 Precisão de Genjutsu."
-    }
-        
+    },
+       {
+      "indice": "270",
+      "name": "Hóspedes Perseguidores",
+      "atributo": [
+         "atributo"
+      ],
+      "bonus": [
+         0
+      ],
+      "code": "<b>Hóspedes Perseguidores</b><br><b>Requisito:</b> Clã Aburame & Nível 10<br><b>Bônus:</b> Permite cultivar e utilizar insetos da espécie Shōkaichū."
+   },
+   {
+      "indice": "271",
+      "name": "Hóspedes Venenosos",
+      "atributo": [
+         "atributo"
+      ],
+      "bonus": [
+         0
+      ],
+      "code": "<b>Hóspedes Venenosos</b><br><b>Requisito:</b> Clã Aburame & Nível 20<br><b>Bônus:</b> Permite cultivar e utilizar insetos da espécie Kochū."
+   },
+   {
+      "indice": "272",
+      "name": "Hóspedes Singulares",
+      "atributo": [
+         "atributo"
+      ],
+      "bonus": [
+         0
+      ],
+      "code": "<b>Hóspedes Singulares</b><br><b>Requisito:</b> Clã Aburame & Nível 25<br><b>Bônus:</b> Permite criar uma espécie completamente nova de insetos que será avaliada pela Staff."
+   },
+   {
+      "indice": "273",
+      "name": "Hóspedes Destrutivos",
+      "atributo": [
+         "atributo"
+      ],
+      "bonus": [
+         0
+      ],
+      "code": "<b>Hóspedes Destrutivos</b><br><b>Requisito:</b> Clã Aburame & Nível 30<br><b>Bônus:</b> Permite cultivar e utilizar insetos da espécie Kidaichū."
+   },
+   {
+      "indice": "274",
+      "name": "Hóspedes Letais",
+      "atributo": [
+         "atributo"
+      ],
+      "bonus": [
+         0
+      ],
+      "code": "<b>Hóspedes Letais</b><br><b>Requisito:</b> Clã Aburame & Nível 40<br><b>Bônus:</b> Permite cultivar e utilizar insetos da espécie Rinkaichū."
+   },
+   {
+      "indice": "275",
+      "name": "Bom Controle de Calorias",
+      "atributo": [
+         "atributo"
+      ],
+      "bonus": [
+         0
+      ],
+      "code": "<b>Bom Controle de Calorias</b><br><b>Requisito:</b> Clã Akimichi & Nível 05<br><b>Bônus:</b> Permite a utilização do Karorī Kontorōru de modo básico."
+   },
+   {
+      "indice": "276",
+      "name": "Grande Controle de Calorias",
+      "atributo": [
+         "atributo"
+      ],
+      "bonus": [
+         0
+      ],
+      "code": "<b>Grande Controle de Calorias</b><br><b>Requisito:</b> Clã Akimichi, Bom Controle de Calorias & Nível 15<br><b>Bônus:</b> Permite a utilização do Karorī Kontorōru de modo melhorado; pílulas verdes não causam mais danos ao fim da duração."
+   },
+   {
+      "indice": "277",
+      "name": "Mestre em Controle de Calorias",
+      "atributo": [
+         "atributo"
+      ],
+      "bonus": [
+         0
+      ],
+      "code": "<b>Mestre em Controle de Calorias</b><br><b>Requisito:</b> Clã Akimichi, Grande Controle de Calorias & Nível 25<br><b>Bônus:</b> Permite a utilização do Karorī Kontorōru de modo avançado; pílulas amarelas não causa mais danos no HP ao fim de sua duração."
+   },
+   {
+      "indice": "278",
+      "name": "Bom Controle Sanguíneo",
+      "atributo": [
+         "atributo"
+      ],
+      "bonus": [
+         0
+      ],
+      "code": "<b>Bom Controle Sanguíneo</b><br><b>Requisito:</b> Clã Chinoike, Ketsuryūgan & Nível 05<br><b>Bônus:</b> +15 Dano Ninjutsu (usando sangue através do Dōjutsu); Manipulação de Sangue (de acordo com as regras de manipulação)."
+   },
+   {
+      "indice": "279",
+      "name": "Grande Controle Sanguíneo",
+      "atributo": [
+         "atributo"
+      ],
+      "bonus": [
+         0
+      ],
+      "code": "<b>Grande Controle Sanguíneo</b><br><b>Requisito:</b> Clã Chinoike, Ketsuryūgan, Bom Controle Sanguíneo e & Nível 15<br><b>Bônus:</b> +35 Dano Ninjutsu (usando sangue através do Dōjutsu).   "
+   },
+   {
+      "indice": "280",
+      "name": "Mestre em Controle Sanguíneo",
+      "atributo": [
+         "atributo"
+      ],
+      "bonus": [
+         0
+      ],
+      "code": "<b>Mestre em Controle Sanguíneo</b><br><b>Requisito:</b> Clã Chinoike, Ketsuryūgan, Grande Controle Sanguíneo & Nível 30<br><b>Bônus:</b> +50 Dano Ninjutsu (usando sangue através do Dōjutsu)."
+   },
+   {
+      "indice": "281",
+      "name": "Experiente em Ketsuryūgan",
+      "atributo": [
+         "atributo"
+      ],
+      "bonus": [
+         0
+      ],
+      "code": "<b>Experiente em Ketsuryūgan</b><br><b>Requisito:</b> Clã Chinoike, Ketsuryūgan & Nível 35<br><b>Bônus:</b> Habilidade de utilizar o Genjutsu: Ketsuryūgan com força de rank A."
+   },
+   {
+      "indice": "282",
+      "name": "Mestre  em Ketsuryūgan",
+      "atributo": [
+         "atributo"
+      ],
+      "bonus": [
+         0
+      ],
+      "code": "<b>Mestre  em Ketsuryūgan</b><br><b>Requisito:</b> Clã Chinoike, Ketsuryūgan, Experiente em Ketsuryūgan & Nível 40<br><b>Bônus:</b> Habilidade de utilizar o Genjutsu: Ketsuryūgan com força de rank S."
+   },
+   {
+      "indice": "283",
+      "name": "Chakra Branco",
+      "atributo": [
+         "atributo"
+      ],
+      "bonus": [
+         0
+      ],
+      "code": "<b>Chakra Branco</b><br><b>Requisito:</b> Clã Hatake & Nível 05<br><b>Bônus:</b> Habilidade de usar chakra na coloração branca em seus golpes. Se usado através do chakra flow os efeitos do chakra são dobrados."
+   },
+   {
+      "indice": "284",
+      "name": "Gênio Ninja",
+      "atributo": [
+         "atributo"
+      ],
+      "bonus": [
+         0
+      ],
+      "code": "<b>Gênio Ninja</b><br><b>Requisito:</b> Clã Hatake & Nível 05<br><b>Bônus:</b> Pontos de inteligência passam a reduzir em 200 palavras as necessidades para aprender técnicas."
+   },
+   {
+      "indice": "285",
+      "name": "Olfato Encantado",
+      "atributo": [
+         "atributo"
+      ],
+      "bonus": [
+         0
+      ],
+      "code": "<b>Olfato Encantado</b><br><b>Requisito:</b> Clã Hatake & Nível 05<br><b>Bônus:</b> Habilidade de sentir odores com clareza dentro de até 1KM."
+   },
+   {
+      "indice": "286",
+      "name": "Elementalista",
+      "atributo": [
+         "atributo"
+      ],
+      "bonus": [
+         0
+      ],
+      "code": "<b>Elementalista</b><br><b>Requisito:</b> Clã Hatake & Nível 20<br><b>Bônus:</b> Permite aprender um quarto elemento com requerimentos e potência de um segundo."
+   },
+   {
+      "indice": "287",
+      "name": "Grande Elementalista",
+      "atributo": [
+         "atributo"
+      ],
+      "bonus": [
+         0
+      ],
+      "code": "<b>Grande Elementalista</b><br><b>Requisito:</b> Clã Hatake & Nível 30<br><b>Bônus:</b> Permite aprender um quinto elemento com requerimentos e potência de um terceiro."
+   },
+   {
+      "indice": "288",
+      "name": "Mestre nas Artes Ninjas",
+      "atributo": [
+         "atributo"
+      ],
+      "bonus": [
+         0
+      ],
+      "code": "<b>Mestre nas Artes Ninjas</b><br><b>Requisito:</b> Clã Hatake & Nível 40<br><b>Bônus:</b> Permite alcançar 10 Pontos em até duas artes ninjas (Ninjutsu, Taijutsu e Genjutsu), se tornando assim um quarto atributo com 10 pontos."
+   },
+   {
+      "indice": "289",
+      "name": "Sempre Hidratado",
+      "atributo": [
+         "atributo"
+      ],
+      "bonus": [
+         0
+      ],
+      "code": "<b>Sempre Hidratado</b><br><b>Requisito:</b> Clã Hōzuki & Nível 15<br><b>Bônus:</b> Aumenta em +1 o número de turnos sem hidratação, e em +1 número de usos da garrafa d’água."
+   },
+   {
+      "indice": "290",
+      "name": "Bom Controle de Liquefação",
+      "atributo": [
+         "atributo"
+      ],
+      "bonus": [
+         0
+      ],
+      "code": "<b>Bom Controle de Liquefação</b><br><b>Requisito:</b> Clã Hōzuki<br><b>Bônus:</b> Permite o uso do Suika no Jutsu de modo parcial."
+   },
+   {
+      "indice": "291",
+      "name": "Grande Controle de Liquefação",
+      "atributo": [
+         "atributo"
+      ],
+      "bonus": [
+         0
+      ],
+      "code": "<b>Grande Controle de Liquefação</b><br><b>Requisito:</b> Clã Hōzuki & Nível 10<br><b>Bônus:</b> Permite o uso do Suika no Jutsu de modo completo."
+   },
+   {
+      "indice": "292",
+      "name": "Mestre em Controle de Liquefação",
+      "atributo": [
+         "atributo"
+      ],
+      "bonus": [
+         0
+      ],
+      "code": "<b>Mestre em Controle de Liquefação</b><br><b>Requisito:</b> Clã Hōzuki & Nível 20<br><b>Bônus:</b> Permite o uso do Suika no Jutsu de modo abrangente."
+   },
+   {
+      "indice": "293",
+      "name": "Grande Controle do Byakugan",
+      "atributo": [
+         "atributo"
+      ],
+      "bonus": [
+         0
+      ],
+      "code": "<b>Grande Controle do Byakugan</b><br><b>Requisito:</b> Clã Hyūga & Nível 05<br><b>Bônus:</b> Habilidade de realizar o primeiro aprimoramento do Byakugan."
+   },
+   {
+      "indice": "294",
+      "name": "Mestre no Controle do Byakugan",
+      "atributo": [
+         "atributo"
+      ],
+      "bonus": [
+         0
+      ],
+      "code": "<b>Mestre no Controle do Byakugan</b><br><b>Requisito:</b> Clã Hyūga, Grande Controle do Byakugan & Nível 10<br><b>Bônus:</b> Habilidade de realizar o segundo e último aprimoramento do Byakugan."
+   },
+   {
+      "indice": "295",
+      "name": "Estudado em Jūken",
+      "atributo": [
+         "atributo"
+      ],
+      "bonus": [
+         0
+      ],
+      "code": "<b>Estudado em Jūken</b><br><b>Requisito:</b> Clã Hyūga & Nível 05<br><b>Bônus:</b> Capacidade de dar dois (02) golpes através de uma única ação com o Jūken."
+   },
+   {
+      "indice": "296",
+      "name": "Versado em Jūken",
+      "atributo": [
+         "atributo"
+      ],
+      "bonus": [
+         0
+      ],
+      "code": "<b>Versado em Jūken</b><br><b>Requisito:</b> Clã Hyūga, Estudado em Jūken & Nível 10<br><b>Bônus:</b> Capacidade de dar quatro (04) golpes através de uma única ação com o Jūken."
+   },
+   {
+      "indice": "297",
+      "name": "Mestre em Jūken",
+      "atributo": [
+         "atributo"
+      ],
+      "bonus": [
+         0
+      ],
+      "code": "<b>Mestre em Jūken</b><br><b>Requisito:</b> Clã Hyūga, Versado em Jūken & Nível 20<br><b>Bônus:</b> Capacidade de dar oito (08) golpes através de uma única ação com o Jūken."
+   },
+   {
+      "indice": "298",
+      "name": "Leão Divino",
+      "atributo": [
+         "atributo"
+      ],
+      "bonus": [
+         0
+      ],
+      "code": "<b>Leão Divino</b><br><b>Requisito:</b> Clã Hyūga, Mestre em Jūken & Nível 30<br><b>Bônus:</b> Habilidade de aprender e usar o Jūho Sōshiken."
+   },
+   {
+      "indice": "299",
+      "name": "Olfato Canino",
+      "atributo": [
+         "atributo"
+      ],
+      "bonus": [
+         0
+      ],
+      "code": "<b>Olfato Canino</b><br><b>Requisito:</b> Clã Inuzuka & Nível 05<br><b>Bônus:</b> Habilidade de farejar odores com clareza em um espaço de até 1 Km."
+   },
+   {
+      "indice": "300",
+      "name": "Olfato Canino Aprimorado",
+      "atributo": [
+         "atributo"
+      ],
+      "bonus": [
+         0
+      ],
+      "code": "<b>Olfato Canino Aprimorado</b><br><b>Requisito:</b> Clã Inuzuka, Olfato Canino & Nível 15<br><b>Bônus:</b> Habilidade de farejar odores com clareza em um espaço de até 1,5 Km. Não é cumulativo com Olfato Canino."
+   },
+   {
+      "indice": "301",
+      "name": "Olfato Canino Perfeito",
+      "atributo": [
+         "atributo"
+      ],
+      "bonus": [
+         0
+      ],
+      "code": "<b>Olfato Canino Perfeito</b><br><b>Requisito:</b> Clã Inuzuka, Olfato Canino Aprimorado & Nível 25<br><b>Bônus:</b> Habilidade de farejar odores com clareza em um espaço de até 2 Km. Não é cumulativo com Olfato Canino Aprimorado."
+   },
+   {
+      "indice": "302",
+      "name": "Instintos Animalescos",
+      "atributo": [
+         "RE", "PM"
+      ],
+      "bonus": [
+         1, 1
+      ],
+      "code": "<b>Instintos Animalescos</b><br><b>Requisito:</b> Clã Inuzuka & Nível 10<br><b>Bônus:</b> +1m/s Reflexo e +1m/s Percepção de Movimentos."
+   },
+   {
+      "indice": "303",
+      "name": "Instintos Animalescos Aprimorados",
+      "atributo": [
+         "RE", "PM"
+      ],
+      "bonus": [
+         2, 2
+      ],
+      "code": "<b>Instintos Animalescos Aprimorados</b><br><b>Requisito:</b> Clã Inuzuka, Instintos Animalescos & Nível 20<br><b>Bônus:</b> +2m/s Reflexo e +2m/s Percepção de Movimentos. Não é cumulativo com Instintos Animalescos."
+   },
+   {
+      "indice": "304",
+      "name": "Instintos Animalescos Perfeitos",
+      "atributo": [
+         "RE", "PM"
+      ],
+      "bonus": [
+         4, 4
+      ],
+      "code": "<b>Instintos Animalescos Perfeitos</b><br><b>Requisito:</b> Clã Inuzuka, Instintos Animalescos Aprimorados & Nível 35<br><b>Bônus:</b> +4m/s Reflexo e +4m/s Percepção de Movimentos. Não é cumulativo com Instintos Animalescos."
+   },
+   {
+      "indice": "305",
+      "name": "Grande Adestrador",
+      "atributo": [
+         "atributo"
+      ],
+      "bonus": [
+         0
+      ],
+      "code": "<b>Grande Adestrador</b><br><b>Requisito:</b> Clã Inuzuka & Nível 15<br><b>Bônus:</b> Habilidade de criar e usar um novo Ninken com Nível 01."
+   },
+   {
+      "indice": "306",
+      "name": "Mestre Adestrador",
+      "atributo": [
+         "atributo"
+      ],
+      "bonus": [
+         0
+      ],
+      "code": "<b>Mestre Adestrador</b><br><b>Requisito:</b> Clã Inuzuka, Grande Adestrador & Nível 30<br><b>Bônus:</b> Habilidade de criar e usar um novo Ninken com Nível 01."
+   },
+   {
+      "indice": "307",
+      "name": "Conexão Natural",
+      "atributo": [
+         "atributo"
+      ],
+      "bonus": [
+         0
+      ],
+      "code": "<b>Conexão Natural</b><br><b>Requisito:</b> Clã Jūgo & Nível 05<br><b>Bônus:</b> Habilidade de conversar com alguma espécie de animal devendo especificar na ficha qual animal (pássaro, gatos, etc)."
+   },
+   {
+      "indice": "308",
+      "name": "Espírito da Natureza",
+      "atributo": [
+         "atributo"
+      ],
+      "bonus": [
+         0
+      ],
+      "code": "<b>Espírito da Natureza</b><br><b>Requisito:</b> Clã Jūgo & Nível 05<br><b>Bônus:</b> Habilidade de aprender e utilizar o Senninka."
+   },
+   {
+      "indice": "309",
+      "name": "Controle das Energias",
+      "atributo": [
+         "atributo"
+      ],
+      "bonus": [
+         0
+      ],
+      "code": "<b>Controle das Energias</b><br><b>Requisito:</b> Clã Jūgo, Espírito da Natureza & Nível 15<br><b>Bônus:</b> Habilidade de aprimorar a utilização do Senninka na sua Forma Incompleta. +1 Ação (variável) para usar Manipulação de Senninka."
+   },
+   {
+      "indice": "310",
+      "name": "Controle da Loucura",
+      "atributo": [
+         "atributo"
+      ],
+      "bonus": [
+         0
+      ],
+      "code": "<b>Controle da Loucura</b><br><b>Requisito:</b> Clã Jūgo & Nível 20<br><b>Bônus:</b> Habilidade de aprimorar a utilização do Senninka na sua Forma Completa."
+   },
+   {
+      "indice": "311",
+      "name": "Bom Controle de Ossos",
+      "atributo": [
+         "atributo"
+      ],
+      "bonus": [
+         0
+      ],
+      "code": "<b>Bom Controle de Ossos</b><br><b>Requisito:</b> Clã Kaguya & Nível 10<br><b>Bônus:</b> Habilidade de realizar o primeiro aprimoramento no uso da Kekkei Genkai: Shikotsumyaku."
+   },
+   {
+      "indice": "312",
+      "name": "Grande Controle de Ossos",
+      "atributo": [
+         "atributo"
+      ],
+      "bonus": [
+         0
+      ],
+      "code": "<b>Grande Controle de Ossos</b><br><b>Requisito:</b> Clã Kaguya, Bom Controle de Ossos & Nível 20<br><b>Bônus:</b> Habilidade de realizar o segundo aprimoramento no uso da Kekkei Genkai: Shikotsumyaku. +1 Ação (variável) para usar Manipulação de Ossos."
+   },
+   {
+      "indice": "313",
+      "name": "Mestre em Controle de Ossos",
+      "atributo": [
+         "atributo"
+      ],
+      "bonus": [
+         0
+      ],
+      "code": "<b>Mestre em Controle de Ossos</b><br><b>Requisito:</b> Clã Kaguya, Grande Controle de Ossos & Nível 30<br><b>Bônus:</b> Habilidade de realizar o terceiro e último aprimoramento no uso da Kekkei Genkai: Shikotsumyaku. +1 Ação (variável) para usar Manipulação de Ossos — acumulativo com o Grande Controle de Ossos."
+   },
+   {
+      "indice": "314",
+      "name": "Demônio das Ilusões",
+      "atributo": [
+         "atributo"
+      ],
+      "bonus": [
+         0
+      ],
+      "code": "<b>Demônio das Ilusões</b><br><b>Requisito:</b> Clã Kurama & Nível 05<br><b>Bônus:</b> Habilidade de despertar a Kekkei Genkai do Clã."
+   },
+   {
+      "indice": "315",
+      "name": "Conexão Demoníaca Formal",
+      "atributo": [
+         "atributo"
+      ],
+      "bonus": [
+         0
+      ],
+      "code": "<b>Conexão Demoníaca Formal</b><br><b>Requisito:</b> Clã Kurama, Demônio das Ilusões & Nível 10<br><b>Bônus:</b> Habilidade de usar Genjutsus através da Kekkei Genkai do clã até rank-B se tiver os demais requisitos."
+   },
+   {
+      "indice": "316",
+      "name": "Conexão Demoníaca Incompleta",
+      "atributo": [
+         "atributo"
+      ],
+      "bonus": [
+         0
+      ],
+      "code": "<b>Conexão Demoníaca Incompleta</b><br><b>Requisito:</b> Clã Kurama, Conexão Demoníaca Formal & Nível 25<br><b>Bônus:</b> Habilidade de usar Genjutsus através da Kekkei Genkai do clã até rank-A se tiver os demais requisitos."
+   },
+   {
+      "indice": "317",
+      "name": "Conexão Demoníaca Completa",
+      "atributo": [
+         "atributo"
+      ],
+      "bonus": [
+         0
+      ],
+      "code": "<b>Conexão Demoníaca Completa</b><br><b>Requisito:</b> Clã Kurama, Conexão Demoníaca Incompleta & Nível 40<br><b>Bônus:</b> Habilidade de usar Genjutsus através da Kekkei Genkai do clã até rank-S se tiver os demais requisitos."
+   },
+   {
+      "indice": "318",
+      "name": "Aprendiz dos Portões",
+      "atributo": [
+         "atributo"
+      ],
+      "bonus": [
+         0
+      ],
+      "code": "<b>Aprendiz dos Portões</b><br><b>Requisito:</b> Clã Lee & Nível 05<br><b>Bônus:</b> Habilidade de desenvolver a Técnica de Assinatura: Hachimon a partir do Nível 05 usando apenas os Talentos Secretos do Clã."
+   },
+   {
+      "indice": "319",
+      "name": "Primeira Chave",
+      "atributo": [
+         "atributo"
+      ],
+      "bonus": [
+         0
+      ],
+      "code": "<b>Primeira Chave</b><br><b>Requisito:</b> Clã Lee & Nível 05<br><b>Bônus:</b> Habilidade de aprender e usar o Primeiro Portão do Hachimon."
+   },
+   {
+      "indice": "320",
+      "name": "Segunda Chave",
+      "atributo": [
+         "atributo"
+      ],
+      "bonus": [
+         0
+      ],
+      "code": "<b>Segunda Chave</b><br><b>Requisito:</b> Clã Lee, Primeira Chave & Nível 05<br><b>Bônus:</b> Habilidade de aprender e usar o Segundo Portão do Hachimon."
+   },
+   {
+      "indice": "321",
+      "name": "Terceira Chave",
+      "atributo": [
+         "atributo"
+      ],
+      "bonus": [
+         0
+      ],
+      "code": "<b>Terceira Chave</b><br><b>Requisito:</b> Clã Lee, Segunda Chave & Nível 05<br><b>Bônus:</b> Habilidade de aprender e usar o Terceiro Portão do Hachimon."
+   },
+   {
+      "indice": "322",
+      "name": "Quarta Chave",
+      "atributo": [
+         "atributo"
+      ],
+      "bonus": [
+         0
+      ],
+      "code": "<b>Quarta Chave</b><br><b>Requisito:</b> Clã Lee, Terceira Chave, Resistência Monstruosa & Nível 10<br><b>Bônus:</b> Habilidade de aprender e usar o Quarto Portão do Hachimon."
+   },
+   {
+      "indice": "323",
+      "name": "Quinta Chave",
+      "atributo": [
+         "atributo"
+      ],
+      "bonus": [
+         0
+      ],
+      "code": "<b>Quinta Chave</b><br><b>Requisito:</b> Clã Lee, Quarta Chave, Resistência Monstruosa & Nível 10<br><b>Bônus:</b> Habilidade de aprender e usar o Quinto Portão do Hachimon."
+   },
+   {
+      "indice": "324",
+      "name": "Sexta Chave",
+      "atributo": [
+         "atributo"
+      ],
+      "bonus": [
+         0
+      ],
+      "code": "<b>Sexta Chave</b><br><b>Requisito:</b> Clã Lee, Quinta Chave, Resistência Monstruosa & Nível 20<br><b>Bônus:</b> Habilidade de aprender e usar o Sexto Portão do Hachimon."
+   },
+   {
+      "indice": "325",
+      "name": "Sétima Chave",
+      "atributo": [
+         "atributo"
+      ],
+      "bonus": [
+         0
+      ],
+      "code": "<b>Sétima Chave</b><br><b>Requisito:</b> Clã Lee, Sexta Chave, Resistência Monstruosa & Nível 35<br><b>Bônus:</b> Habilidade de aprender e usar o Sétimo Portão do Hachimon."
+   },
+   {
+      "indice": "326",
+      "name": "Oitava Chave",
+      "atributo": [
+         "atributo"
+      ],
+      "bonus": [
+         0
+      ],
+      "code": "<b>Oitava Chave</b><br><b>Requisito:</b> Clã Lee, Sétima Chave, Resistência Monstruosa & Nível 35<br><b>Bônus:</b> Habilidade de aprender e usar o Oitavo Portão do Hachimon."
+   },
+   {
+      "indice": "327",
+      "name": "Entregue aos Portões",
+      "atributo": [
+         "atributo"
+      ],
+      "bonus": [
+         0
+      ],
+      "code": "<b>Entregue aos Portões</b><br><b>Requisito:</b> Clã Lee, Sexta Chave & Nível 25<br><b>Bônus:</b> +1 Turno de duração para todos os Portões."
+   },
+   {
+      "indice": "328",
+      "name": "Resistência aos Portões",
+      "atributo": [
+         "atributo"
+      ],
+      "bonus": [
+         0
+      ],
+      "code": "<b>Resistência aos Portões</b><br><b>Requisito:</b> Clã Lee, Sexta Chave & Nível 30<br><b>Bônus:</b> Os efeitos negativos do 1°, 2°, 3°, 4° e 5° Portões são anulados."
+   },
+   {
+      "indice": "329",
+      "name": "Grande Controle de Sombras",
+      "atributo": [
+         "atributo"
+      ],
+      "bonus": [
+         0
+      ],
+      "code": "<b>Grande Controle de Sombras</b><br><b>Requisito:</b> Clã Nara & Nível 15<br><b>Bônus:</b> Habilidade de realizar o primeiro aprimoramento das técnicas de sombras do clã Nara."
+   },
+   {
+      "indice": "330",
+      "name": "Mestre em Controle de Sombras",
+      "atributo": [
+         "atributo"
+      ],
+      "bonus": [
+         0
+      ],
+      "code": "<b>Mestre em Controle de Sombras</b><br><b>Requisito:</b> Clã Nara, Grande Controle de Sombras & Nível 30<br><b>Bônus:</b> Habilidade de realizar o segundo e último aprimoramento das técnicas de sombras do clã Nara. +1 Ação Suplementar por turno usando técnicas de sombras."
+   },
+   {
+      "indice": "331",
+      "name": "Sábio em Armadilhas",
+      "atributo": [
+         "atributo"
+      ],
+      "bonus": [
+         0
+      ],
+      "code": "<b>Sábio em Armadilhas</b><br><b>Requisito:</b> Clã Nara & Nível 10<br><b>Bônus:</b> Habilidade de realizar +1 Ação Rápida no turno se for para armadilhas."
+   },
+   {
+      "indice": "332",
+      "name": "Mestre em Armadilhas",
+      "atributo": [
+         "atributo"
+      ],
+      "bonus": [
+         0
+      ],
+      "code": "<b>Mestre em Armadilhas</b><br><b>Requisito:</b> Clã Nara, Sábio em Armadilhas & Nível 20<br><b>Bônus:</b> Habilidade de realizar +1 Ação Rápida no turno se for para armadilhas."
+   },
+   {
+      "indice": "333",
+      "name": "Chuva de Sinapses",
+      "atributo": [
+         "atributo"
+      ],
+      "bonus": [
+         0
+      ],
+      "code": "<b>Chuva de Sinapses</b><br><b>Requisito:</b> Clã Nara, 03 Inteligência & Nível 10<br><b>Bônus:</b> Capacidade de utilizar a habilidade Postura de Concentração."
+   },
+   {
+      "indice": "334",
+      "name": "Capacidade Elemental",
+      "atributo": [
+         "atributo"
+      ],
+      "bonus": [
+         0
+      ],
+      "code": "<b>Capacidade Elemental</b><br><b>Requisito:</b> Clã Sarutobi & Nível 20<br><b>Bônus:</b> Permite aprender um quarto elemento com requerimentos e potência de um segundo."
+   },
+   {
+      "indice": "335",
+      "name": "Grande Capacidade Elemental",
+      "atributo": [
+         "atributo"
+      ],
+      "bonus": [
+         0
+      ],
+      "code": "<b>Grande Capacidade Elemental</b><br><b>Requisito:</b> Clã Sarutobi, Capacidade Elemental & Nível 30<br><b>Bônus:</b> Permite aprender um quinto elemento com requerimentos e potência de um terceiro."
+   },
+   {
+      "indice": "336",
+      "name": "Genialidade Técnica",
+      "atributo": [
+         "atributo"
+      ],
+      "bonus": [
+         0
+      ],
+      "code": "<b>Genialidade Técnica</b><br><b>Requisito:</b> Clã Sarutobi& Nível 15<br><b>Bônus:</b> +2 Jutsus (até rank A) no Limite de Jutsus do personagem, além de parenderem automaticamente jutsus (do elemento Katon) até rank A, sem necessidade de treinamento."
+   },
+   {
+      "indice": "337",
+      "name": "Deus Ninja",
+      "atributo": [
+         "atributo"
+      ],
+      "bonus": [
+         0
+      ],
+      "code": "<b>Deus Ninja</b><br><b>Requisito:</b> Clã Sarutobi & Nível 40<br><b>Bônus:</b> Permite alcançar 10 pontos em até duas artes ninjas (Ninjutsu, Taijutsu e Genjutsu), se tornando assim um quarto atributo com 10 pontos."
+   },
+   {
+      "indice": "338",
+      "name": "Espírito Ninja",
+      "atributo": [
+         "atributo"
+      ],
+      "bonus": [
+         0
+      ],
+      "code": "<b>Espírito Ninja</b><br><b>Requisito:</b> Clã Senju & Nível 05<br><b>Bônus:</b> Pontos de inteligência passam a reduzir em 200 palavras as necessidades para aprender técnicas."
+   },
+   {
+      "indice": "339",
+      "name": "Reservas Hereditárias",
+      "atributo": [
+         "atributo"
+      ],
+      "bonus": [
+         0
+      ],
+      "code": "<b>Reservas Hereditárias</b><br><b>Requisito:</b> Clã Senju & Nível 05<br><b>Bônus:</b> Habilidade de resistir até um turno mesmo com o HP zerado. O mesmo funciona para casos de extração de Bijus. No entanto, o jogador não poderá realizar nenhuma técnica, apenas movimentos leves e falar."
+   },
+   {
+      "indice": "340",
+      "name": "Senhor dos Jutsus",
+      "atributo": [
+         "atributo"
+      ],
+      "bonus": [
+         0
+      ],
+      "code": "<b>Senhor dos Jutsus</b><br><b>Requisito:</b> Clã Senju & Nível 15<br><b>Bônus:</b> +4 Jutsus (até rank A) no Limite de Jutsus do personagem."
+   },
+   {
+      "indice": "341",
+      "name": "Controlador dos Elementos",
+      "atributo": [
+         "atributo"
+      ],
+      "bonus": [
+         0
+      ],
+      "code": "<b>Controlador dos Elementos</b><br><b>Requisito:</b> Clã Senju & Nível 20<br><b>Bônus:</b> Permite aprender um quarto elemento com requerimentos e potência de um segundo."
+   },
+   {
+      "indice": "342",
+      "name": "Mestre dos Elementos",
+      "atributo": [
+         "atributo"
+      ],
+      "bonus": [
+         0
+      ],
+      "code": "<b>Mestre dos Elementos</b><br><b>Requisito:</b> Clã Senju & Nível 30<br><b>Bônus:</b> Permite aprender um quinto elemento com requerimentos e potência de um terceiro."
+   },
+   {
+      "indice": "343",
+      "name": "Encarnação do Guerreiro",
+      "atributo": [
+         "atributo"
+      ],
+      "bonus": [
+         0
+      ],
+      "code": "<b>Encarnação do Guerreiro</b><br><b>Requisito:</b> Clã Senju & Nível 40<br><b>Bônus:</b> Permite alcançar 10 Pontos em até duas artes ninjas (Ninjutsu, Taijutsu e Genjutsu), se tornando assim um quarto atributo com 10 pontos."
+   },
+   {
+      "indice": "344",
+      "name": "Guerreiro das Mil Ações",
+      "atributo": [
+         "atributo"
+      ],
+      "bonus": [
+         0
+      ],
+      "code": "<b>Guerreiro das Mil Ações</b><br><b>Requisito:</b> Clã Senju & Nível 50<br><b>Bônus:</b> +1 ação de qualquer tipo por turno."
+   },
+   {
+      "indice": "345",
+      "name": "Herança dos Seis Caminhos",
+      "atributo": [
+         "atributo"
+      ],
+      "bonus": [
+         0
+      ],
+      "code": "<b>Herança dos Seis Caminhos</b><br><b>Requisito:</b> Clã Senju & Nível 50<br><b>Bônus:</b> Capacidade para suportar o Rinnegan no corpo."
+   },
+   {
+      "indice": "346",
+      "name": "Bom Domínio do Sharingan",
+      "atributo": [
+         "atributo"
+      ],
+      "bonus": [
+         0
+      ],
+      "code": "<b>Bom Domínio do Sharingan</b><br><b>Requisito:</b> Clã Uchiha, Sharingan & Nível 05<br><b>Bônus:</b> Habilidade de realizar o primeiro aprimoramento do Sharingan."
+   },
+   {
+      "indice": "347",
+      "name": "Grande Domínio do Sharingan",
+      "atributo": [
+         "atributo"
+      ],
+      "bonus": [
+         0
+      ],
+      "code": "<b>Grande Domínio do Sharingan</b><br><b>Requisito:</b> Clã Uchiha, Sharingan Ni Tomoe & Nível 15<br><b>Bônus:</b> Habilidade de realizar o segundo aprimoramento do Sharingan."
+   },
+   {
+      "indice": "348",
+      "name": "Mestre do Sharingan",
+      "atributo": [
+         "atributo"
+      ],
+      "bonus": [
+         0
+      ],
+      "code": "<b>Mestre do Sharingan</b><br><b>Requisito:</b> Clã Uchiha, Sharingan San Tomoe & Nível 30<br><b>Bônus:</b> Habilidade de realizar o terceiro aprimoramento do Sharingan."
+   },
+   {
+      "indice": "349",
+      "name": "Controle dos Olhos da Percepção",
+      "atributo": [
+         "atributo"
+      ],
+      "bonus": [
+         0
+      ],
+      "code": "<b>Controle dos Olhos da Percepção</b><br><b>Requisito:</b> Clã Uchiha, 3 Inteligência, Sharingan & Nível 05<br><b>Bônus:</b> Habilidade de usar as habilidades listadas nos Olhos da Percepção das Regras do Sharingan."
+   },
+   {
+      "indice": "350",
+      "name": "Controle dos Olhos do Hipnotismo",
+      "atributo": [
+         "atributo"
+      ],
+      "bonus": [
+         0
+      ],
+      "code": "<b>Controle dos Olhos do Hipnotismo</b><br><b>Requisito:</b> Clã Uchiha, Estudado em Genjutsu, Sharingan & Nível 05<br><b>Bônus:</b> Habilidade de usar as habilidades listadas nos Olhos do Hipnotismo das Regras do Sharingan."
+   },
+   {
+      "indice": "351",
+      "name": "Espírito do Dragão",
+      "atributo": [
+         "atributo"
+      ],
+      "bonus": [
+         0
+      ],
+      "code": "<b>Espírito do Dragão</b><br><b>Requisito:</b> Clã Uchiha & Nível 30<br><b>Bônus:</b> Anula a fraqueza elemental do Katon contra Suiton."
+   },
+   {
+      "indice": "352",
+      "name": "Controlador de Bestas",
+      "atributo": [
+         "atributo"
+      ],
+      "bonus": [
+         0
+      ],
+      "code": "<b>Controlador de Bestas</b><br><b>Requisito:</b> Clã Uchiha, Sharingan & Nível 40<br><b>Bônus:</b> Habilidade de afetar Bijus com os Genjutsus derivados do Sharingan."
+   },
+   {
+      "indice": "353",
+      "name": "Herança dos Seis Caminhos",
+      "atributo": [
+         "atributo"
+      ],
+      "bonus": [
+         0
+      ],
+      "code": "<b>Herança dos Seis Caminhos</b><br><b>Requisito:</b> Clã Uchiha & Nível 50<br><b>Bônus:</b> Capacidade para suportar o Rinnegan no corpo."
+   },
+   {
+      "indice": "354",
+      "name": "Reservas Hereditárias",
+      "atributo": [
+         "atributo"
+      ],
+      "bonus": [
+         0
+      ],
+      "code": "<b>Reservas Hereditárias</b><br><b>Requisito:</b> Clã Uzumaki & Nível 05<br><b>Bônus:</b> Habilidade de resistir até um turno mesmo com o HP zerado. O mesmo funciona para casos de extração de Bijus. No entanto, o jogador não poderá realizar nenhuma técnica, apenas movimentos leves e falar."
+   },
+   {
+      "indice": "355",
+      "name": "Essência Regenerativa",
+      "atributo": [
+         "atributo"
+      ],
+      "bonus": [
+         0
+      ],
+      "code": "<b>Essência Regenerativa</b><br><b>Requisito:</b> Clã Uzumaki & Nível 05<br><b>Bônus:</b> O chakra desses ninjas são altamente regenerativos ao natural. É possível desenvolver a individualidade Heal Bite. Graças a essa capacidade natural, os personagens envelhecem mais devagar."
+   },
+   {
+      "indice": "356",
+      "name": "Controle de Correntes Espirituais",
+      "atributo": [
+         "atributo"
+      ],
+      "bonus": [
+         0
+      ],
+      "code": "<b>Controle de Correntes Espirituais</b><br><b>Requisito:</b> Clã Uzumaki & Nível 15<br><b>Bônus:</b> Habilidade de aprender e usar Adamantine Attacking Chains."
+   },
+   {
+      "indice": "357",
+      "name": "Mestre das Correntes Espirituais",
+      "atributo": [
+         "atributo"
+      ],
+      "bonus": [
+         0
+      ],
+      "code": "<b>Mestre das Correntes Espirituais</b><br><b>Requisito:</b> Clã Uzumaki, Controle de Correntes Espirituais & Nível 30<br><b>Bônus:</b> Habilidade de aprender e usar Kongō Fūsa."
+   },
+   {
+      "indice": "358",
+      "name": "Conexão com Shinigamis",
+      "atributo": [
+         "atributo"
+      ],
+      "bonus": [
+         0
+      ],
+      "code": "<b>Conexão com Shinigamis</b><br><b>Requisito:</b> Clã Uzumaki & Nível 40<br><b>Bônus:</b> Habilidade de utilizar o Shiki Fūjin sem perder a alma."
+   },
+   {
+      "indice": "359",
+      "name": "Controle da Espiral de Selos",
+      "atributo": [
+         "atributo"
+      ],
+      "bonus": [
+         0
+      ],
+      "code": "<b>Controle da Espiral de Selos</b><br><b>Requisito:</b> Clã Uzumaki & Nível 10<br><b>Bônus:</b> Possibilidade de obter todos os Talentos Aprimoradores da árvore Estudado em Fuinjutsu através deste Talento Secreto."
+   },
+   {
+      "indice": "360",
+      "name": "Mestre da Espiral de Selos",
+      "atributo": [
+         "atributo"
+      ],
+      "bonus": [
+         0
+      ],
+      "code": "<b>Mestre da Espiral de Selos</b><br><b>Requisito:</b> Clã Uzumaki & Nível 20<br><b>Bônus:</b> Possibilidade de obter todos os Talentos Aprimoradores da árvore Versado em Fuinjutsu através deste Talento Secreto."
+   },
+   {
+      "indice": "361",
+      "name": "Herança dos Seis Caminhos",
+      "atributo": [
+         "atributo"
+      ],
+      "bonus": [
+         0
+      ],
+      "code": "<b>Herança dos Seis Caminhos</b><br><b>Requisito:</b> Clã Uzumaki & Nível 50<br><b>Bônus:</b> Capacidade para suportar o Rinnegan no corpo."
+   },
+   {
+      "indice": "362",
+      "name": "Grande Dominador de Mentes",
+      "atributo": [
+         "atributo"
+      ],
+      "bonus": [
+         0
+      ],
+      "code": "<b>Grande Dominador de Mentes</b><br><b>Requisito:</b> Clã Yamanaka & Nível 10<br><b>Bônus:</b> Habilidade de aprender e usar o Shinranshin no Jutsu e suas variantes. +2m/s Velocidade da Mente."
+   },
+   {
+      "indice": "363",
+      "name": "Mestre em Dominação de Mentes",
+      "atributo": [
+         "atributo"
+      ],
+      "bonus": [
+         0
+      ],
+      "code": "<b>Mestre em Dominação de Mentes</b><br><b>Requisito:</b> Clã Yamanaka, Grande Dominador de Mentes & Nível 30<br><b>Bônus:</b> Habilidade de aprender e usar o Shinten Kugutsu Juin no Jutsu. +2m/s Velocidade da Mente."
+   },
+   {
+      "indice": "364",
+      "name": "Telepata",
+      "atributo": [
+         "atributo"
+      ],
+      "bonus": [
+         0
+      ],
+      "code": "<b>Telepata</b><br><b>Requisito:</b> Clã Yamanaka & Nível 05<br><b>Bônus:</b> Habilidade de aprender e usar técnicas de telepatia do clã."
+   },
+   {
+      "indice": "365",
+      "name": "Grande Telepata",
+      "atributo": [
+         "atributo"
+      ],
+      "bonus": [
+         0
+      ],
+      "code": "<b>Grande Telepata</b><br><b>Requisito:</b> Clã Yamanaka, Telepata & Nível 15<br><b>Bônus:</b> Habilidade de realizar o primeiro aprimoramento das técnicas de telepatia do clã."
+   },
+   {
+      "indice": "366",
+      "name": "Mestre Telepata",
+      "atributo": [
+         "atributo"
+      ],
+      "bonus": [
+         0
+      ],
+      "code": "<b>Mestre Telepata</b><br><b>Requisito:</b> Clã Yamanaka, Grande Telepata & Nível 30<br><b>Bônus:</b> Habilidade de realizar o segundo e último aprimoramento das técnicas de telepatia do clã."
+   },
+   {
+      "indice": "367",
+      "name": "Chakra Frio",
+      "atributo": [
+         "atributo"
+      ],
+      "bonus": [
+         0
+      ],
+      "code": "<b>Chakra Frio</b><br><b>Requisito:</b> Clã Yuki & Nível 05<br><b>Bônus:</b> Habilidade de alterar drasticamente a temperatura do ambiente apenas com seu chakra."
+   },
+   {
+      "indice": "368",
+      "name": "Controle do Chakra Frio",
+      "atributo": [
+         "atributo"
+      ],
+      "bonus": [
+         0
+      ],
+      "code": "<b>Controle do Chakra Frio</b><br><b>Requisito:</b> Clã Yuki & Nível 20<br><b>Bônus:</b> +1 Ação (variável) para usar Manipulação de Hyōton."
+   },
+   {
+      "indice": "369",
+      "name": "Grande Controle do Chakra Frio",
+      "atributo": [
+         "atributo"
+      ],
+      "bonus": [
+         0
+      ],
+      "code": "<b>Grande Controle do Chakra Frio</b><br><b>Requisito:</b> Clã Yuki & Nível 30<br><b>Bônus:</b> +1 Ação (variável) para usar Manipulação de Hyōton."
+   },
+   {
+      "indice": "370",
+      "name": "Controlador de Espelhos",
+      "atributo": [
+         "atributo"
+      ],
+      "bonus": [
+         0
+      ],
+      "code": "<b>Controlador de Espelhos</b><br><b>Requisito:</b> Clã Yuki & Nível 10<br><b>Bônus:</b> Habilidade de utilizar o Makyō Hyōshō na sua forma básica."
+   },
+   {
+      "indice": "371",
+      "name": "Mestre dos Espelhos",
+      "atributo": [
+         "atributo"
+      ],
+      "bonus": [
+         0
+      ],
+      "code": "<b>Mestre dos Espelhos</b><br><b>Requisito:</b> Clã Yuki, Controlador de Espelhos & Nível 20<br><b>Bônus:</b> Habilidade de utilizar o Makyō Hyōshō na sua forma final."
+   },
+   {
+      "indice": "372",
+      "name": "Grande Criador de Marionetes",
+      "atributo": [
+         "atributo"
+      ],
+      "bonus": [
+         0
+      ],
+      "code": "<b>Grande Criador de Marionetes</b><br><b>Requisito:</b> Habilidade Inicial: Kugutsu & Nível 15<br><b>Bônus:</b> Habilidade de criar e usar marionetes até rank A."
+   },
+   {
+      "indice": "373",
+      "name": "Mestre Criador de Marionetes",
+      "atributo": [
+         "atributo"
+      ],
+      "bonus": [
+         0
+      ],
+      "code": "<b>Mestre Criador de Marionetes</b><br><b>Requisito:</b> Habilidade Inicial: Kugutsu & Nível 25<br><b>Bônus:</b> Habilidade de criar e usar marionetes até rank S."
+   },
+   {
+      "indice": "374",
+      "name": "Bom Controle de Marionetes",
+      "atributo": [
+         "atributo"
+      ],
+      "bonus": [
+         0
+      ],
+      "code": "<b>Bom Controle de Marionetes</b><br><b>Requisito:</b> Habilidade Inicial: Kugutsu & Nível 10<br><b>Bônus:</b> Habilidade de realizar o primeiro aprimoramento do Controle de Marionetes."
+   },
+   {
+      "indice": "375",
+      "name": "Grande Controle de Marionetes",
+      "atributo": [
+         "atributo"
+      ],
+      "bonus": [
+         0
+      ],
+      "code": "<b>Grande Controle de Marionetes</b><br><b>Requisito:</b> Habilidade Inicial: Kugutsu & Nível 20<br><b>Bônus:</b> Habilidade de realizar o segundo aprimoramento do Controle de Marionetes."
+   },
+   {
+      "indice": "376",
+      "name": "Mestre no Controle de Marionetes",
+      "atributo": [
+         "atributo"
+      ],
+      "bonus": [
+         0
+      ],
+      "code": "<b>Mestre no Controle de Marionetes</b><br><b>Requisito:</b> Habilidade Inicial: Kugutsu & Nível 30<br><b>Bônus:</b> Habilidade de realizar o terceiro aprimoramento do Controle de Marionetes."
+   },
+   {
+      "indice": "377",
+      "name": "Grande Controle do Akagan",
+      "atributo": [
+         "atributo"
+      ],
+      "bonus": [
+         0
+      ],
+      "code": "<b>Grande Controle do Akagan</b><br><b>Requisito:</b> Kekkei Genkai: Akagan & Nível 10<br><b>Bônus:</b> Habilidade de realizar o primeiro aprimoramento do Akagan."
+   },
+   {
+      "indice": "378",
+      "name": "Mestre do Akagan",
+      "atributo": [
+         "atributo"
+      ],
+      "bonus": [
+         0
+      ],
+      "code": "<b>Mestre do Akagan</b><br><b>Requisito:</b> Kekkei Genkai: Akagan, Grande Controle do Akagan & Nível 20<br><b>Bônus:</b> Habilidade de realizar o segundo aprimoramento do Akagan."
+   },
+   {
+      "indice": "379",
+      "name": "Último Suspiro",
+      "atributo": [
+         "atributo"
+      ],
+      "bonus": [
+         0
+      ],
+      "code": "<b>Último Suspiro</b><br><b>Requisito:</b> Kekkei Genkai: Akagan, Mestre do Akagan & Nível 25<br><b>Bônus:</b> Capacidade de usar a habilidade Transferência de Força Vital através do Akagan."
+   },
+   {
+      "indice": "380",
+      "name": "Chakra Explosivo",
+      "atributo": [
+         "atributo"
+      ],
+      "bonus": [
+         0
+      ],
+      "code": "<b>Chakra Explosivo</b><br><b>Requisito:</b> Kekkei Genkai: Bakuton & Nível 01<br><b>Bônus:</b> Habilidade de utilizar o chakra flow com o Bakuton mesmo sem os requerimentos básicos ditos na regra."
+   },
+   {
+      "indice": "381",
+      "name": "Controle do Chakra Explosivo",
+      "atributo": [
+         "atributo"
+      ],
+      "bonus": [
+         0
+      ],
+      "code": "<b>Controle do Chakra Explosivo</b><br><b>Requisito:</b> Kekkei Genkai: Bakuton & Nível 20<br><b>Bônus:</b> +1 Ação (variável) para usar Manipulação de Bakuton."
+   },
+   {
+      "indice": "382",
+      "name": "Grande Controle do Chakra Explosivo",
+      "atributo": [
+         "atributo"
+      ],
+      "bonus": [
+         0
+      ],
+      "code": "<b>Grande Controle do Chakra Explosivo</b><br><b>Requisito:</b> Kekkei Genkai: Bakuton & Nível 30<br><b>Bônus:</b> +1 Ação (variável) para usar Manipulação de Bakuton."
+   },
+   {
+      "indice": "383",
+      "name": "Outros Vapores",
+      "atributo": [
+         "atributo"
+      ],
+      "bonus": [
+         0
+      ],
+      "code": "<b>Outros Vapores</b><br><b>Requisito:</b> Kekkei Genkai: Futton & Nível 25<br><b>Bônus:</b> Habilidade de utilizar a forma oposta do Futton àquela escolhida ao criar a ficha."
+   },
+   {
+      "indice": "384",
+      "name": "Controle do Chakra Vaporizado",
+      "atributo": [
+         "atributo"
+      ],
+      "bonus": [
+         0
+      ],
+      "code": "<b>Controle do Chakra Vaporizado</b><br><b>Requisito:</b> Kekkei Genkai: Futton & Nível 20<br><b>Bônus:</b> +1 Ação (variável) para usar Manipulação de Futton."
+   },
+   {
+      "indice": "385",
+      "name": "Grande Controle do Chakra Vaporizado",
+      "atributo": [
+         "atributo"
+      ],
+      "bonus": [
+         0
+      ],
+      "code": "<b>Grande Controle do Chakra Vaporizado</b><br><b>Requisito:</b> Kekkei Genkai: Futton & Nível 30<br><b>Bônus:</b> +1 Ação (variável) para usar Manipulação de Futton."
+   },
+   {
+      "indice": "386",
+      "name": "Defesa Absoluta",
+      "atributo": [
+         "atributo"
+      ],
+      "bonus": [
+         0
+      ],
+      "code": "<b>Defesa Absoluta</b><br><b>Requisito:</b> Kekkei Genkai: Jiton, Suna/Satetsu/Sakin & Nível 10<br><b>Bônus:</b> Capacidade de utilizar a habilidade Defesa Absoluta."
+   },
+   {
+      "indice": "387",
+      "name": "Controle do Chakra Magnético",
+      "atributo": [
+         "atributo"
+      ],
+      "bonus": [
+         0
+      ],
+      "code": "<b>Controle do Chakra Magnético</b><br><b>Requisito:</b> Kekkei Genkai: Jiton & Nível 20<br><b>Bônus:</b> +1 Ação (variável) para usar Manipulação de Jiton."
+   },
+   {
+      "indice": "388",
+      "name": "Grande Controle do Chakra Magnético",
+      "atributo": [
+         "atributo"
+      ],
+      "bonus": [
+         0
+      ],
+      "code": "<b>Grande Controle do Chakra Magnético</b><br><b>Requisito:</b> Kekkei Genkai: Jiton & Nível 30<br><b>Bônus:</b> +1 Ação (variável) para usar Manipulação de Jiton."
+   },
+   {
+      "indice": "389",
+      "name": "Grande Controle de Areia",
+      "atributo": [
+         "atributo"
+      ],
+      "bonus": [
+         0
+      ],
+      "code": "<b>Grande Controle de Areia</b><br><b>Requisito:</b> Kekkei Genkai: Jiton, Suna/Satetsu/Sakin & Nível 15<br><b>Bônus:</b> Habilidade de realizar o primeiro aprimoramento das areias."
+   },
+   {
+      "indice": "390",
+      "name": "Mestre no Controle de Areia",
+      "atributo": [
+         "atributo"
+      ],
+      "bonus": [
+         0
+      ],
+      "code": "<b>Mestre no Controle de Areia</b><br><b>Requisito:</b> Kekkei Genkai: Jiton, Suna/Satetsu/Sakin & Nível 30<br><b>Bônus:</b> Habilidade de realizar o segundo aprimoramento das areias."
+   },
+   {
+      "indice": "391",
+      "name": "Mestre dos Desertos",
+      "atributo": [
+         "atributo"
+      ],
+      "bonus": [
+         0
+      ],
+      "code": "<b>Mestre dos Desertos</b><br><b>Requisito:</b> Kekkei Genkai: Jiton & Nível 30<br><b>Bônus:</b> Habilidade de aprender e usar outro tipo de areia da Kekkei Genkai."
+   },
+   {
+      "indice": "392",
+      "name": "Poeira Cúbica",
+      "atributo": [
+         "atributo"
+      ],
+      "bonus": [
+         0
+      ],
+      "code": "<b>Poeira Cúbica</b><br><b>Requisito:</b> Kekkei Genkai: Jinton & Nível 10<br><b>Bônus:</b> Habilidade de utilizar técnicas de Jinton em formas cúbicas."
+   },
+   {
+      "indice": "393",
+      "name": "Poeira Triangular",
+      "atributo": [
+         "atributo"
+      ],
+      "bonus": [
+         0
+      ],
+      "code": "<b>Poeira Triangular</b><br><b>Requisito:</b> Kekkei Genkai: Jinton & Nível 10<br><b>Bônus:</b> Habilidade de utilizar técnicas de Jinton em formas triangulares."
+   },
+   {
+      "indice": "394",
+      "name": "Poeira Cilíndrica",
+      "atributo": [
+         "atributo"
+      ],
+      "bonus": [
+         0
+      ],
+      "code": "<b>Poeira Cilíndrica</b><br><b>Requisito:</b> Kekkei Genkai: Jinton & Nível 10<br><b>Bônus:</b> Habilidade de utilizar técnicas de Jinton em formas cilíndricas."
+   },
+   {
+      "indice": "395",
+      "name": "Bom Controle do Metal",
+      "atributo": [
+         "atributo"
+      ],
+      "bonus": [
+         0
+      ],
+      "code": "<b>Bom Controle do Metal</b><br><b>Requisito:</b> Kekkei Genkai: Koton & Nível 05<br><b>Bônus:</b> Habilidade de realizar o primeiro aprimoramento no uso da Kekkei Genkai: Koton."
+   },
+   {
+      "indice": "396",
+      "name": "Grande Controle do Metal",
+      "atributo": [
+         "atributo"
+      ],
+      "bonus": [
+         0
+      ],
+      "code": "<b>Grande Controle do Metal</b><br><b>Requisito:</b> Kekkei Genkai: Koton & Nível 15<br><b>Bônus:</b> Habilidade de realizar o segundo aprimoramento no uso da Kekkei Genkai: Koton. +1 Ação (variável) para usar Manipulação de Koton."
+   },
+   {
+      "indice": "397",
+      "name": "Mestre no Controle do Metal",
+      "atributo": [
+         "atributo"
+      ],
+      "bonus": [
+         0
+      ],
+      "code": "<b>Mestre no Controle do Metal</b><br><b>Requisito:</b> Kekkei Genkai: Koton & Nível 30<br><b>Bônus:</b> Habilidade de realizar o terceiro aprimoramento no uso da Kekkei Genkai: Koton. +1 Ação (variável) para usar Manipulação de Koton."
+   },
+   {
+      "indice": "398",
+      "name": "Controlador de Nuvens",
+      "atributo": [
+         "atributo"
+      ],
+      "bonus": [
+         0
+      ],
+      "code": "<b>Controlador de Nuvens</b><br><b>Requisito:</b> Kekkei Genkai: Ranton & Nível 01 (ou 10 se não for a primeira escolha)<br><b>Bônus:</b> Habilidade de utilizar o Ranton em forma de nuvens."
+   },
+   {
+      "indice": "399",
+      "name": "Controlador de Laser",
+      "atributo": [
+         "atributo"
+      ],
+      "bonus": [
+         0
+      ],
+      "code": "<b>Controlador de Laser</b><br><b>Requisito:</b> Kekkei Genkai: Ranton & Nível 01 (ou 10 se não for a primeira escolha)<br><b>Bônus:</b> Habilidade de utilizar o Ranton em forma de laser."
+   },
+   {
+      "indice": "400",
+      "name": "Controle do Chakra Tempestuoso",
+      "atributo": [
+         "atributo"
+      ],
+      "bonus": [
+         0
+      ],
+      "code": "<b>Controle do Chakra Tempestuoso</b><br><b>Requisito:</b> Kekkei Genkai: Ranton & Nível 20<br><b>Bônus:</b> +1 Ação (variável) para usar Manipulação de Ranton."
+   },
+   {
+      "indice": "401",
+      "name": "Grande Controle do Chakra Tempestuoso",
+      "atributo": [
+         "atributo"
+      ],
+      "bonus": [
+         0
+      ],
+      "code": "<b>Grande Controle do Chakra Tempestuoso</b><br><b>Requisito:</b> Kekkei Genkai: Ranton & Nível 30<br><b>Bônus:</b> +1 Ação (variável) para usar Manipulação de Ranton."
+   },
+   {
+      "indice": "402",
+      "name": "Chakra Quente",
+      "atributo": [
+         "atributo"
+      ],
+      "bonus": [
+         0
+      ],
+      "code": "<b>Chakra Quente</b><br><b>Requisito:</b> Kekkei Genkai: Shakuton & Nível 05<br><b>Bônus:</b> Habilidade de alterar drasticamente a temperatura do ambiente apenas com seu chakra."
+   },
+   {
+      "indice": "403",
+      "name": "Controle do Chakra Quente",
+      "atributo": [
+         "atributo"
+      ],
+      "bonus": [
+         0
+      ],
+      "code": "<b>Controle do Chakra Quente</b><br><b>Requisito:</b> Kekkei Genkai: Shakuton & Nível 20<br><b>Bônus:</b> +1 Ação (variável) para usar Manipulação de Shakuton."
+   },
+   {
+      "indice": "404",
+      "name": "Grande Controle do Chakra Quente",
+      "atributo": [
+         "atributo"
+      ],
+      "bonus": [
+         0
+      ],
+      "code": "<b>Grande Controle do Chakra Quente</b><br><b>Requisito:</b> Kekkei Genkai: Shakuton & Nível 30<br><b>Bônus:</b> +1 Ação (variável) para usar Manipulação de Shakuton."
+   },
+   {
+      "indice": "405",
+      "name": "Controle do Chakra Cristalizado",
+      "atributo": [
+         "atributo"
+      ],
+      "bonus": [
+         0
+      ],
+      "code": "<b>Controle do Chakra Cristalizado</b><br><b>Requisito:</b> Kekkei Genkai: Shoton & Nível 20<br><b>Bônus:</b> +1 Ação (variável) para usar Manipulação de Shoton."
+   },
+   {
+      "indice": "406",
+      "name": "Grande Controle do Chakra Cristalizado",
+      "atributo": [
+         "atributo"
+      ],
+      "bonus": [
+         0
+      ],
+      "code": "<b>Grande Controle do Chakra Cristalizado</b><br><b>Requisito:</b> Kekkei Genkai: Shoton & Nível 30<br><b>Bônus:</b> +1 Ação (variável) para usar Manipulação de Shoton."
+   },
+   {
+      "indice": "407",
+      "name": "Vulcões Semelhantes",
+      "atributo": [
+         "atributo"
+      ],
+      "bonus": [
+         0
+      ],
+      "code": "<b>Vulcões Semelhantes</b><br><b>Requisito:</b> Kekkei Genkai: Yoton & Nível 25<br><b>Bônus:</b> Habilidade de utilizar a forma oposta do Yoton àquela escolhida ao criar a ficha."
+   },
+   {
+      "indice": "408",
+      "name": "Controle do Chakra Vulcanizado",
+      "atributo": [
+         "atributo"
+      ],
+      "bonus": [
+         0
+      ],
+      "code": "<b>Controle do Chakra Vulcanizado</b><br><b>Requisito:</b> Kekkei Genkai: Yoton & Nível 20<br><b>Bônus:</b> +1 Ação (variável) para usar Manipulação de Yoton."
+   },
+   {
+      "indice": "409",
+      "name": "Grande Controle do Chakra Vulcanizado",
+      "atributo": [
+         "atributo"
+      ],
+      "bonus": [
+         0
+      ],
+      "code": "<b>Grande Controle do Chakra Vulcanizado</b><br><b>Requisito:</b> Kekkei Genkai: Yoton & Nível 30<br><b>Bônus:</b> +1 Ação (variável) para usar Manipulação de Yoton."
+   }        
 ]
