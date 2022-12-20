@@ -106,7 +106,8 @@ function checarspoiler(numero){
     if (numero < 254) return 17;
     if (numero < 258) return 18;
     if (numero < 262) return 19;
-    else return 20;
+    if (numero < 270) return 20;
+    else return 21;
 }
 
 function divCheck(texto, i){
@@ -184,6 +185,9 @@ function talentGenerator(talentos , lista, i, tipo){
         }
         if (tipo[20] !== ""){
             final += `<dl class="codebox spoiler"><dt style="cursor: pointer;">Talentos Secretos:</dt><dd><div class="spoiler_content">${tipo[20]}</div></dd></dl><br>`;
+        }
+        if (tipo[21] !== ""){
+            final += `<dl class="codebox spoiler"><dt style="cursor: pointer;">Talentos de Clã/KG:</dt><dd><div class="spoiler_content">${tipo[21]}</div></dd></dl><br>`;
         }
         //console.log(final);
         return final;
