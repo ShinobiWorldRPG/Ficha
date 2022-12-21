@@ -196,7 +196,7 @@ function talentGenerator(talentos , lista, i, tipo){
 
     //tipo[j] += lista[talentos[i]-1].code;
     tipo[j] += divCheck(lista[talentos[i]-1].code , talentos[i]);
-    //console.log(tipo);
+    console.log(tipo, i);
 
     return talentGenerator(talentos, lista, i + 1, tipo);
 }
