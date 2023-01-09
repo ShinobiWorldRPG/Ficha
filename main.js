@@ -122,7 +122,6 @@ function talentGenerator(talentos , lista, i, tipo){
     if(talentos[i] <= 0) return talentGenerator(talentos, lista, i + 1, tipo);
     if(talentos[i]-1 > lista.length) return talentGenerator(talentos, lista, i + 1, tipo);
     if(i >= talentos.length){
-        console.log(i)
         var final = "";
         if (tipo[0] !== ""){
             final += `<dl class="codebox spoiler"><dt style="cursor: pointer;">Ninjutsu:</dt><dd><div class="spoiler_content">${tipo[0]}</div></dd></dl><br>`;
@@ -191,6 +190,8 @@ function talentGenerator(talentos , lista, i, tipo){
             final += `<dl class="codebox spoiler"><dt style="cursor: pointer;">Talentos de Clã/KG:</dt><dd><div class="spoiler_content">${tipo[21]}</div></dd></dl><br>`;
         }
         console.log(tipo[21])
+        console.log(tipo[20])
+        console.log(tipo[0])
         //console.log(final);
         return final;
     }
