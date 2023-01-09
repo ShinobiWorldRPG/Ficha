@@ -1,4 +1,4 @@
-var version = '2.0';
+var version = '2.0.3';
 
 $.fn.textWidth = function(){
     var html_org = $(this).html();
@@ -86,6 +86,7 @@ function saque(arma , VS){
 }
 
 function checarspoiler(numero){
+    console.log(numero)
     if (numero < 17) return 0;
     if (numero < 34) return 1;
     if (numero < 47) return 2;
@@ -191,7 +192,6 @@ function talentGenerator(talentos , lista, i, tipo){
         }
         console.log(tipo[21])
         console.log(tipo[20])
-        console.log(tipo[0])
         //console.log(final);
         return final;
     }
